@@ -110,7 +110,7 @@ export default function ContestantsSection() {
           top: 0,
           height: '100vh',
           overflow: 'hidden',
-          background: 'var(--color-bg)',
+          background: `rgba(13, 15, 18, ${Math.min(1, progress * 10)})`,
         }}
       >
         {CONTESTANTS.map((person, i) => {
@@ -119,15 +119,11 @@ export default function ContestantsSection() {
           const sliceDuration = sliceEnd - sliceStart;
 
           const imgIn = phaseValue(progress, sliceStart, sliceStart + sliceDuration * 0.15);
-          const imgOut = i < CONTESTANTS.length - 1
-            ? 1 - phaseValue(progress, sliceEnd - sliceDuration * 0.2, sliceEnd)
-            : 1 - phaseValue(progress, sliceEnd - sliceDuration * 0.25, sliceEnd);
+          const imgOut = 1 - phaseValue(progress, sliceEnd - sliceDuration * 0.2, sliceEnd);
           const imgOpacity = Math.min(imgIn, imgOut);
 
           const txtIn = phaseValue(progress, sliceStart + sliceDuration * 0.05, sliceStart + sliceDuration * 0.2);
-          const txtOut = i < CONTESTANTS.length - 1
-            ? 1 - phaseValue(progress, sliceEnd - sliceDuration * 0.25, sliceEnd - sliceDuration * 0.05)
-            : 1 - phaseValue(progress, sliceEnd - sliceDuration * 0.3, sliceEnd - sliceDuration * 0.05);
+          const txtOut = 1 - phaseValue(progress, sliceEnd - sliceDuration * 0.25, sliceEnd - sliceDuration * 0.05);
           const txtOpacity = Math.min(txtIn, txtOut);
 
           const txtExitProgress = phaseValue(progress, sliceEnd - sliceDuration * 0.25, sliceEnd - sliceDuration * 0.05);

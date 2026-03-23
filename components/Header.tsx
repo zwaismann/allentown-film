@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export default function Header({ visible }: { visible: boolean }) {
+export default function Header({ visible, onInvestorClick }: { visible: boolean; onInvestorClick?: () => void }) {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const id = href.replace('#', '');
@@ -68,6 +68,17 @@ export default function Header({ visible }: { visible: boolean }) {
               {item.label}
             </a>
           ))}
+          <a
+            href="#investors"
+            className="nav-link"
+            onClick={(e) => {
+              e.preventDefault();
+              onInvestorClick?.();
+            }}
+            style={{ color: 'rgba(212,148,58,0.7)' }}
+          >
+            For Investors
+          </a>
         </nav>
     </header>
   );

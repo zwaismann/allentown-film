@@ -76,7 +76,7 @@ export default function ContestSection() {
           top: 0,
           height: '100vh',
           overflow: 'hidden',
-          background: 'var(--color-bg)',
+          background: `rgba(13, 15, 18, ${Math.min(1, progress * 10)})`,
         }}
       >
         {/* Billboard 59-days image - fades in behind text */}

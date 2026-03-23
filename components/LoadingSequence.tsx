@@ -65,7 +65,7 @@ export default function LoadingSequence({ onComplete }: { onComplete?: () => voi
     <div
       ref={containerRef}
       style={{
-        height: '110vh',
+        height: '102vh',
         position: 'relative',
       }}
     >

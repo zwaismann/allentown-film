@@ -27,69 +27,77 @@ export default function FilmSection() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const bgIn = phaseValue(progress, 0.0, 0.12);
-  const titleShow = phaseValue(progress, 0.02, 0.10);
-  const loglineShow = phaseValue(progress, 0.10, 0.18);
-  const toneShow = phaseValue(progress, 0.20, 0.35);
-  const closingShow = phaseValue(progress, 0.40, 0.55);
-  const sectionExit = phaseValue(progress, 0.65, 0.85);
-  const contentOpacity = 1 - sectionExit;
+  const titleShow = phaseValue(progress, 0.02, 0.12);
+  const loglineShow = phaseValue(progress, 0.12, 0.25);
+  const bodyShow = phaseValue(progress, 0.28, 0.50);
+  const contentOpacity = 1;
 
   return (
     <div ref={containerRef} id="film" style={{ height: '280vh', position: 'relative' }}>
-      <div style={{ position: 'sticky', top: 0, height: '100vh', overflow: 'hidden', background: 'var(--color-bg)' }}>
+      <div style={{
+        position: 'sticky', top: 0, height: '100vh', overflow: 'hidden',
+        background: `rgba(13, 15, 18, ${Math.min(1, progress * 10)})`,
+      }}>
 
-        {/* Background */}
+        {/* Static background image - no scroll-linked transforms */}
         <div style={{
           position: 'absolute', inset: 0,
           backgroundImage: 'url(/images/film-tone.png)',
           backgroundSize: 'cover', backgroundPosition: 'center 30%',
-          opacity: bgIn * 0.2 * contentOpacity,
+          opacity: 0.12,
+          pointerEvents: 'none',
         }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.7) 100%)' }} />
-          <div className="film-grain" />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.7) 100%)' }} />
         </div>
 
-        {/* Ambient grain on viewport */}
-        <div className="film-grain" style={{ zIndex: 2, opacity: 0.15 }} />
+        {/* Subtle grain */}
+        <div className="film-grain" style={{ zIndex: 2, opacity: 0.06, pointerEvents: 'none' }} />
 
         <div style={{
           position: 'absolute', inset: 0, zIndex: 10,
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-          textAlign: 'center', padding: '0 24px', opacity: contentOpacity,
+          textAlign: 'center', padding: '0 clamp(24px, 5vw, 80px)', opacity: contentOpacity,
         }}>
-          <div style={{ maxWidth: '720px' }}>
+          <div style={{ maxWidth: '800px' }}>
             <p style={{
               fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
               letterSpacing: '0.3em', textTransform: 'uppercase', color: '#8899AA',
               marginBottom: '16px', opacity: titleShow, transform: `translateY(${(1 - titleShow) * 10}px)`,
             }}>The Film</p>
 
+            {/* Title on one line or balanced two lines - never orphan a word */}
             <h2 style={{
-              fontFamily: "'Anton', sans-serif", fontSize: 'clamp(36px, 8vw, 80px)', textTransform: 'uppercase',
+              fontFamily: "'Anton', sans-serif",
+              fontSize: 'clamp(36px, 7vw, 72px)',
+              textTransform: 'uppercase',
               color: '#E8DCC8', letterSpacing: '0.06em', lineHeight: 1.15,
-              marginBottom: '12px', opacity: loglineShow, transform: `translateY(${(1 - loglineShow) * 15}px)`,
-            }}>A rust belt fairy tale.</h2>
+              marginBottom: '12px', opacity: loglineShow,
+              transform: `translateY(${(1 - loglineShow) * 15}px)`,
+              whiteSpace: 'nowrap',
+            }}>A RUST BELT FAIRY TALE.</h2>
 
             <div className="tri-bar" style={{ width: '60px', margin: '20px auto 28px', opacity: loglineShow * 0.8 }} />
 
-            <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: 'clamp(15px, 1.6vw, 17px)',
-              color: '#E8DCC8', lineHeight: 1.8,
-              opacity: toneShow * 0.85, transform: `translateY(${(1 - toneShow) * 12}px)`,
-              marginBottom: '32px',
+            {/* Unified DM Sans for both paragraphs - they appear together */}
+            <div style={{
+              opacity: bodyShow * 0.9,
+              transform: `translateY(${(1 - bodyShow) * 12}px)`,
             }}>
-              A film that lives in the space between absurdity and heartbreak, where the biggest laughs come from the most desperate circumstances and the most moving moments sneak up on you sideways.
-            </p>
+              <p style={{
+                fontFamily: "'DM Sans', sans-serif", fontSize: 'clamp(15px, 1.5vw, 17px)',
+                fontWeight: 300, color: '#E8DCC8', lineHeight: 1.8,
+                marginBottom: '24px',
+              }}>
+                A film that lives in the space between absurdity and heartbreak, where the biggest laughs come from the most desperate circumstances and the most moving moments sneak up on you sideways.
+              </p>
 
-            <p style={{
-              fontFamily: "'Crimson Pro', serif", fontStyle: 'italic',
-              fontSize: 'clamp(18px, 2.5vw, 24px)', color: '#E8DCC8',
-              lineHeight: 1.5, letterSpacing: '0.04em',
-              opacity: closingShow * 0.9, transform: `translateY(${(1 - closingShow) * 12}px)`,
-            }}>
-              A comedy about survival. A drama about dignity. And a love letter to the people who build their lives with whatever they&apos;ve got.
-            </p>
+              <p style={{
+                fontFamily: "'DM Sans', sans-serif", fontSize: 'clamp(15px, 1.5vw, 17px)',
+                fontWeight: 400, fontStyle: 'italic', color: '#E8DCC8', lineHeight: 1.8,
+              }}>
+                A comedy about survival. A drama about dignity. And a love letter to the people who build their lives with whatever they&apos;ve got.
+              </p>
+            </div>
           </div>
         </div>
       </div>

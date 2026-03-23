@@ -23,12 +23,24 @@ const IMAGES = [
 ];
 
 const STATS = [
-  { number: '18%', label: 'mortgage rates', color: '#99AABB' },
-  { number: '16%', label: 'unemployment', color: '#7A8FA0' },
-  { number: '13.5%', label: 'inflation', color: '#C4713B' },
-  { number: '12M', label: 'out of work', color: '#D4943A' },
-  { number: '$1.5B', label: 'steel losses', color: '#E84B2B' },
+  { value: 18, suffix: '%', label: 'mortgage rates' },
+  { value: 16, suffix: '%', label: 'unemployment' },
+  { value: 13.5, suffix: '%', label: 'inflation' },
+  { value: 12, suffix: 'M', label: 'out of work' },
+  { value: 1.5, prefix: '$', suffix: 'B', label: 'steel losses' },
 ];
+
+function formatStat(stat: typeof STATS[0], countProgress: number): string {
+  const current = stat.value * countProgress;
+  // Format with appropriate decimal places
+  let formatted: string;
+  if (stat.value % 1 !== 0) {
+    formatted = current.toFixed(1);
+  } else {
+    formatted = Math.round(current).toString();
+  }
+  return (stat.prefix || '') + formatted + stat.suffix;
+}
 
 export default function AllentownSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -46,15 +58,6 @@ export default function AllentownSection() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Tighter mapping across 400vh:
-  // 0.00 - 0.08: "1982 / ALLENTOWN, PA"
-  // 0.06 - 0.25: recession images scroll
-  // 0.23 - 0.30: title exits, congress image fades in
-  // 0.30 - 0.65: stats appear left to right over congress image
-  // 0.65 - 0.72: stats + image fade out
-  // 0.72 - 0.88: closing line
-  // 0.88 - 0.95: "gone" turns red
-
   const yearShow = phaseValue(progress, 0.0, 0.05);
   const cityShow = phaseValue(progress, 0.04, 0.09);
   const barShow = phaseValue(progress, 0.03, 0.08);
@@ -69,18 +72,18 @@ export default function AllentownSection() {
   const heroImageOut = phaseValue(progress, 0.65, 0.72);
   const heroImageOpacity = heroImageIn * (1 - heroImageOut) * 0.4;
 
-  // Stats appear one by one from left to right, all stay visible
+  // Stats appear one by one, each with a count-up animation
   const statsStart = 0.30;
   const statsEnd = 0.60;
   const statSlice = (statsEnd - statsStart) / STATS.length;
 
-  // Closing line appears below stats (stats stay visible)
+  // Closing line appears below stats
   const closingShow = phaseValue(progress, 0.62, 0.72);
   const goneRedShift = phaseValue(progress, 0.75, 0.82);
 
-  // Everything fades out together after the red shift
-  const allExit = phaseValue(progress, 0.85, 0.95);
-  const allOpacity = 1 - easeInOutCubic(allExit);
+  // Gentle late fade
+  const allExit = phaseValue(progress, 0.95, 1.0);
+  const allOpacity = 1 - allExit * 0.6;
 
   return (
     <div
@@ -123,7 +126,7 @@ export default function AllentownSection() {
           })}
         </div>
 
-        {/* Congress protest image - visible through stats */}
+        {/* Congress protest image */}
         <div style={{
           position: 'absolute', inset: 0,
           backgroundImage: 'url(/images/congress-protest.jpg)',
@@ -151,15 +154,15 @@ export default function AllentownSection() {
           </div>
         )}
 
-        {/* Stats + closing line - unified section */}
-        {heroImageOpacity > 0 && allOpacity > 0 && (
+        {/* Stats + closing line */}
+        {allOpacity > 0 && (
           <div style={{
             position: 'absolute', inset: 0, zIndex: 10,
             display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
             padding: '0 clamp(16px, 3vw, 40px)',
             opacity: allOpacity,
           }}>
-            {/* Stats row */}
+            {/* Stats row - all white/cream, with count-up animation */}
             <div style={{
               display: 'flex', gap: 'clamp(12px, 2.5vw, 32px)',
               flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-end',
@@ -167,10 +170,11 @@ export default function AllentownSection() {
             }}>
               {STATS.map((stat, i) => {
                 const statAppear = phaseValue(progress, statsStart + i * statSlice, statsStart + i * statSlice + statSlice * 0.6);
+                const countUp = phaseValue(progress, statsStart + i * statSlice, statsStart + i * statSlice + statSlice * 1.2);
                 if (statAppear <= 0) return null;
 
                 return (
-                  <div key={stat.number} style={{
+                  <div key={stat.label} style={{
                     textAlign: 'center',
                     opacity: statAppear,
                     transform: `translateY(${(1 - statAppear) * 15}px)`,
@@ -178,22 +182,22 @@ export default function AllentownSection() {
                     <p style={{
                       fontFamily: "'Anton', sans-serif",
                       fontSize: 'clamp(32px, 6vw, 64px)',
-                      color: stat.color,
+                      color: '#E8DCC8',
                       letterSpacing: '0.02em',
                       lineHeight: 1,
                       marginBottom: '4px',
                       textShadow: '0 2px 16px rgba(0,0,0,0.6)',
                     }}>
-                      {stat.number}
+                      {formatStat(stat, countUp)}
                     </p>
                     <p style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 'clamp(9px, 1vw, 12px)',
+                      fontSize: 'clamp(11px, 1.2vw, 14px)',
                       fontWeight: 500,
-                      letterSpacing: '0.15em',
+                      letterSpacing: '0.12em',
                       textTransform: 'uppercase',
                       color: '#E8DCC8',
-                      opacity: 0.5,
+                      opacity: 0.75,
                       textShadow: '0 1px 8px rgba(0,0,0,0.6)',
                     }}>
                       {stat.label}
@@ -203,18 +207,21 @@ export default function AllentownSection() {
               })}
             </div>
 
-            {/* Closing line - appears below stats */}
+            {/* Closing line - unified DM Sans font */}
             {closingShow > 0 && (
               <div style={{ maxWidth: '680px', textAlign: 'center' }}>
                 <p style={{
-                  fontFamily: "'Crimson Pro', serif", fontStyle: 'italic',
-                  fontSize: 'clamp(18px, 2.5vw, 24px)', color: '#E8DCC8',
-                  lineHeight: 1.5, letterSpacing: '0.04em',
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 'clamp(16px, 2vw, 20px)',
+                  fontWeight: 300,
+                  color: '#E8DCC8',
+                  lineHeight: 1.6, letterSpacing: '0.02em',
                   opacity: closingShow, transform: `translateY(${(1 - closingShow) * 15}px)`,
                   textShadow: '0 1px 12px rgba(0,0,0,0.6)',
                 }}>
                   For the people of Allentown, the American Dream wasn&apos;t slipping away.{' '}
                   <span style={{
+                    fontWeight: 500,
                     color: goneRedShift > 0
                       ? `rgb(${Math.round(232 * goneRedShift + 232 * (1 - goneRedShift))}, ${Math.round(75 * goneRedShift + 220 * (1 - goneRedShift))}, ${Math.round(43 * goneRedShift + 200 * (1 - goneRedShift))})`
                       : '#E8DCC8',

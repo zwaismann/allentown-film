@@ -24,15 +24,15 @@ const TEAM: TeamMember[] = [
     name: 'ROBERTO ALCAZAR',
     role: 'Executive Producer',
     image: '/images/roberto-alcazar.webp',
-    imagePosition: 'center 15%',
-    imageScale: 1.8,
+    imagePosition: 'center 10%',
+    imageScale: 1.32,
   },
   {
     name: 'ZE\'EV WAISMANN',
     role: 'Director / Co-Writer',
     image: '/images/zev-waismann.jpg',
-    imagePosition: 'center 10%',
-    imageScale: 2,
+    imagePosition: 'center 25%',
+    imageScale: 2.2,
   },
   {
     name: 'PAT TAGGART',
@@ -42,12 +42,12 @@ const TEAM: TeamMember[] = [
     name: 'CONRAD SYLVIA',
     role: 'Writer',
     image: '/images/conrad-sylvia.png',
-    imagePosition: 'center 10%',
-    imageScale: 2.5,
+    imagePosition: 'center 8%',
+    imageScale: 1.55,
   },
 ];
 
-export default function TeamSection() {
+export default function TeamSection({ onMemberClick }: { onMemberClick?: (index: number) => void }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -95,6 +95,7 @@ export default function TeamSection() {
         {TEAM.map((member, i) => (
           <div
             key={member.name}
+            onClick={() => onMemberClick?.(i)}
             style={{
               textAlign: 'center',
               minWidth: '120px',
@@ -102,11 +103,12 @@ export default function TeamSection() {
               opacity: visible ? 1 : 0,
               transform: visible ? 'translateY(0)' : 'translateY(20px)',
               transition: `opacity 1s ease-out ${0.3 + i * 0.12}s, transform 1s ease-out ${0.3 + i * 0.12}s`,
+              cursor: 'pointer',
             }}
           >
             {/* Avatar */}
             <div style={{
-              width: '96px', height: '96px', borderRadius: '50%',
+              width: '112px', height: '112px', borderRadius: '50%',
               margin: '0 auto 12px', overflow: 'hidden',
               background: '#1A1F24', border: '1px solid #2A2A2A',
             }}>
@@ -117,6 +119,7 @@ export default function TeamSection() {
                   backgroundSize: 'cover',
                   backgroundPosition: member.imagePosition || 'center 20%',
                   transform: `scale(${member.imageScale || 1})`,
+                  transformOrigin: member.imagePosition || 'center 20%',
                 }} />
               ) : (
                 <div style={{

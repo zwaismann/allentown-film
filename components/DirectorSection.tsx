@@ -27,12 +27,13 @@ export default function DirectorSection() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const titleShow = phaseValue(progress, 0.0, 0.10);
-  const p1Show = phaseValue(progress, 0.10, 0.25);
-  const p2Show = phaseValue(progress, 0.25, 0.40);
-  const sigShow = phaseValue(progress, 0.40, 0.50);
-  const sectionExit = phaseValue(progress, 0.60, 0.80);
-  const contentOpacity = 1 - sectionExit;
+  const titleShow = phaseValue(progress, 0.0, 0.12);
+  const p1Show = phaseValue(progress, 0.12, 0.32);
+  const p2Show = phaseValue(progress, 0.34, 0.55);
+  const sigShow = phaseValue(progress, 0.55, 0.68);
+  // Gentle late fade - content softens at the very end but never disappears
+  const directorExit = phaseValue(progress, 0.90, 1.0);
+  const contentOpacity = 1 - directorExit * 0.5;
 
   return (
     <div
@@ -49,7 +50,7 @@ export default function DirectorSection() {
           top: 0,
           height: '100vh',
           overflow: 'hidden',
-          background: 'var(--color-bg)',
+          background: `rgba(13, 15, 18, ${Math.min(1, progress * 10)})`,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
