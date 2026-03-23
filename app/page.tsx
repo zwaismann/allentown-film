@@ -28,7 +28,9 @@ export default function Home() {
           visible={headerVisible}
           onInvestorClick={() => setInvestorModalOpen(true)}
         />
-        <LoadingSequence onComplete={() => setHeaderVisible(true)} />
+        <div style={{ position: 'relative', zIndex: 10, marginBottom: '-100vh' }}>
+          <LoadingSequence onComplete={() => setHeaderVisible(true)} />
+        </div>
         <div style={{ position: 'relative', zIndex: 2, marginBottom: '-100vh' }}>
           <AllentownSection />
         </div>

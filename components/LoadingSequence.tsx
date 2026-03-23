@@ -60,12 +60,14 @@ export default function LoadingSequence({ onComplete }: { onComplete?: () => voi
   const easedProgress = easeOutCubic(scrollProgress);
   // Scroll-driven fade - no CSS transition, immediate response
   const scrollFade = Math.max(0, 1 - easedProgress * 2);
+  // Background fades to transparent so the next section shows through
+  const bgOpacity = Math.max(0, 1 - easedProgress * 1.5);
 
   return (
     <div
       ref={containerRef}
       style={{
-        height: '102vh',
+        height: '115vh',
         position: 'relative',
       }}
     >
@@ -75,11 +77,10 @@ export default function LoadingSequence({ onComplete }: { onComplete?: () => voi
           top: 0,
           height: '100vh',
           overflow: 'hidden',
-          background: 'var(--color-bg)',
+          background: `rgba(13, 15, 18, ${bgOpacity})`,
         }}
       >
         {/* Background image */}
-        {/* Two layers: one for intro zoom (CSS transition), one for scroll fade (no transition) */}
         <div
           style={{
             position: 'absolute',
@@ -87,28 +88,15 @@ export default function LoadingSequence({ onComplete }: { onComplete?: () => voi
             backgroundImage: 'url(/images/hero-billboard.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center 30%',
-            // Intro: CSS transition handles zoom + initial fade in
-            opacity: phase >= 1 ? 1 : 0,
+            opacity: (phase >= 1 ? 1 : 0) * scrollFade,
             transform: phase >= 1 ? 'scale(1)' : 'scale(1.15)',
-            transition: introZoomDone ? 'none' : 'opacity 2s ease-in-out, transform 4s cubic-bezier(0.25, 0.1, 0.25, 1)',
+            transition: introZoomDone ? 'none' : 'transform 4s cubic-bezier(0.25, 0.1, 0.25, 1)',
           }}
         >
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(26,31,36,0.2) 0%, rgba(26,31,36,0.35) 40%, rgba(12,10,8,0.88) 85%, rgba(12,10,8,0.95) 100%)', mixBlendMode: 'multiply' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.7) 100%)' }} />
           <div className="film-grain" />
         </div>
-
-        {/* Scroll fade overlay - sits on top, no CSS transition, responds instantly */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background: 'var(--color-bg)',
-            opacity: 1 - scrollFade,
-            zIndex: 3,
-            pointerEvents: 'none',
-          }}
-        />
 
         {/* Text content */}
         <div
@@ -143,7 +131,7 @@ export default function LoadingSequence({ onComplete }: { onComplete?: () => voi
           </p>
         </div>
 
-        {/* Scroll indicator - lingers longer */}
+        {/* Scroll indicator */}
         <div style={{ position: 'absolute', bottom: '28px', left: '50%', transform: 'translateX(-50%)', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', opacity: phase >= 7 && scrollProgress < 0.15 ? Math.max(0, 1 - scrollProgress * 8) : 0, transition: 'opacity 0.8s ease-out' }}>
           <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 500, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#667788' }}>Scroll</span>
           <div className="scroll-pulse" style={{ width: '1px', height: '24px', background: 'linear-gradient(180deg, #667788, transparent)' }} />

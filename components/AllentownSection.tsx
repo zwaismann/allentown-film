@@ -91,7 +91,7 @@ export default function AllentownSection() {
       id="story"
       style={{ height: '400vh', position: 'relative' }}
     >
-      <div style={{ position: 'sticky', top: 0, height: '100vh', overflow: 'hidden', background: 'var(--color-bg)' }}>
+      <div style={{ position: 'sticky', top: 0, height: '100vh', overflow: 'hidden', background: `rgba(13, 15, 18, ${Math.min(1, progress * 10)})` }}>
 
         {/* Scrolling recession images */}
         <div style={{ position: 'absolute', inset: 0, overflow: 'hidden' }}>
