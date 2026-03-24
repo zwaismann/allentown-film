@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import useIsMobile from './useIsMobile';
 
 function easeOutCubic(t: number): number {
   return 1 - Math.pow(1 - t, 3);
@@ -16,9 +17,9 @@ function phaseValue(progress: number, start: number, end: number): number {
 }
 
 const IMAGES = [
-  '/images/recession-unemployment-line.jpg',
-  '/images/recession-job-sign.jpg',
-  '/images/recession-decay.jpg',
+  '/images/recession-unemployment-line.webp',
+  '/images/recession-job-sign.webp',
+  '/images/recession-decay.webp',
   '/images/recession-dump-reagan.webp',
 ];
 
@@ -45,6 +46,7 @@ function formatStat(stat: typeof STATS[0], countProgress: number): string {
 export default function AllentownSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -113,7 +115,9 @@ export default function AllentownSection() {
                 position: 'absolute',
                 left: isLeft ? 'clamp(16px, 3vw, 40px)' : 'auto',
                 right: isLeft ? 'auto' : 'clamp(16px, 3vw, 40px)',
-                top: '50%', width: 'min(52vw, 520px)', height: 'min(45vh, 380px)',
+                top: '50%',
+                width: isMobile ? 'min(70vw, 320px)' : 'min(52vw, 520px)',
+                height: 'min(45vh, 380px)',
                 backgroundColor: '#1A1F24',
                 transform: `translateY(calc(-50% + ${yPercent}%))`,
                 opacity, borderRadius: '2px', overflow: 'hidden',
@@ -129,7 +133,7 @@ export default function AllentownSection() {
         {/* Congress protest image */}
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: 'url(/images/congress-protest.jpg)',
+          backgroundImage: 'url(/images/congress-protest.webp)',
           backgroundSize: 'cover', backgroundPosition: 'center center',
           opacity: heroImageOpacity,
         }}>
@@ -164,7 +168,7 @@ export default function AllentownSection() {
           }}>
             {/* Stats row - all white/cream, with count-up animation */}
             <div style={{
-              display: 'flex', gap: 'clamp(12px, 2.5vw, 32px)',
+              display: 'flex', gap: isMobile ? 'clamp(8px, 2vw, 16px)' : 'clamp(12px, 2.5vw, 32px)',
               flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-end',
               marginBottom: '40px',
             }}>

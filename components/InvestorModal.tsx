@@ -190,7 +190,7 @@ export default function InvestorModal({ open, onClose }: { open: boolean; onClos
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                  display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap',
                   padding: '20px 24px',
                   background: 'rgba(255,255,255,0.03)',
                   border: '1px solid rgba(255,255,255,0.08)',

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import useIsMobile from './useIsMobile';
 
 interface TeamMember {
   name: string;
@@ -21,19 +22,19 @@ const TEAM_ROWS: TeamRow[] = [
     members: [
       {
         name: 'ZE\'EV WAISMANN',
-        image: '/images/zev-waismann.jpg',
+        image: '/images/zev-waismann.webp',
         imagePosition: 'center 25%',
         imageScale: 2.2,
       },
       {
         name: 'PAT TAGGART',
-        image: '/images/pat-taggart.jpg',
+        image: '/images/pat-taggart.webp',
         imagePosition: 'center 20%',
         imageScale: 1,
       },
       {
         name: 'CONRAD SYLVIA',
-        image: '/images/conrad-sylvia.png',
+        image: '/images/conrad-sylvia.webp',
         imagePosition: 'center 8%',
         imageScale: 1.55,
       },
@@ -56,7 +57,7 @@ const TEAM_ROWS: TeamRow[] = [
       },
       {
         name: 'PILAR DE POSADAS',
-        image: '/images/pilar-de-posadas.jpg',
+        image: '/images/pilar-de-posadas.webp',
         imagePosition: 'center 25%',
         imageScale: 1,
       },
@@ -107,6 +108,7 @@ function renderMember(member: TeamMember, flatIndex: number, onMemberClick?: (in
 export default function TeamSection({ onMemberClick }: { onMemberClick?: (index: number) => void }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -152,8 +154,10 @@ export default function TeamSection({ onMemberClick }: { onMemberClick?: (index:
         {/* Row 1: Writer/Director + Writers */}
         <div
           style={{
-            display: 'flex', gap: 'clamp(20px, 3vw, 48px)',
-            justifyContent: 'center', alignItems: 'flex-start',
+            display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
+            gap: 'clamp(20px, 3vw, 48px)',
+            justifyContent: 'center', alignItems: isMobile ? 'center' : 'flex-start',
             opacity: visible ? 1 : 0,
             transform: visible ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 1s ease-out 0.3s, transform 1s ease-out 0.3s',

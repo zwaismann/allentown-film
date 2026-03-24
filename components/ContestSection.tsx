@@ -36,7 +36,7 @@ export default function ContestSection() {
   // 0.12 - 0.22: bridge text fades out
   // 0.22 - 0.36: "ONE BILLBOARD." fades in
   // 0.36 - 0.48: "THREE MEN." fades in
-  // 0.48 - 0.62: "LAST ONE DOWN WINS A HOME." fades in
+  // 0.48 - 0.62: "LAST ONE DOWN WINS A HOME." fades in
   // 0.60 - 0.72: billboard image fades in behind text
   // 0.70 - 0.82: text fades out, image stays
   // 0.82 - 1.00: hold on image, then fade out
@@ -84,7 +84,7 @@ export default function ContestSection() {
           style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: 'url(/images/billboard-59-days.png)',
+            backgroundImage: 'url(/images/billboard-59-days.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center 40%',
             opacity: imageOpacity,
@@ -137,6 +137,7 @@ export default function ContestSection() {
                   fontSize: 'clamp(36px, 8vw, 90px)',
                   color: '#E8DCC8',
                   letterSpacing: '0.06em',
+                  overflowWrap: 'break-word',
                   lineHeight: 1.15,
                   opacity: line1Show,
                   transform: `translateY(${(1 - line1Show) * 20}px)`,
@@ -152,6 +153,7 @@ export default function ContestSection() {
                   fontSize: 'clamp(36px, 8vw, 90px)',
                   color: '#E8DCC8',
                   letterSpacing: '0.06em',
+                  overflowWrap: 'break-word',
                   lineHeight: 1.15,
                   opacity: line2Show,
                   transform: `translateY(${(1 - line2Show) * 20}px)`,
@@ -167,12 +169,13 @@ export default function ContestSection() {
                   fontSize: 'clamp(36px, 8vw, 90px)',
                   color: '#D4943A',
                   letterSpacing: '0.06em',
+                  overflowWrap: 'break-word',
                   lineHeight: 1.15,
                   opacity: line3Show,
                   transform: `translateY(${(1 - line3Show) * 20}px)`,
                 }}
               >
-                LAST ONE DOWN WINS A HOME.
+                LAST ONE DOWN WINS A HOME.
               </h2>
 
               {/* Tri-bar */}

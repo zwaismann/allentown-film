@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import useIsMobile from './useIsMobile';
 
 function easeOutCubic(t: number): number {
   return 1 - Math.pow(1 - t, 3);
@@ -31,7 +32,7 @@ const CONTESTANTS: Contestant[] = [
     roleColor: '#E84B2B',
     quote: '"I Need A Home"',
     bio: 'Mike MacKay entered the contest 47,000 times. A stocky, bearded loudmouth who never met a room he didn\'t want to own. His wife Linda just wanted him to come home. Mike wanted to be famous.',
-    image: '/images/mike-mackay.png',
+    image: '/images/mike-mackay.webp',
     imagePosition: 'center 30%',
     textSide: 'left',
   },
@@ -41,7 +42,7 @@ const CONTESTANTS: Contestant[] = [
     roleColor: '#8899AA',
     quote: '"Due to the high cost of living, I may never be able to purchase a home of my own."',
     bio: 'Ron Kistler was 25, a house painter who picked up trucking shifts when he could find them. Quiet. Stubborn. He had a piece of land, a girl named Sue, and no way to build a life with either one.',
-    image: '/images/ron-kistler.png',
+    image: '/images/ron-kistler.webp',
     imagePosition: 'center 20%',
     textSide: 'right',
     flipImage: true,
@@ -52,7 +53,7 @@ const CONTESTANTS: Contestant[] = [
     roleColor: '#C4713B',
     quote: '"I could live indefinitely on a billboard."',
     bio: 'His mother entered him while he slept. Dalton was 22, an Army veteran fresh out of Korea, unemployed, doing karate in his underwear in his childhood bedroom. He didn\'t volunteer for this.',
-    image: '/images/dalton-young.png',
+    image: '/images/dalton-young.webp',
     imagePosition: 'center 25%',
     textSide: 'left',
   },
@@ -63,7 +64,7 @@ const CONTESTANTS: Contestant[] = [
     roleColor: '#D4943A',
     quote: '"Part publicity stunt, part social experiment, part act of accidental cruelty."',
     bio: 'WSAN\'s marketing director and the man who dreamed the whole thing up. He wore the fanciest suit an AM radio salary could buy, convinced Fulmer to green-light it, and when it spiraled out of control, he was the one who had to explain why on national television.',
-    image: '/images/matt-krasja.png',
+    image: '/images/matt-krasja.webp',
     imagePosition: 'center 25%',
     textSide: 'right',
   },
@@ -74,7 +75,7 @@ const CONTESTANTS: Contestant[] = [
     roleColor: '#667788',
     quote: '"He didn\'t believe in handouts. He believed in hand-ups."',
     bio: 'Harold Fulmer drove a 1937 Rolls-Royce Phantom III, wore a ten-gallon hat, and owned WSAN. A self-made millionaire who believed these three men should earn their home the same way he earned his.',
-    image: '/images/harold-fulmer.png',
+    image: '/images/harold-fulmer.webp',
     imagePosition: 'center 30%',
     textSide: 'left',
   },
@@ -83,6 +84,7 @@ const CONTESTANTS: Contestant[] = [
 export default function ContestantsSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -161,9 +163,13 @@ export default function ContestantsSection() {
                 <div style={{
                   position: 'absolute',
                   inset: 0,
-                  background: isRight
-                    ? 'linear-gradient(270deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.2) 100%)'
-                    : 'linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.2) 100%)',
+                  background: isMobile
+                    ? (isRight
+                      ? 'linear-gradient(270deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.25) 100%)'
+                      : 'linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.25) 100%)')
+                    : (isRight
+                      ? 'linear-gradient(270deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.2) 100%)'
+                      : 'linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.2) 100%)'),
                 }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.0) 40%, rgba(0,0,0,0.4) 100%)' }} />
                 <div className="film-grain" />
@@ -179,8 +185,10 @@ export default function ContestantsSection() {
                   flexDirection: 'column',
                   alignItems: isRight ? 'flex-end' : 'flex-start',
                   justifyContent: 'center',
-                  padding: 'clamp(32px, 6vw, 80px)',
-                  paddingRight: isRight ? 'clamp(48px, 12vw, 200px)' : 'clamp(32px, 6vw, 80px)',
+                  padding: isMobile ? 'clamp(24px, 5vw, 48px)' : 'clamp(32px, 6vw, 80px)',
+                  paddingRight: isRight
+                    ? (isMobile ? 'clamp(24px, 5vw, 48px)' : 'clamp(48px, 12vw, 200px)')
+                    : (isMobile ? 'clamp(24px, 5vw, 48px)' : 'clamp(32px, 6vw, 80px)'),
                   opacity: txtOpacity,
                   transform: `translateY(${txtTranslateY}px)`,
                   textAlign: isRight ? 'right' : 'left',

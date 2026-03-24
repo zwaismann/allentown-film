@@ -85,7 +85,7 @@ export default function LoadingSequence({ onComplete }: { onComplete?: () => voi
           style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: 'url(/images/hero-billboard.png)',
+            backgroundImage: 'url(/images/hero-billboard.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center 30%',
             opacity: (phase >= 1 ? 1 : 0) * scrollFade,

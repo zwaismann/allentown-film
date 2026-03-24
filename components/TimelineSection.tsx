@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import useIsMobile from './useIsMobile';
 
 function easeOutCubic(t: number): number {
   return 1 - Math.pow(1 - t, 3);
@@ -25,21 +26,22 @@ interface TimelineBeat {
 }
 
 const BEATS: TimelineBeat[] = [
-  { day: 'DAY 1', text: 'Three men climb a billboard above Route 22.', image: '/images/timeline-day1.png', imagePosition: 'center 40%', side: 'left' },
-  { day: 'DAY 15', text: 'Nobody comes down. The station figured it would be over by now.', image: '/images/timeline-day15.png', imagePosition: 'center 30%', side: 'right' },
-  { day: 'DAY 67', text: 'The Wall Street Journal puts the story on the front page.', image: '/images/timeline-wsj.png', imagePosition: 'center 20%', side: 'left' },
-  { day: 'DAY 71', text: 'Billy Joel releases "Allentown."', image: '/images/timeline-billy-joel.png', imagePosition: 'center 30%', side: 'right' },
-  { day: 'DAY 86', text: 'A record blizzard. Three strangers huddle in one tent to survive.', image: '/images/timeline-blizzard.png', imagePosition: 'center 40%', side: 'left' },
-  { day: 'DAY 96', text: 'Christmas on the billboard.', image: '/images/timeline-christmas.png', imagePosition: 'center 30%', side: 'right' },
-  { day: 'DAY 158', text: 'Phil Donahue calls. Japanese news crews arrive.', image: '/images/timeline-media.png', imagePosition: 'center 30%', side: 'left' },
-  { day: 'DAY 196', text: 'Dalton Young is arrested and removed.', image: '/images/timeline-dalton-arrested.png', imagePosition: 'center 20%', accent: true, side: 'right' },
-  { day: 'DAY 260', text: 'Two men remain. One makes a decision.', image: '/images/timeline-two-men.png', imagePosition: 'center 30%', side: 'left' },
-  { day: 'DAY 261', text: 'It ends the way no one expected.', image: '/images/timeline-end.png', imagePosition: 'center 30%', accent: true, side: 'right' },
+  { day: 'DAY 1', text: 'Three men climb a billboard above Route 22.', image: '/images/timeline-day1.webp', imagePosition: 'center 40%', side: 'left' },
+  { day: 'DAY 15', text: 'Nobody comes down. The station figured it would be over by now.', image: '/images/timeline-day15.webp', imagePosition: 'center 30%', side: 'right' },
+  { day: 'DAY 67', text: 'The Wall Street Journal puts the story on the front page.', image: '/images/timeline-wsj.webp', imagePosition: 'center 20%', side: 'left' },
+  { day: 'DAY 71', text: 'Billy Joel releases "Allentown."', image: '/images/timeline-billy-joel.webp', imagePosition: 'center 30%', side: 'right' },
+  { day: 'DAY 86', text: 'A record blizzard. Three strangers huddle in one tent to survive.', image: '/images/timeline-blizzard.webp', imagePosition: 'center 40%', side: 'left' },
+  { day: 'DAY 96', text: 'Christmas on the billboard.', image: '/images/timeline-christmas.webp', imagePosition: 'center 30%', side: 'right' },
+  { day: 'DAY 158', text: 'Phil Donahue calls. Japanese news crews arrive.', image: '/images/timeline-media.webp', imagePosition: 'center 30%', side: 'left' },
+  { day: 'DAY 196', text: 'Dalton Young is arrested and removed.', image: '/images/timeline-dalton-arrested.webp', imagePosition: 'center 20%', accent: true, side: 'right' },
+  { day: 'DAY 260', text: 'Two men remain. One makes a decision.', image: '/images/timeline-two-men.webp', imagePosition: 'center 30%', side: 'left' },
+  { day: 'DAY 261', text: 'It ends the way no one expected.', image: '/images/timeline-end.webp', imagePosition: 'center 30%', accent: true, side: 'right' },
 ];
 
 export default function TimelineSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -124,17 +126,17 @@ export default function TimelineSection() {
           </div>
         )}
 
-        {/* Center timeline line */}
+        {/* Center timeline line - hidden on mobile */}
         <div
           style={{
             position: 'absolute', left: '50%', top: '10%', bottom: '10%',
             width: '1px',
             background: 'linear-gradient(180deg, transparent 0%, #667788 15%, #667788 85%, transparent 100%)',
-            opacity: lineOpacity, transform: 'translateX(-50%)',
+            opacity: isMobile ? 0 : lineOpacity, transform: 'translateX(-50%)',
           }}
         />
 
-        {/* Glowing dot on center line */}
+        {/* Glowing dot on center line - hidden on mobile */}
         <div
           className="timeline-dot"
           style={{
@@ -142,7 +144,7 @@ export default function TimelineSection() {
             width: '7px', height: '7px', borderRadius: '50%',
             transform: 'translate(-50%, -50%)',
             background: 'linear-gradient(135deg, #E84B2B, #D4943A)',
-            opacity: lineOpacity > 0 ? 0.8 : 0,
+            opacity: isMobile ? 0 : (lineOpacity > 0 ? 0.8 : 0),
           }}
         />
 
@@ -165,21 +167,26 @@ export default function TimelineSection() {
             if (opacity <= 0) return null;
 
             const isLeft = beat.side === 'left';
-            const hDrift = (1 - Math.min(1, beatProgress * 3)) * (isLeft ? -12 : 12);
+            const hDrift = isMobile ? 0 : (1 - Math.min(1, beatProgress * 3)) * (isLeft ? -12 : 12);
 
             return (
               <div
                 key={beat.day}
                 style={{
                   position: 'absolute',
-                  left: isLeft ? 'auto' : 'calc(50% + 32px)',
-                  right: isLeft ? 'calc(50% + 32px)' : 'auto',
+                  ...(isMobile
+                    ? { left: '24px', right: '24px', width: 'auto' }
+                    : {
+                        left: isLeft ? 'auto' : 'calc(50% + 32px)',
+                        right: isLeft ? 'calc(50% + 32px)' : 'auto',
+                        width: 'min(36vw, 380px)',
+                      }
+                  ),
                   top: '50%',
-                  width: 'min(36vw, 380px)',
                   transform: `translate(${hDrift}px, calc(-50% + ${yPercent}%))`,
                   opacity, willChange: 'transform, opacity',
                   display: 'flex', flexDirection: 'column', gap: '14px',
-                  textAlign: isLeft ? 'right' : 'left',
+                  textAlign: isMobile ? 'center' : (isLeft ? 'right' : 'left'),
                 }}
               >
                 {beat.image && (

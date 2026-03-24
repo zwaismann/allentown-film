@@ -42,7 +42,7 @@ export default function FilmSection() {
         {/* Static background image - no scroll-linked transforms */}
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: 'url(/images/film-tone.png)',
+          backgroundImage: 'url(/images/film-tone.webp)',
           backgroundSize: 'cover', backgroundPosition: 'center 30%',
           opacity: 0.12,
           pointerEvents: 'none',
@@ -73,7 +73,7 @@ export default function FilmSection() {
               color: '#E8DCC8', letterSpacing: '0.06em', lineHeight: 1.15,
               marginBottom: '12px', opacity: loglineShow,
               transform: `translateY(${(1 - loglineShow) * 15}px)`,
-              whiteSpace: 'nowrap',
+
             }}>A RUST BELT FAIRY TALE.</h2>
 
             <div className="tri-bar" style={{ width: '60px', margin: '20px auto 28px', opacity: loglineShow * 0.8 }} />

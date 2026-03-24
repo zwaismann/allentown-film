@@ -23,11 +23,20 @@
 html {
   background: var(--color-bg);
   color: var(--color-text);
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
-
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
 body {
   background: var(--color-bg);
   color: var(--color-text);
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
   font-family: 'DM Sans', sans-serif;
   font-size: 17px;
   line-height: 1.75;
@@ -194,4 +203,87 @@ html.lenis, html.lenis body {
   pointer-events: none;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
   background-size: 128px 128px;
+}
+
+/* ============================================
+   MOBILE NAV - Hamburger Menu
+   ============================================ */
+
+/* Hide mobile elements on desktop */
+.mobile-header-bar,
+.mobile-menu-overlay {
+  display: none !important;
+}
+
+/* Mobile nav link style */
+.mobile-nav-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(232, 220, 200, 0.75);
+  text-decoration: none;
+  padding: 12px 24px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.mobile-nav-link:hover,
+.mobile-nav-link:active {
+  color: #fff;
+  text-shadow: 0 0 16px rgba(255,255,255,0.3);
+}
+
+/* Hamburger button */
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
+
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: rgba(232, 220, 200, 0.8);
+  border-radius: 1px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* Animate to X when open */
+.hamburger-open .hamburger-line-1 {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger-open .hamburger-line-2 {
+  opacity: 0;
+}
+.hamburger-open .hamburger-line-3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+  /* Hide desktop header on mobile */
+  .header-desktop {
+    display: none !important;
+  }
+
+  /* Show mobile elements */
+  .mobile-header-bar {
+    display: flex !important;
+  }
+  .mobile-menu-overlay {
+    display: flex !important;
+  }
 }
