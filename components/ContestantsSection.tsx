@@ -21,6 +21,7 @@ interface Contestant {
   imagePosition: string;
   textSide: 'left' | 'right';
   flipImage?: boolean;
+  group?: string;
 }
 
 const CONTESTANTS: Contestant[] = [
@@ -57,6 +58,7 @@ const CONTESTANTS: Contestant[] = [
   },
   {
     name: 'MATT KRASJA',
+    group: 'WSAN RADIO',
     role: 'The Marketer',
     roleColor: '#D4943A',
     quote: '"Part publicity stunt, part social experiment, part act of accidental cruelty."',
@@ -67,6 +69,7 @@ const CONTESTANTS: Contestant[] = [
   },
   {
     name: 'HAROLD FULMER',
+    group: 'WSAN RADIO',
     role: 'The McMillionaire',
     roleColor: '#667788',
     quote: '"He didn\'t believe in handouts. He believed in hand-ups."',
@@ -184,6 +187,28 @@ export default function ContestantsSection() {
                 }}
               >
                 <div style={{ maxWidth: '480px' }}>
+                  {/* Group label (e.g. WSAN Radio) */}
+                  {person.group && (
+                    <p
+                      style={{
+                        fontFamily: "'DM Sans', sans-serif",
+                        fontSize: 'clamp(10px, 1vw, 12px)',
+                        fontWeight: 600,
+                        letterSpacing: '0.3em',
+                        textTransform: 'uppercase',
+                        color: '#667788',
+                        marginBottom: '8px',
+                        opacity: nameShow,
+                        transform: `translateY(${(1 - nameShow) * 20}px)`,
+                        borderBottom: '1px solid rgba(102, 119, 136, 0.3)',
+                        paddingBottom: '8px',
+                        display: 'inline-block',
+                      }}
+                    >
+                      {person.group}
+                    </p>
+                  )}
+
                   {/* Name */}
                   <h3
                     style={{

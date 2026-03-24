@@ -4,48 +4,105 @@ import { useEffect, useRef, useState } from 'react';
 
 interface TeamMember {
   name: string;
-  role: string;
   credential?: string;
   image?: string;
   imagePosition?: string;
   imageScale?: number;
 }
 
-const TEAM: TeamMember[] = [
+interface TeamRow {
+  label: string;
+  members: TeamMember[];
+}
+
+const TEAM_ROWS: TeamRow[] = [
   {
-    name: 'GARY FOSTER',
-    role: 'Producer',
-    credential: 'Oscar-nominated',
-    image: '/images/gary-foster.webp',
-    imagePosition: 'center 15%',
-    imageScale: 1,
+    label: 'Writers',
+    members: [
+      {
+        name: 'ZE\'EV WAISMANN',
+        image: '/images/zev-waismann.jpg',
+        imagePosition: 'center 25%',
+        imageScale: 2.2,
+      },
+      {
+        name: 'PAT TAGGART',
+        image: '/images/pat-taggart.jpg',
+        imagePosition: 'center 20%',
+        imageScale: 1,
+      },
+      {
+        name: 'CONRAD SYLVIA',
+        image: '/images/conrad-sylvia.png',
+        imagePosition: 'center 8%',
+        imageScale: 1.55,
+      },
+    ],
   },
   {
-    name: 'ROBERTO ALCAZAR',
-    role: 'Executive Producer',
-    image: '/images/roberto-alcazar.webp',
-    imagePosition: 'center 10%',
-    imageScale: 1.32,
-  },
-  {
-    name: 'ZE\'EV WAISMANN',
-    role: 'Director / Co-Writer',
-    image: '/images/zev-waismann.jpg',
-    imagePosition: 'center 25%',
-    imageScale: 2.2,
-  },
-  {
-    name: 'PAT TAGGART',
-    role: 'Writer',
-  },
-  {
-    name: 'CONRAD SYLVIA',
-    role: 'Writer',
-    image: '/images/conrad-sylvia.png',
-    imagePosition: 'center 8%',
-    imageScale: 1.55,
+    label: 'Producers',
+    members: [
+      {
+        name: 'GARY FOSTER',
+        image: '/images/gary-foster.webp',
+        imagePosition: 'center 15%',
+        imageScale: 1,
+      },
+      {
+        name: 'ROBERTO ALCAZAR',
+        image: '/images/roberto-alcazar.webp',
+        imagePosition: 'center 10%',
+        imageScale: 1.32,
+      },
+      {
+        name: 'PILAR DE POSADAS',
+        image: '/images/pilar-de-posadas.jpg',
+        imagePosition: 'center 25%',
+        imageScale: 1,
+      },
+    ],
   },
 ];
+
+function renderMember(member: TeamMember, flatIndex: number, onMemberClick?: (index: number) => void) {
+  return (
+    <div
+      key={member.name}
+      style={{ textAlign: 'center', minWidth: '100px', cursor: 'pointer' }}
+      onClick={() => onMemberClick?.(flatIndex)}
+    >
+      <div style={{
+        width: '96px', height: '96px', borderRadius: '50%',
+        margin: '0 auto 10px', overflow: 'hidden',
+        background: '#1A1F24', border: '1px solid #2A2A2A',
+      }}>
+        {member.image ? (
+          <div style={{
+            width: '100%', height: '100%',
+            backgroundImage: `url(${member.image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: member.imagePosition || 'center 20%',
+            transform: `scale(${member.imageScale || 1})`,
+            transformOrigin: member.imagePosition || 'center 20%',
+          }} />
+        ) : (
+          <div style={{
+            width: '100%', height: '100%',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontFamily: "'Anton', sans-serif", fontSize: '18px',
+            color: '#333', letterSpacing: '0.04em',
+          }}>
+            {member.name.charAt(0)}
+          </div>
+        )}
+      </div>
+      <p style={{
+        fontFamily: "'Anton', sans-serif", fontSize: '12px',
+        color: '#E8DCC8', letterSpacing: '0.06em', marginBottom: '2px',
+      }}>{member.name}</p>
+    </div>
+  );
+}
 
 export default function TeamSection({ onMemberClick }: { onMemberClick?: (index: number) => void }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -86,74 +143,64 @@ export default function TeamSection({ onMemberClick }: { onMemberClick?: (index:
         opacity: visible ? 0.8 : 0, transition: 'opacity 1.5s ease-out 0.2s',
       }} />
 
-      {/* Team - horizontal row */}
+      {/* Team - two rows: writing team (3) + producers (3) */}
       <div style={{
-        display: 'flex', flexWrap: 'wrap', justifyContent: 'center',
-        gap: 'clamp(24px, 3vw, 48px)',
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        gap: 'clamp(36px, 5vh, 56px)',
         maxWidth: '1100px', width: '100%',
       }}>
-        {TEAM.map((member, i) => (
-          <div
-            key={member.name}
-            onClick={() => onMemberClick?.(i)}
-            style={{
-              textAlign: 'center',
-              minWidth: '120px',
-              flex: '0 0 auto',
-              opacity: visible ? 1 : 0,
-              transform: visible ? 'translateY(0)' : 'translateY(20px)',
-              transition: `opacity 1s ease-out ${0.3 + i * 0.12}s, transform 1s ease-out ${0.3 + i * 0.12}s`,
-              cursor: 'pointer',
-            }}
-          >
-            {/* Avatar */}
-            <div style={{
-              width: '112px', height: '112px', borderRadius: '50%',
-              margin: '0 auto 12px', overflow: 'hidden',
-              background: '#1A1F24', border: '1px solid #2A2A2A',
-            }}>
-              {member.image ? (
-                <div style={{
-                  width: '100%', height: '100%',
-                  backgroundImage: `url(${member.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: member.imagePosition || 'center 20%',
-                  transform: `scale(${member.imageScale || 1})`,
-                  transformOrigin: member.imagePosition || 'center 20%',
-                }} />
-              ) : (
-                <div style={{
-                  width: '100%', height: '100%',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontFamily: "'Anton', sans-serif", fontSize: '20px',
-                  color: '#333', letterSpacing: '0.04em',
-                }}>
-                  {member.name.charAt(0)}
-                </div>
-              )}
-            </div>
-
-            {/* Name */}
+        {/* Row 1: Writer/Director + Writers */}
+        <div
+          style={{
+            display: 'flex', gap: 'clamp(20px, 3vw, 48px)',
+            justifyContent: 'center', alignItems: 'flex-start',
+            opacity: visible ? 1 : 0,
+            transform: visible ? 'translateY(0)' : 'translateY(20px)',
+            transition: 'opacity 1s ease-out 0.3s, transform 1s ease-out 0.3s',
+          }}
+        >
+          {/* Ze'ev - Writer / Director */}
+          <div style={{ textAlign: 'center' }}>
             <p style={{
-              fontFamily: "'Anton', sans-serif", fontSize: '13px',
-              color: '#E8DCC8', letterSpacing: '0.06em', marginBottom: '2px',
-            }}>{member.name}</p>
-
-            {/* Role */}
-            <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 500,
-              letterSpacing: '0.15em', textTransform: 'uppercase', color: '#667788',
-            }}>{member.role}</p>
-
-            {/* Credential */}
-            {member.credential && (
-              <p style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: '10px',
-                color: '#8899AA', marginTop: '2px',
-              }}>{member.credential}</p>
-            )}
+              fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600,
+              letterSpacing: '0.25em', textTransform: 'uppercase', color: '#667788',
+              marginBottom: '16px',
+            }}>Writer / Director</p>
+            {renderMember(TEAM_ROWS[0].members[0], 0, onMemberClick)}
           </div>
-        ))}
+
+          {/* Pat + Conrad - Writers */}
+          <div style={{ textAlign: 'center' }}>
+            <p style={{
+              fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600,
+              letterSpacing: '0.25em', textTransform: 'uppercase', color: '#667788',
+              marginBottom: '16px',
+            }}>Writers</p>
+            <div style={{ display: 'flex', gap: 'clamp(20px, 2.5vw, 36px)', justifyContent: 'center' }}>
+              {renderMember(TEAM_ROWS[0].members[1], 1, onMemberClick)}
+              {renderMember(TEAM_ROWS[0].members[2], 2, onMemberClick)}
+            </div>
+          </div>
+        </div>
+
+        {/* Row 2: Producers */}
+        <div
+          style={{
+            textAlign: 'center',
+            opacity: visible ? 1 : 0,
+            transform: visible ? 'translateY(0)' : 'translateY(20px)',
+            transition: 'opacity 1s ease-out 0.45s, transform 1s ease-out 0.45s',
+          }}
+        >
+          <p style={{
+            fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600,
+            letterSpacing: '0.25em', textTransform: 'uppercase', color: '#667788',
+            marginBottom: '16px',
+          }}>Producers</p>
+          <div style={{ display: 'flex', gap: 'clamp(20px, 2.5vw, 36px)', justifyContent: 'center' }}>
+            {TEAM_ROWS[1].members.map((member, i) => renderMember(member, 3 + i, onMemberClick))}
+          </div>
+        </div>
       </div>
     </section>
   );

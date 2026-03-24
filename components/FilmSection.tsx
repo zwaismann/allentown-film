@@ -36,7 +36,7 @@ export default function FilmSection() {
     <div ref={containerRef} id="film" style={{ height: '280vh', position: 'relative' }}>
       <div style={{
         position: 'sticky', top: 0, height: '100vh', overflow: 'hidden',
-        background: `rgba(13, 15, 18, ${Math.min(1, progress * 10)})`,
+        background: '#0D0F12',
       }}>
 
         {/* Static background image - no scroll-linked transforms */}

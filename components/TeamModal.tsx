@@ -12,7 +12,32 @@ interface TeamMemberData {
   bio: string;
 }
 
+// Order must match flat index from TeamSection groups: Ze'ev, Pat, Conrad, Gary, Roberto, Pilar
 const TEAM_BIOS: TeamMemberData[] = [
+  {
+    name: "ZE'EV WAISMANN",
+    role: 'Writer / Director',
+    image: '/images/zev-waismann.jpg',
+    imagePosition: 'center 25%',
+    imageScale: 2.2,
+    bio: "Ze'ev Waismann is a multidisciplinary director and cinematographer. Ze'ev's ambition is to create purposeful and emotionally-charged films rooted in his belief that images speak to the soul of the viewer. His hands-on approach has led him to both direct and shoot visually distinctive branded content and commercial work for clients including Nike, Adidas, Reebok, Dodge, Chevrolet, Blue Cross Blue Shield, AT&T, and others.\n\nBorn in Rio de Janeiro, Ze'ev holds a master's degree in Film from the USC School of Cinematic Arts and a bachelor's in Economics from the London School of Economics.",
+  },
+  {
+    name: 'PAT TAGGART',
+    role: 'Writer',
+    image: '/images/pat-taggart.jpg',
+    imagePosition: 'center 20%',
+    imageScale: 1,
+    bio: 'Pat Taggart is a screenwriter and playwright whose work draws on the textures of working-class American life. Pat co-wrote the Allentown screenplay, bringing a sharp ear for dialogue and a deep understanding of the characters who populate this story. His writing captures the humor, desperation, and resilience of ordinary people in extraordinary circumstances.',
+  },
+  {
+    name: 'CONRAD SYLVIA',
+    role: 'Writer',
+    image: '/images/conrad-sylvia.png',
+    imagePosition: 'center 8%',
+    imageScale: 1.55,
+    bio: 'Conrad Sylvia is a screenwriter and academic whose work bridges research and storytelling. As co-writer on Allentown, Conrad brought extensive knowledge of the real events and historical context that underpin the screenplay. His background in research and narrative structure helped shape the story into a screenplay that honors the true events while crafting a compelling dramatic arc.',
+  },
   {
     name: 'GARY FOSTER',
     role: 'Producer',
@@ -31,25 +56,12 @@ const TEAM_BIOS: TeamMemberData[] = [
     bio: 'Roberto Alcazar is an executive producer and entrepreneur with deep roots in entertainment finance and production. His experience in structuring independent film deals and building sustainable production models has been instrumental in bringing Allentown from concept to active development. Roberto oversees the business strategy and financial architecture of the project.',
   },
   {
-    name: "ZE'EV WAISMANN",
-    role: 'Director / Co-Writer',
-    image: '/images/zev-waismann.jpg',
+    name: 'PILAR DE POSADAS',
+    role: 'Producer',
+    image: '/images/pilar-de-posadas.jpg',
     imagePosition: 'center 25%',
-    imageScale: 2.2,
-    bio: "Ze'ev Waismann is a multidisciplinary director and cinematographer. Ze'ev's ambition is to create purposeful and emotionally-charged films rooted in his belief that images speak to the soul of the viewer. His hands-on approach has led him to both direct and shoot visually distinctive branded content and commercial work for clients including Nike, Adidas, Reebok, Dodge, Chevrolet, Blue Cross Blue Shield, AT&T, and others.\n\nBorn in Rio de Janeiro, Ze'ev holds a master's degree in Film from the USC School of Cinematic Arts and a bachelor's in Economics from the London School of Economics.",
-  },
-  {
-    name: 'PAT TAGGART',
-    role: 'Writer',
-    bio: 'Pat Taggart is a screenwriter and playwright whose work draws on the textures of working-class American life. Pat co-wrote the Allentown screenplay, bringing a sharp ear for dialogue and a deep understanding of the characters who populate this story. His writing captures the humor, desperation, and resilience of ordinary people in extraordinary circumstances.',
-  },
-  {
-    name: 'CONRAD SYLVIA',
-    role: 'Writer',
-    image: '/images/conrad-sylvia.png',
-    imagePosition: 'center 8%',
-    imageScale: 1.55,
-    bio: 'Conrad Sylvia is a screenwriter and academic whose work bridges research and storytelling. As co-writer on Allentown, Conrad brought extensive knowledge of the real events and historical context that underpin the screenplay. His background in research and narrative structure helped shape the story into a screenplay that honors the true events while crafting a compelling dramatic arc.',
+    imageScale: 1,
+    bio: 'Pilar de Posadas is a producer bringing international perspective and production expertise to Allentown.',
   },
 ];
 

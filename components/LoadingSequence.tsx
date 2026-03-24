@@ -148,7 +148,7 @@ export default function LoadingSequence({ onComplete }: { onComplete?: () => voi
             opacity: phase >= 5 ? scrollFade : 0,
             transform: phase >= 5 ? 'scaleX(1)' : 'scaleX(0)',
             transformOrigin: 'left center',
-            transition: phase < 6 ? 'transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1)' : 'none',
+            transition: phase < 6 ? 'transform 1.8s cubic-bezier(0.22, 1, 0.36, 1)' : 'none',
             transitionDelay: phase >= 5 && phase < 6 ? '0.5s' : '0s',
             zIndex: 4,
           }}
