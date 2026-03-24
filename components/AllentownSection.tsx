@@ -81,17 +81,17 @@ export default function AllentownSection() {
 
   // Closing line appears below stats
   const closingShow = phaseValue(progress, 0.62, 0.72);
-  const goneRedShift = phaseValue(progress, 0.75, 0.82);
+  const goneRedShift = phaseValue(progress, 0.75, 0.85);
 
   // Gentle late fade
-  const allExit = phaseValue(progress, 0.95, 1.0);
+  const allExit = phaseValue(progress, 0.90, 1.0);
   const allOpacity = 1 - allExit * 0.6;
 
   return (
     <div
       ref={containerRef}
       id="story"
-      style={{ height: '400vh', position: 'relative' }}
+      style={{ height: '340vh', position: 'relative' }}
     >
       <div style={{ position: 'sticky', top: 0, height: '100vh', overflow: 'hidden', background: `rgba(13, 15, 18, ${Math.min(1, progress * 10)})` }}>
 

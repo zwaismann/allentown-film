@@ -105,7 +105,7 @@ export default function ContestantsSection() {
       ref={containerRef}
       id="men"
       style={{
-        height: `${CONTESTANTS.length * 110}vh`,
+        height: `${CONTESTANTS.length * 95}vh`,
         position: 'relative',
       }}
     >

@@ -15,9 +15,9 @@ const NAV_ITEMS = [
 // so the nav lands on the "loaded" state of the content
 const SECTION_TARGETS: Record<string, number> = {
   story: 0.12,    // "1982 / ALLENTOWN, PA" both titles fully visible
-  contest: 0.55,  // "ONE BILLBOARD. THREE MEN. LAST ONE DOWN WINS A HOME." all loaded
+  contest: 0.60,  // "ONE BILLBOARD. THREE MEN. LAST ONE DOWN WINS A HOME." all loaded
   men: 0.1,       // First contestant visible
-  film: 0.45,     // "A RUST BELT FAIRY TALE" with body text
+  film: 0.55,     // "A RUST BELT FAIRY TALE" with body text
 };
 
 function getTargetScroll(id: string): number {

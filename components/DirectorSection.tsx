@@ -27,12 +27,12 @@ export default function DirectorSection() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const titleShow = phaseValue(progress, 0.0, 0.12);
-  const p1Show = phaseValue(progress, 0.12, 0.32);
-  const p2Show = phaseValue(progress, 0.34, 0.55);
-  const sigShow = phaseValue(progress, 0.55, 0.68);
+  const titleShow = phaseValue(progress, 0.0, 0.15);
+  const p1Show = phaseValue(progress, 0.15, 0.40);
+  const p2Show = phaseValue(progress, 0.42, 0.65);
+  const sigShow = phaseValue(progress, 0.65, 0.80);
   // Gentle late fade - content softens at the very end but never disappears
-  const directorExit = phaseValue(progress, 0.90, 1.0);
+  const directorExit = phaseValue(progress, 0.88, 1.0);
   const contentOpacity = 1 - directorExit * 0.5;
 
   return (
@@ -40,7 +40,7 @@ export default function DirectorSection() {
       ref={containerRef}
       id="director"
       style={{
-        height: '220vh',
+        height: '180vh',
         position: 'relative',
       }}
     >

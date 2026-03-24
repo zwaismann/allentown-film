@@ -85,7 +85,7 @@ export default function TimelineSection() {
     <div
       ref={containerRef}
       id="timeline"
-      style={{ height: '480vh', position: 'relative' }}
+      style={{ height: '400vh', position: 'relative' }}
     >
       <div
         style={{

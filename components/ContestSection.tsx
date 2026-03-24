@@ -41,22 +41,22 @@ export default function ContestSection() {
   // 0.70 - 0.82: text fades out, image stays
   // 0.82 - 1.00: hold on image, then fade out
 
-  const line1Show = phaseValue(progress, 0.0, 0.18);
-  const line2Show = phaseValue(progress, 0.18, 0.35);
-  const line3Show = phaseValue(progress, 0.35, 0.55);
+  const line1Show = phaseValue(progress, 0.0, 0.20);
+  const line2Show = phaseValue(progress, 0.20, 0.40);
+  const line3Show = phaseValue(progress, 0.40, 0.60);
 
   // Billboard image fades in as lines appear
-  const imageIn = phaseValue(progress, 0.10, 0.22);
-  const imageOut = phaseValue(progress, 0.88, 1.0);
+  const imageIn = phaseValue(progress, 0.12, 0.25);
+  const imageOut = phaseValue(progress, 0.92, 1.0);
   const imageOpacity = imageIn * (1 - imageOut) * 0.45;
 
   // Text fades out as image takes over
-  const textExit = phaseValue(progress, 0.65, 0.75);
+  const textExit = phaseValue(progress, 0.68, 0.78);
   const textExitEased = easeInOutCubic(textExit);
   const textOpacity = 1 - textExitEased;
 
   // "The Contestants" bridge card
-  const contestantsShow = phaseValue(progress, 0.78, 0.88);
+  const contestantsShow = phaseValue(progress, 0.82, 0.92);
 
   // Ambient color intensity builds with the lines
   const colorIntensity = Math.max(line1Show * 0.3, line2Show * 0.5, line3Show * 0.8) * textOpacity;
@@ -66,7 +66,7 @@ export default function ContestSection() {
       ref={containerRef}
       id="contest"
       style={{
-        height: '320vh',
+        height: '270vh',
         position: 'relative',
       }}
     >

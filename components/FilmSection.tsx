@@ -27,13 +27,14 @@ export default function FilmSection() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const titleShow = phaseValue(progress, 0.02, 0.12);
-  const loglineShow = phaseValue(progress, 0.12, 0.25);
-  const bodyShow = phaseValue(progress, 0.28, 0.50);
-  const contentOpacity = 1;
+  const titleShow = phaseValue(progress, 0.02, 0.15);
+  const loglineShow = phaseValue(progress, 0.15, 0.35);
+  const bodyShow = phaseValue(progress, 0.38, 0.65);
+  const exitFade = phaseValue(progress, 0.85, 1.0);
+  const contentOpacity = 1 - exitFade * 0.5;
 
   return (
-    <div ref={containerRef} id="film" style={{ height: '280vh', position: 'relative' }}>
+    <div ref={containerRef} id="film" style={{ height: '200vh', position: 'relative' }}>
       <div style={{
         position: 'sticky', top: 0, height: '100vh', overflow: 'hidden',
         background: '#0D0F12',
@@ -56,7 +57,8 @@ export default function FilmSection() {
         <div style={{
           position: 'absolute', inset: 0, zIndex: 10,
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-          textAlign: 'center', padding: '0 clamp(24px, 5vw, 80px)', opacity: contentOpacity,
+          textAlign: 'center', padding: '0 clamp(24px, 5vw, 80px)',
+          opacity: contentOpacity,
         }}>
           <div style={{ maxWidth: '800px' }}>
             <p style={{
