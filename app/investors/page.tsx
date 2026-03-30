@@ -803,7 +803,7 @@ function AttachmentsSection() {
         <div style={{
           width: '80px', height: '80px', borderRadius: '50%', flexShrink: 0,
           backgroundImage: 'url(/images/matt-wood-headshot.jpg)',
-          backgroundSize: '145%', backgroundPosition: 'center 55%',
+          backgroundSize: '200%', backgroundPosition: 'center 20%',
           border: '2px solid rgba(212,148,58,0.4)',
         }} />
         <div>
