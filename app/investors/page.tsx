@@ -2,128 +2,11 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-
-/* ─── Data ─── */
-
-const COMPARABLES = [
-  { title: 'I, TONYA', budget: '$11M', gross: '$56M', roi: '408%' },
-  { title: 'THREE BILLBOARDS', budget: '$15M', gross: '$160M', roi: '967%' },
-  { title: 'MONEYBALL', budget: '$50M', gross: '$222.6M', roi: '345%' },
-];
-
-const REVENUE_BREAKDOWN = [
-  { label: 'Streaming Deals', amount: '$2.7M', note: 'Netflix / Amazon' },
-  { label: 'Limited Theatrical', amount: '$1.9M', note: '500 screens, US & UK' },
-  { label: 'International Sales', amount: '$0.75M', note: 'Global distribution' },
-  { label: 'Ancillaries & Tie-ins', amount: '$0.4M', note: 'Merchandise, licensing' },
-];
-
-const BUDGET_BREAKDOWN = [
-  { label: 'Above-The-Line (Script, Producers, Director, Cast)', amount: '$764K' },
-  { label: 'Production (Crew, Equipment, Locations)', amount: '$1.04M' },
-  { label: 'Post-Production (Editing, Sound, VFX, Music)', amount: '$268K' },
-  { label: 'Other (Insurance, Publicity, General)', amount: '$56K' },
-  { label: 'Contingency (10%)', amount: '$213K' },
-];
-
-const DISTRIBUTION_PHASES = [
-  {
-    phase: 'Phase 1',
-    timeline: 'Q4 2026',
-    title: 'Festival Premiere',
-    description: 'Premiere at Sundance and TIFF, targeting awards buzz and acquisition deals, mirroring I, Tonya\'s path.',
-  },
-  {
-    phase: 'Phase 2',
-    timeline: 'Q2 2027',
-    title: 'Limited Theatrical',
-    description: 'Limited theatrical release (500 screens, $1.9M gross) in key markets (US, UK), leveraging housing crisis relevance.',
-  },
-  {
-    phase: 'Phase 3',
-    timeline: 'Q3 2027',
-    title: 'Streaming & International',
-    description: 'Streaming deals with Netflix/Amazon ($2.7M) and international sales ($0.75M), capitalizing on the radio contest\'s global media frenzy.',
-  },
-];
-
-const TEAM_MEMBERS = [
-  {
-    role: 'PRODUCER',
-    name: 'Gary Foster',
-    image: '/images/gary-foster.webp',
-    bio: 'Sleepless in Seattle ($228M global gross), The Score ($113M), Tin Cup, Community, and Daredevil. A track record of high-ROI films and TV.',
-  },
-  {
-    role: 'DIRECTOR / CO-WRITER',
-    name: 'Ze\'ev Waismann',
-    image: '/images/zev-waismann.webp',
-    bio: 'Accomplished commercial director with over a decade of expertise, delivering a bold vision blending gritty realism with heartfelt storytelling.',
-  },
-  {
-    role: 'WRITER',
-    name: 'Conrad Sylvia',
-    image: '/images/conrad-sylvia.webp',
-    bio: 'A TV veteran who crafts compelling, moving scripts.',
-  },
-  {
-    role: 'WRITER',
-    name: 'Pat Taggart',
-    image: '/images/pat-taggart.webp',
-    bio: 'An Allentown native, rooting the script in his hometown\'s authenticity.',
-  },
-  {
-    role: 'EXECUTIVE PRODUCER',
-    name: 'Roberto Alcazar',
-    image: '/images/roberto-alcazar.webp',
-    bio: 'International experience ensuring operational excellence, streamlining the $2.3M production.',
-  },
-  {
-    role: 'EXECUTIVE PRODUCER',
-    name: 'Pilar de Posadas',
-    image: '/images/pilar-de-posadas.webp',
-    bio: 'Global market expert, securing worldwide distribution and maximizing appeal for streaming and international sales.',
-  },
-];
-
-const DOCUMENTS = [
-  {
-    title: 'Screenplay',
-    description: 'Revised draft by Pat Taggart, Conrad Sylvia, and Ze\'ev Waismann',
-    href: '/docs/ALLENTOWN_Script.pdf',
-    type: 'PDF',
-  },
-  {
-    title: 'Pitch Deck',
-    description: 'Visual treatment, logline, story overview, and creative vision',
-    href: 'https://indd.adobe.com/view/582021df-5e82-4974-98a7-f9d574890a39',
-    type: 'LINK',
-  },
-  {
-    title: 'Billboard Boys Documentary',
-    description: 'The original documentary on the Allentown billboard sitters',
-    href: 'https://vimeo.com/user48884984/review/232709722/f0ab22adb9',
-    type: 'LINK',
-  },
-  {
-    title: 'Budget Assumptions',
-    description: 'Production budget preamble, assumptions, and methodology',
-    href: '/docs/ALLENTOWN_Budget_Preamble.pdf',
-    type: 'PDF',
-  },
-  {
-    title: 'Production Budget',
-    description: 'Full production budget breakdown - $2.3M, 26 shoot days',
-    href: '/docs/ALLENTOWN_Production_Budget.pdf',
-    type: 'PDF',
-  },
-];
-
-const CONTACTS = [
-  { role: 'PRODUCER', name: 'Gary Foster', phone: '+1 (508) 292 5752', email: 'gsfhorse@mac.com' },
-  { role: 'EXECUTIVE PRODUCER', name: 'Roberto Alcazar', phone: '+1 (646) 346 9213', email: 'alcazar@eointegration.com' },
-  { role: 'EXECUTIVE PRODUCER', name: 'Pilar De Posadas', phone: '+1 (310) 740 5530', email: 'pposadas@scenicrights.com' },
-];
+import {
+  ASPIRATIONAL_COMPS, BUDGET_BREAKDOWN, DISTRIBUTION_PHASES,
+  TEAM_MEMBERS, DOCUMENTS, CONTACTS, ENTITY_NAME,
+  BUDGET_SHORTHAND, EQUITY_RAISE, TAX_CREDIT, PRODUCTION_PHASES,
+} from './data';
 
 /* ─── Utility: section fade-in hook ─── */
 
@@ -483,7 +366,7 @@ function ExecutiveSummarySection() {
         gap: '16px',
         marginBottom: '32px',
       }}>
-        {COMPARABLES.map((film) => (
+        {ASPIRATIONAL_COMPS.map((film) => (
           <div key={film.title} style={{
             padding: '24px',
             background: 'rgba(255,255,255,0.03)',
@@ -501,7 +384,7 @@ function ExecutiveSummarySection() {
               Budget: <span style={{ color: '#E8DCC8' }}>{film.budget}</span>
             </p>
             <p style={{ ...S.muted, marginBottom: '4px' }}>
-              Gross: <span style={{ color: '#E8DCC8' }}>{film.gross}</span>
+              Worldwide: <span style={{ color: '#E8DCC8' }}>{film.worldwide}</span>
             </p>
             <p style={{
               fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
@@ -570,85 +453,47 @@ function FinancialPlanSection() {
       <p style={S.sectionHeading}>Financial Plan</p>
 
       <p style={{ ...S.body, marginBottom: '32px' }}>
-        <strong style={S.bold}>ALLENTOWN</strong> is budgeted at{' '}
-        <strong style={{ ...S.bold, color: '#D4943A' }}>$2.3M</strong>, leveraging Pennsylvania's low-cost
-        locations and 25-30% Film Tax Credit (~$600K). Projected revenue of{' '}
-        <strong style={{ ...S.bold, color: '#D4943A' }}>$5.75M yields a 150% ROI</strong>.
+        <strong style={S.bold}>{ENTITY_NAME}</strong> is budgeted at{' '}
+        <strong style={{ ...S.bold, color: '#D4943A' }}>{BUDGET_SHORTHAND}</strong>, leveraging Pennsylvania's low-cost
+        locations and 25-30% Film Tax Credit (~{TAX_CREDIT}). Equity raise of{' '}
+        <strong style={{ ...S.bold, color: '#D4943A' }}>{EQUITY_RAISE}</strong> with full three-scenario projections below.
       </p>
 
-      {/* Two-column: budget + revenue */}
+      {/* Budget breakdown */}
       <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-        gap: '24px',
+        padding: '28px',
+        background: 'rgba(255,255,255,0.03)',
+        border: '1px solid rgba(255,255,255,0.08)',
+        borderRadius: '6px',
         marginBottom: '32px',
       }}>
-        {/* Budget breakdown */}
-        <div style={{
-          padding: '28px',
-          background: 'rgba(255,255,255,0.03)',
-          border: '1px solid rgba(255,255,255,0.08)',
-          borderRadius: '6px',
+        <p style={{
+          fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
+          letterSpacing: '0.2em', textTransform: 'uppercase',
+          color: '#8899AA', marginBottom: '16px',
         }}>
-          <p style={{
-            fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
-            letterSpacing: '0.2em', textTransform: 'uppercase',
-            color: '#8899AA', marginBottom: '16px',
+          Budget Breakdown - {BUDGET_SHORTHAND}
+        </p>
+        {BUDGET_BREAKDOWN.map((item) => (
+          <div key={item.label} style={{
+            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+            padding: '8px 0',
+            borderBottom: '1px solid rgba(255,255,255,0.04)',
           }}>
-            Budget Breakdown - $2.3M
-          </p>
-          {BUDGET_BREAKDOWN.map((item) => (
-            <div key={item.label} style={{
-              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-              padding: '8px 0',
-              borderBottom: '1px solid rgba(255,255,255,0.04)',
-            }}>
-              <span style={{ ...S.body, fontSize: '14px' }}>{item.label}</span>
-              <span style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
-                fontWeight: 600, color: '#E8DCC8',
-              }}>{item.amount}</span>
-            </div>
-          ))}
-        </div>
-
-        {/* Revenue projections */}
-        <div style={{
-          padding: '28px',
-          background: 'rgba(255,255,255,0.03)',
-          border: '1px solid rgba(255,255,255,0.08)',
-          borderRadius: '6px',
-        }}>
-          <p style={{
-            fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
-            letterSpacing: '0.2em', textTransform: 'uppercase',
-            color: '#8899AA', marginBottom: '16px',
-          }}>
-            Revenue Projections - $5.75M
-          </p>
-          {REVENUE_BREAKDOWN.map((item) => (
-            <div key={item.label} style={{
-              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-              padding: '8px 0',
-              borderBottom: '1px solid rgba(255,255,255,0.04)',
-            }}>
-              <div>
-                <span style={{ ...S.body, fontSize: '14px' }}>{item.label}</span>
-                <span style={{ ...S.muted, display: 'block', fontSize: '12px' }}>{item.note}</span>
-              </div>
-              <span style={{
-                fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
-                fontWeight: 600, color: '#D4943A',
-              }}>{item.amount}</span>
-            </div>
-          ))}
-        </div>
+            <span style={{ ...S.body, fontSize: '14px' }}>{item.label}</span>
+            <span style={{
+              fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
+              fontWeight: 600, color: '#E8DCC8',
+            }}>{item.amount}</span>
+          </div>
+        ))}
       </div>
+      {/* Revenue projections will be replaced by the three-scenario section */}
 
       <p style={S.body}>
-        Pennsylvania's tax credit reduces investor exposure to <strong style={S.bold}>~$1.7M</strong>,
-        while a 10% contingency ($213K) mitigates overruns. This conservative financial model,
-        paired with festival buzz and streaming demand, positions Allentown as a low-risk,
+        Pennsylvania's tax credit reduces investor exposure to <strong style={S.bold}>~{EQUITY_RAISE}</strong>,
+        while a 10% contingency mitigates overruns. This conservative financial model,
+        paired with festival buzz and streaming demand, positions {ENTITY_NAME} as a low-risk,
         high-return investment.
       </p>
     </section>
@@ -681,23 +526,7 @@ function ProductionPlanSection() {
         gap: '20px',
         marginBottom: '24px',
       }}>
-        {[
-          {
-            phase: 'Pre-Production',
-            timeline: 'Q2-Q3 2026, 6 months',
-            detail: 'Casting bankable talent, scouting Allentown\'s steel mills and downtown, and securing Pennsylvania\'s 25-30% tax credit.',
-          },
-          {
-            phase: 'Production',
-            timeline: 'Q4 2026, 26-day shoot',
-            detail: 'Leverages local crew via Central Pennsylvania Film Commission, minimizing costs, with a billboard set as the centerpiece.',
-          },
-          {
-            phase: 'Post-Production',
-            timeline: 'Q1-Q2 2027, 6 months',
-            detail: 'Covers editing, sound design, and festival submissions (Sundance, TIFF).',
-          },
-        ].map((item) => (
+        {PRODUCTION_PHASES.map((item) => (
           <div key={item.phase} style={{
             padding: '24px',
             background: 'rgba(255,255,255,0.03)',
