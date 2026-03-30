@@ -195,6 +195,22 @@ export const CAST = [
     value: '',
     status: 'Casting in progress',
   },
+  {
+    name: 'TBD',
+    role: 'Harold Fulmer',
+    image: '/images/harold-fulmer.webp',
+    credits: '',
+    value: '',
+    status: 'Casting in progress',
+  },
+  {
+    name: 'TBD',
+    role: 'Matt Krasja',
+    image: '/images/matt-krasja.webp',
+    credits: '',
+    value: '',
+    status: 'Casting in progress',
+  },
 ];
 
 /* ─── Distribution ─── */
@@ -263,7 +279,7 @@ export const TEAM_MEMBERS = [
     role: 'PRODUCER',
     name: 'Gary Foster',
     image: '/images/gary-foster.webp',
-    bio: 'Sleepless in Seattle ($228M global gross), The Score ($113M), Tin Cup, Community, and Daredevil. A track record of high-ROI films and TV.',
+    bio: 'President of Krasnoff/Foster Entertainment with 40+ years in the industry. Most recently produced Bedford Park (2026 Sundance, Special Jury Award, acquired by Sony Pictures Classics) and Finestkind (2023, Paramount+, starring Jenna Ortega and Tommy Lee Jones). Earlier credits include Denial (2016, BAFTA nominated, starring Rachel Weisz), Community (TV series), Daredevil, Elektra, and Ghost Rider for Marvel, and the Oscar-nominated Sleepless in Seattle ($300M+ worldwide).',
   },
   {
     role: 'DIRECTOR / CO-WRITER',

@@ -404,16 +404,37 @@ function MarketAnalysisSection() {
       <div className="tri-bar-thin" style={{ width: '40px', marginBottom: '24px', opacity: 0.6 }} />
       <p style={S.sectionHeading}>Market Analysis</p>
 
+      <p style={S.sectionHeading}>Why This Film, Why Now</p>
+
       <p style={{ ...S.body, marginBottom: '24px' }}>
-        <strong style={S.bold}>ALLENTOWN</strong> taps into the thriving indie dramedy market. Streaming
-        platforms like Netflix and Amazon, acquiring Sundance titles for $5-15M, crave gritty, true-story
-        narratives like Allentown's radio contest saga.
+        The themes of <strong style={S.bold}>ALLENTOWN</strong> are universal, and in many ways more applicable and
+        relevant today than they were in 1982. The American Dream of homeownership, the struggle of the working
+        class, the desperation that drives people to extreme lengths - these aren't period-piece concerns. They
+        are today's headlines.
       </p>
 
       <p style={{ ...S.body, marginBottom: '24px' }}>
-        The film targets <strong style={S.bold}>Millennials/Gen X</strong> (25-45, 60% of audience), drawn to its
-        housing crisis relevance (49% Millennial homeownership vs. 70% Boomers), and{' '}
-        <strong style={S.bold}>Boomers</strong> (55+, 30%), nostalgic for 1980s Allentown and Billy Joel's anthem.
+        Homeownership rates among Americans under 35 have fallen to historic lows. The median home price has
+        outpaced wage growth by over 3x in the past decade. A generation of young Americans faces the same
+        impossible math the billboard sitters faced in 1982: work hard, play by the rules, and still not be
+        able to afford a home. Allentown's story isn't nostalgia - it's a mirror.
+      </p>
+
+      <div className="tri-bar-thin" style={{ width: '40px', marginBottom: '24px', marginTop: '40px', opacity: 0.6 }} />
+      <p style={S.sectionHeading}>Market Analysis</p>
+
+      <p style={{ ...S.body, marginBottom: '24px' }}>
+        <strong style={S.bold}>ALLENTOWN</strong> taps into the thriving indie dramedy market. Streaming
+        platforms like Netflix and Amazon, acquiring Sundance titles for $5-15M, crave gritty, true-story
+        narratives. This is a human interest story at its core - three ordinary men pushed to extraordinary
+        circumstances by an economy that left them behind.
+      </p>
+
+      <p style={{ ...S.body, marginBottom: '24px' }}>
+        The film targets <strong style={S.bold}>working and middle-class Americans ages 25-65</strong> - a broad
+        audience drawn to its themes of economic struggle, community, and resilience. Younger viewers (25-40)
+        connect through today's housing crisis, while older audiences (45-65) bring nostalgia for 1980s
+        Allentown, Billy Joel's anthem, and the blue-collar America they grew up in.
       </p>
 
       <p style={S.body}>

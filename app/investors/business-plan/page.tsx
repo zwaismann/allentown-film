@@ -195,7 +195,7 @@ export default function BusinessPlanPage() {
 
         <div className="bp-callout">
           <p>
-            <strong>ALLENTOWN</strong> is a {BUDGET_SHORTHAND} dramatic feature film based on the true story of the Allentown billboard sitters - three unemployed steelworkers who climbed a billboard in 1982 and refused to come down until they had jobs. The film stars <strong>Dane DeHaan</strong> (<em>Chronicle</em>, <em>Valerian</em>) and is produced by <strong>Gary Foster</strong>, whose credits include <em>Sleepless in Seattle</em> ($228M global gross).
+            <strong>ALLENTOWN</strong> is a {BUDGET_SHORTHAND} dramatic feature film based on the true story of the Allentown billboard sitters - three unemployed steelworkers who climbed a billboard in 1982 and refused to come down until they had jobs. The film stars <strong>Dane DeHaan</strong> (<em>Chronicle</em>, <em>Valerian</em>) and is produced by <strong>Gary Foster</strong>, whose recent credits include <em>Bedford Park</em> (2026 Sundance, Special Jury Award, acquired by Sony Pictures Classics) and the Oscar-nominated <em>Sleepless in Seattle</em> ($300M+ worldwide).
           </p>
         </div>
 
@@ -440,9 +440,17 @@ export default function BusinessPlanPage() {
           <div className="bp-h2">06 - Market Analysis</div>
         </div>
 
+        <div className="bp-h3">Why This Film, Why Now</div>
+        <p>
+          The themes of <em>Allentown</em> are universal, and in many ways more applicable and relevant today than they were in 1982. The American Dream of homeownership, the struggle of the working class, the desperation that drives people to extreme lengths - these are not period-piece concerns. They are today's headlines.
+        </p>
+        <p>
+          Homeownership rates among Americans under 35 have fallen to historic lows. The median home price has outpaced wage growth by over 3x in the past decade. A generation of young Americans faces the same impossible math the billboard sitters faced in 1982: work hard, play by the rules, and still not be able to afford a home. Allentown's story is not nostalgia - it is a mirror.
+        </p>
+
         <div className="bp-h3">Genre Trends</div>
         <p>
-          Character-driven working-class dramas have experienced a sustained resurgence driven by streaming platform investment and audience appetite for authentic stories. After years of franchise dominance in theatrical exhibition, the awards circuit and streaming landscape reward films with emotional specificity - exactly what <em>Allentown</em> delivers.
+          Character-driven working-class dramas have experienced a sustained resurgence driven by streaming platform investment and audience appetite for authentic stories. After years of franchise dominance in theatrical exhibition, the awards circuit and streaming landscape reward films with emotional specificity - exactly what <em>Allentown</em> delivers. This is a human interest story at its core - three ordinary men pushed to extraordinary circumstances by an economy that left them behind.
         </p>
 
         <div className="bp-h3">Streaming Platform Appetite</div>
@@ -465,12 +473,12 @@ export default function BusinessPlanPage() {
           <tbody>
             <tr>
               <td><strong>Primary</strong></td>
-              <td>Adults 35-65, working-class and middle-class, American Rust Belt identity</td>
+              <td>Working and middle-class Americans, ages 25-65. Younger viewers (25-40) connect through today's housing crisis. Older audiences (45-65) bring nostalgia for 1980s Allentown and Billy Joel's anthem.</td>
               <td>Theatrical + streaming</td>
             </tr>
             <tr>
               <td><strong>Secondary</strong></td>
-              <td>Dane DeHaan fan base, ages 25-40, international</td>
+              <td>Dane DeHaan fan base, international audiences</td>
               <td>Streaming + international sales</td>
             </tr>
             <tr>
@@ -958,7 +966,7 @@ export default function BusinessPlanPage() {
         <div className="bp-h3">Gary Foster's Track Record</div>
         <div className="bp-callout">
           <p>
-            Gary Foster has produced films and television totaling hundreds of millions in global gross receipts. His experience managing productions across budgets, studios, and formats provides operational confidence that this production will be completed on schedule and within budget. Key productions: <em>Sleepless in Seattle</em> ($228M global), <em>The Score</em> ($113M global), <em>Tin Cup</em>, <em>Community</em>, <em>Daredevil</em>.
+            Gary Foster, President of Krasnoff/Foster Entertainment, has over 40 years of experience producing films and television totaling hundreds of millions in global gross receipts. Most recently he produced <em>Bedford Park</em> (2026 Sundance, Special Jury Award, acquired by Sony Pictures Classics) and <em>Finestkind</em> (2023, Paramount+, starring Jenna Ortega and Tommy Lee Jones). Earlier credits include <em>Denial</em> (2016, BAFTA nominated, starring Rachel Weisz), <em>Community</em> (TV series), Marvel's <em>Daredevil</em>, <em>Elektra</em>, and <em>Ghost Rider</em>, and the Oscar-nominated <em>Sleepless in Seattle</em> ($300M+ worldwide).
           </p>
         </div>
       </div>
