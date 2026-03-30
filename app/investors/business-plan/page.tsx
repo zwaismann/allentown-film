@@ -159,27 +159,29 @@ export default function BusinessPlanPage() {
         </div>
         <ul className="bp-toc-list">
           {[
-            { num: '01', title: 'Executive Summary', desc: 'The ask, the opportunity, projected returns' },
-            { num: '02', title: 'The Film', desc: 'Logline, synopsis, genre positioning' },
-            { num: '03', title: 'Cast', desc: 'Attached talent and market value' },
-            { num: '04', title: 'The Filmmakers', desc: 'Producer, director, writers, EPs' },
-            { num: '05', title: 'Comparable Films', desc: 'Aspirational and direct budget comps' },
-            { num: '06', title: 'Market Analysis', desc: 'Genre trends, streaming appetite, audience' },
-            { num: '07', title: 'Distribution Strategy', desc: 'Festival, theatrical, streaming, international' },
-            { num: '08', title: 'Production Plan', desc: 'Timeline, PA advantages, shoot details' },
-            { num: '09', title: 'Budget Top Sheet', desc: 'Line item summary - $2.3M total' },
-            { num: '10', title: 'Financing Structure', desc: 'Capital stack, equity raise, tax credit' },
-            { num: '11', title: 'Investment Terms', desc: 'LLC structure, 120% preferred return, profit split' },
-            { num: '12', title: 'Financial Projections', desc: 'Conservative, moderate, and optimistic scenarios' },
-            { num: '13', title: 'Sensitivity and Break-Even', desc: 'Revenue sensitivity matrix' },
-            { num: '14', title: 'Waterfall Structure', desc: 'Full recoupment waterfall, all 10 tiers' },
-            { num: '15', title: 'Completion and Insurance', desc: 'Contingency, E&O, production insurance' },
-            { num: '16', title: 'Risk Factors', desc: 'Material risks for prospective investors' },
+            { num: '01', id: 'executive-summary', title: 'Executive Summary', desc: 'The ask, the opportunity, projected returns' },
+            { num: '02', id: 'the-film', title: 'The Film', desc: 'Logline, synopsis, genre positioning' },
+            { num: '03', id: 'cast', title: 'Cast', desc: 'Attached talent and market value' },
+            { num: '04', id: 'filmmakers', title: 'The Filmmakers', desc: 'Producer, director, writers, EPs' },
+            { num: '05', id: 'comparables', title: 'Comparable Films', desc: 'Aspirational and direct budget comps' },
+            { num: '06', id: 'market-analysis', title: 'Market Analysis', desc: 'Genre trends, streaming appetite, audience' },
+            { num: '07', id: 'distribution', title: 'Distribution Strategy', desc: 'Festival, theatrical, streaming, international' },
+            { num: '08', id: 'production-plan', title: 'Production Plan', desc: 'Timeline, PA advantages, shoot details' },
+            { num: '09', id: 'budget', title: 'Budget Top Sheet', desc: 'Line item summary - $2.3M total' },
+            { num: '10', id: 'financing', title: 'Financing Structure', desc: 'Capital stack, equity raise, tax credit' },
+            { num: '11', id: 'investment-terms', title: 'Investment Terms', desc: 'LLC structure, 120% preferred return, profit split' },
+            { num: '12', id: 'projections', title: 'Financial Projections', desc: 'Conservative, moderate, and optimistic scenarios' },
+            { num: '13', id: 'sensitivity', title: 'Sensitivity and Break-Even', desc: 'Revenue sensitivity matrix' },
+            { num: '14', id: 'waterfall', title: 'Waterfall Structure', desc: 'Full recoupment waterfall, all 10 tiers' },
+            { num: '15', id: 'completion', title: 'Completion and Insurance', desc: 'Contingency, E&O, production insurance' },
+            { num: '16', id: 'risk-factors', title: 'Risk Factors', desc: 'Material risks for prospective investors' },
           ].map((item) => (
             <li key={item.num} className="bp-toc-item">
-              <span className="bp-toc-num">{item.num}</span>
-              <span className="bp-toc-title">{item.title}</span>
-              <span className="bp-toc-desc">{item.desc}</span>
+              <a href={`#${item.id}`} style={{ display: 'flex', alignItems: 'baseline', gap: '12px', textDecoration: 'none', color: 'inherit' }}>
+                <span className="bp-toc-num">{item.num}</span>
+                <span className="bp-toc-title">{item.title}</span>
+                <span className="bp-toc-desc">{item.desc}</span>
+              </a>
             </li>
           ))}
         </ul>
@@ -188,7 +190,7 @@ export default function BusinessPlanPage() {
       <div className="page-break"></div>
 
       {/* ─── SECTION 3: EXECUTIVE SUMMARY ─── */}
-      <div className="bp-section">
+      <div id="executive-summary" className="bp-section">
         <div className="bp-section-header">
           <div className="bp-h2">01 - Executive Summary</div>
         </div>
@@ -268,7 +270,7 @@ export default function BusinessPlanPage() {
       <div className="page-break"></div>
 
       {/* ─── SECTION 4: THE FILM ─── */}
-      <div className="bp-section">
+      <div id="the-film" className="bp-section">
         <div className="bp-section-header">
           <div className="bp-h2">02 - The Film</div>
         </div>
@@ -301,7 +303,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 5: CAST ─── */}
-      <div className="bp-section page-break">
+      <div id="cast" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">03 - Cast</div>
         </div>
@@ -347,7 +349,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 6: FILMMAKERS ─── */}
-      <div className="bp-section page-break">
+      <div id="filmmakers" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">04 - The Filmmakers</div>
         </div>
@@ -364,7 +366,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 7: COMPARABLE FILMS ─── */}
-      <div className="bp-section page-break">
+      <div id="comparables" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">05 - Comparable Films</div>
         </div>
@@ -435,7 +437,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 8: MARKET ANALYSIS ─── */}
-      <div className="bp-section page-break">
+      <div id="market-analysis" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">06 - Market Analysis</div>
         </div>
@@ -501,7 +503,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 9: DISTRIBUTION STRATEGY ─── */}
-      <div className="bp-section page-break">
+      <div id="distribution" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">07 - Distribution Strategy</div>
         </div>
@@ -551,7 +553,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 10: PRODUCTION PLAN ─── */}
-      <div className="bp-section page-break">
+      <div id="production-plan" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">08 - Production Plan</div>
         </div>
@@ -592,7 +594,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 11: BUDGET TOP SHEET ─── */}
-      <div className="bp-section page-break">
+      <div id="budget" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">09 - Budget Top Sheet</div>
         </div>
@@ -625,7 +627,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 12: FINANCING STRUCTURE ─── */}
-      <div className="bp-section page-break">
+      <div id="financing" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">10 - Financing Structure</div>
         </div>
@@ -666,7 +668,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 13: INVESTMENT TERMS ─── */}
-      <div className="bp-section page-break">
+      <div id="investment-terms" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">11 - Investment Terms</div>
         </div>
@@ -718,7 +720,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 14: FINANCIAL PROJECTIONS ─── */}
-      <div className="bp-section page-break">
+      <div id="projections" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">12 - Financial Projections</div>
         </div>
@@ -834,7 +836,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 15: SENSITIVITY AND BREAK-EVEN ─── */}
-      <div className="bp-section page-break">
+      <div id="sensitivity" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">13 - Sensitivity and Break-Even</div>
         </div>
@@ -906,7 +908,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 16: WATERFALL STRUCTURE ─── */}
-      <div className="bp-section page-break">
+      <div id="waterfall" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">14 - Waterfall Structure</div>
         </div>
@@ -938,7 +940,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 17: COMPLETION AND INSURANCE ─── */}
-      <div className="bp-section page-break">
+      <div id="completion" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">15 - Completion and Insurance</div>
         </div>
@@ -972,7 +974,7 @@ export default function BusinessPlanPage() {
       </div>
 
       {/* ─── SECTION 18: RISK FACTORS ─── */}
-      <div className="bp-section page-break">
+      <div id="risk-factors" className="bp-section page-break">
         <div className="bp-section-header">
           <div className="bp-h2">16 - Risk Factors</div>
         </div>

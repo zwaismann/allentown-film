@@ -180,10 +180,10 @@ export const CAST = [
     status: 'Attached',
   },
   {
-    name: 'Matt Woods',
+    name: 'Matt Wood',
     role: 'Mike Mackay',
     image: '/images/mike-mackay.webp',
-    credits: '',
+    credits: 'Saturday Night (2024, directed by Jason Reitman, as John Belushi)',
     value: '',
     status: 'Attached',
   },
