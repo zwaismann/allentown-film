@@ -11,6 +11,8 @@ import CastSection from './components/CastSection';
 import ComparablesSection from './components/ComparablesSection';
 import ScenariosSection from './components/ScenariosSection';
 import SensitivitySection from './components/SensitivitySection';
+import WaterfallSection from './components/WaterfallSection';
+import InvestmentTermsSection from './components/InvestmentTermsSection';
 
 /* ─── Utility: section fade-in hook ─── */
 
@@ -228,6 +230,12 @@ export default function InvestorsPage() {
 
       {/* ──── SENSITIVITY ANALYSIS ──── */}
       <SensitivitySection />
+
+      {/* ──── REVENUE WATERFALL ──── */}
+      <WaterfallSection />
+
+      {/* ──── INVESTMENT TERMS ──── */}
+      <InvestmentTermsSection />
 
       {/* ──── PRODUCTION PLAN ──── */}
       <ProductionPlanSection />
