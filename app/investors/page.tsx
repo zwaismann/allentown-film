@@ -58,36 +58,42 @@ const TEAM_MEMBERS = [
     role: 'PRODUCER',
     name: 'Gary Foster',
     image: '/images/gary-foster.webp',
+    short: 'Krasnoff/Foster Entertainment. Bedford Park (2026 Sundance), Sleepless in Seattle ($300M+)',
     bio: 'President of Krasnoff/Foster Entertainment with 40+ years in the industry. Most recently produced Bedford Park (2026 Sundance, Special Jury Award, acquired by Sony Pictures Classics) and Finestkind (2023, Paramount+). Earlier credits include Denial (2016, BAFTA nominated), Community (TV), and the Oscar-nominated Sleepless in Seattle ($300M+ worldwide). Also produced Daredevil, Elektra, and Ghost Rider for Marvel.',
   },
   {
     role: 'DIRECTOR / CO-WRITER',
     name: 'Ze\'ev Waismann',
     image: '/images/zev-waismann.webp',
+    short: 'Commercial director. Nike, Adidas, Chevrolet, Scout Motors, Unilever',
     bio: 'Commercial director with over a decade of experience directing campaigns for Nike, Adidas, Chevrolet, Scout Motors, and Unilever. Brings a cinematic eye and narrative precision to his first feature, blending gritty realism with heartfelt storytelling.',
   },
   {
     role: 'WRITER',
     name: 'Conrad Sylvia',
     image: '/images/conrad-sylvia.webp',
+    short: 'Writer, director. AVP: Requiem, Deck the Halls, The Week in Television',
     bio: 'Writer, director, and creator of The Week in Television, a respected industry newsletter covering the television landscape. Credits include Aliens vs. Predator: Requiem and Deck the Halls. Develops projects for studios and production companies, with deep expertise in the current TV and international marketplace.',
   },
   {
     role: 'WRITER',
     name: 'Pat Taggart',
     image: '/images/pat-taggart.webp',
+    short: 'Allentown native. Director, Billboard Boys documentary (2017)',
     bio: 'Allentown native and the filmmaker who brought this story to light. Directed the Billboard Boys documentary (2017), which premiered at film festivals and was featured in The Philadelphia Inquirer, WHYY, and PhillyVoice. His personal connection to the Lehigh Valley and years of research into the billboard sitters give the script its authenticity.',
   },
   {
     role: 'EXECUTIVE PRODUCER',
     name: 'Roberto Alcazar',
     image: '/images/roberto-alcazar.webp',
+    short: 'EO Integration. 200 Cartas (Lin-Manuel Miranda), YASUNI',
     bio: 'Managing Partner at EO Integration with extensive experience in impact-driven entertainment. Executive produced 200 Cartas (starring Lin-Manuel Miranda) and produced the documentary YASUNI, which premiered at the Miami International Film Festival. Also produced and directed CASI 10, featured in 25+ film festivals worldwide.',
   },
   {
     role: 'EXECUTIVE PRODUCER',
     name: 'Pilar de Posadas',
     image: '/images/pilar-de-posadas.webp',
+    short: 'Scenic Rights (LA). International sales and acquisitions',
     bio: 'International content and distribution specialist. Associate at Scenic Rights (Los Angeles), with prior roles as Television Development and Acquisitions Head at Herrick Entertainment and International Sales Consultant for Dopamine Content and Zebra Producciones. Brings deep expertise in international sales, acquisitions, and scripted content development.',
   },
 ];
@@ -342,6 +348,9 @@ export default function InvestorsPage() {
       {/* ──── FINANCIAL PLAN ──── */}
       <FinancialPlanSection />
 
+      {/* ──── CURRENT ATTACHMENTS ──── */}
+      <AttachmentsSection />
+
       {/* ──── PRODUCTION PLAN ──── */}
       <ProductionPlanSection />
 
@@ -478,6 +487,11 @@ function ExecutiveSummarySection() {
         and grants (e.g., Greater Philadelphia Film Office). Projected revenue of{' '}
         <strong style={{ ...S.bold, color: '#D4943A' }}>$5.75M (150% ROI)</strong> spans festivals (Sundance),
         limited theatrical, streaming (Netflix, Amazon), and international sales.
+        A{' '}
+        <a href="/investors/business-plan" style={{ color: '#D4943A', textDecoration: 'none', borderBottom: '1px solid rgba(212,148,58,0.4)' }}>
+          full business plan
+        </a>{' '}
+        with detailed financial projections and waterfall analysis is available below.
       </p>
 
       {/* Aspirational comps */}
@@ -699,6 +713,94 @@ function FinancialPlanSection() {
   );
 }
 
+function AttachmentsSection() {
+  const { ref, visible } = useFadeIn();
+  return (
+    <section ref={ref} style={S.section(visible)}>
+      <div className="tri-bar-thin" style={{ width: '40px', marginBottom: '24px', opacity: 0.6 }} />
+      <p style={S.sectionHeading}>Current Attachments</p>
+
+      <div style={{
+        display: 'flex', gap: '24px', alignItems: 'flex-start',
+        padding: '28px',
+        background: 'rgba(255,255,255,0.03)',
+        border: '1px solid rgba(255,255,255,0.08)',
+        borderRadius: '6px',
+        marginBottom: '16px',
+      }}>
+        <div style={{
+          width: '80px', height: '80px', borderRadius: '50%', flexShrink: 0,
+          backgroundImage: 'url(/images/ron-kistler.webp)',
+          backgroundSize: 'cover', backgroundPosition: 'center top',
+          border: '2px solid rgba(212,148,58,0.4)',
+        }} />
+        <div>
+          <p style={{
+            fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
+            letterSpacing: '0.15em', textTransform: 'uppercase',
+            color: '#D4943A', marginBottom: '4px',
+          }}>
+            Attached
+          </p>
+          <p style={{
+            fontFamily: "'Anton', sans-serif",
+            fontSize: 'clamp(22px, 2.5vw, 28px)',
+            color: '#E8DCC8', letterSpacing: '0.04em', marginBottom: '4px',
+          }}>
+            Dane DeHaan
+            <span style={{ ...S.muted, fontSize: '14px', marginLeft: '12px', fontFamily: "'DM Sans', sans-serif" }}>
+              as Ron Kistler
+            </span>
+          </p>
+          <p style={{ ...S.body, fontSize: '14px', marginBottom: '8px' }}>
+            Chronicle ($126M worldwide), The Amazing Spider-Man 2, Valerian and the City of a Thousand Planets, A Cure for Wellness, ZeroZeroZero
+          </p>
+          <p style={S.muted}>
+            Internationally recognized name that elevates distribution value, drives streaming platform interest, and strengthens international pre-sale positioning.
+          </p>
+        </div>
+      </div>
+
+      <div style={{
+        display: 'flex', gap: '24px', alignItems: 'flex-start',
+        padding: '28px',
+        background: 'rgba(255,255,255,0.03)',
+        border: '1px solid rgba(255,255,255,0.08)',
+        borderRadius: '6px',
+      }}>
+        <div style={{
+          width: '80px', height: '80px', borderRadius: '50%', flexShrink: 0,
+          backgroundImage: 'url(/images/mike-mackay.webp)',
+          backgroundSize: 'cover', backgroundPosition: 'center top',
+          border: '2px solid rgba(212,148,58,0.4)',
+        }} />
+        <div>
+          <p style={{
+            fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
+            letterSpacing: '0.15em', textTransform: 'uppercase',
+            color: '#D4943A', marginBottom: '4px',
+          }}>
+            Attached
+          </p>
+          <p style={{
+            fontFamily: "'Anton', sans-serif",
+            fontSize: 'clamp(22px, 2.5vw, 28px)',
+            color: '#E8DCC8', letterSpacing: '0.04em', marginBottom: '4px',
+          }}>
+            Matt Wood
+            <span style={{ ...S.muted, fontSize: '14px', marginLeft: '12px', fontFamily: "'DM Sans', sans-serif" }}>
+              as Mike Mackay
+            </span>
+          </p>
+          <p style={{ ...S.body, fontSize: '14px' }}>
+            Saturday Night (2024, directed by Jason Reitman, as John Belushi)
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ProductionPlanSection() {
   const { ref, visible } = useFadeIn();
   return (
@@ -810,45 +912,73 @@ function DistributionSection() {
 
 function TeamSection() {
   const { ref, visible } = useFadeIn();
+  const [expanded, setExpanded] = useState<string | null>(null);
+
   return (
     <section ref={ref} style={S.section(visible)}>
       <div className="tri-bar-thin" style={{ width: '40px', marginBottom: '24px', opacity: 0.6 }} />
       <p style={S.sectionHeading}>The Team</p>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-        gap: '20px',
-      }}>
-        {TEAM_MEMBERS.map((member) => (
-          <div key={member.name} style={{
-            display: 'flex', gap: '16px', alignItems: 'flex-start',
-            padding: '24px',
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(255,255,255,0.08)',
-            borderRadius: '6px',
-          }}>
-            <div style={{
-              width: '56px', height: '56px', borderRadius: '50%', flexShrink: 0,
-              backgroundImage: `url(${member.image})`,
-              backgroundSize: 'cover', backgroundPosition: 'center top',
-              border: '2px solid rgba(212,148,58,0.3)',
-            }} />
-            <div>
-              <p style={{ ...S.muted, fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '2px' }}>
-                {member.role}
-              </p>
-              <p style={{
-                fontFamily: "'Anton', sans-serif",
-                fontSize: '18px', color: '#E8DCC8',
-                letterSpacing: '0.04em', marginBottom: '6px',
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        {TEAM_MEMBERS.map((member) => {
+          const isOpen = expanded === member.name;
+          return (
+            <div
+              key={member.name}
+              onClick={() => setExpanded(isOpen ? null : member.name)}
+              style={{
+                display: 'flex', gap: '16px', alignItems: 'center',
+                padding: '16px 20px',
+                background: isOpen ? 'rgba(212,148,58,0.06)' : 'rgba(255,255,255,0.03)',
+                border: isOpen ? '1px solid rgba(212,148,58,0.25)' : '1px solid rgba(255,255,255,0.08)',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+                flexWrap: 'wrap',
+              }}
+            >
+              <div style={{
+                width: '44px', height: '44px', borderRadius: '50%', flexShrink: 0,
+                backgroundImage: `url(${member.image})`,
+                backgroundSize: 'cover', backgroundPosition: 'center top',
+                border: '2px solid rgba(212,148,58,0.3)',
+              }} />
+              <div style={{ flex: 1, minWidth: '200px' }}>
+                <p style={{
+                  fontFamily: "'Anton', sans-serif",
+                  fontSize: '17px', color: '#E8DCC8',
+                  letterSpacing: '0.04em',
+                }}>
+                  <span style={{ ...S.muted, fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', marginRight: '10px', fontFamily: "'DM Sans', sans-serif" }}>
+                    {member.role}
+                  </span>
+                  {member.name}
+                </p>
+                <p style={{ ...S.muted, fontSize: '13px', lineHeight: 1.4, marginTop: '2px' }}>
+                  {member.short}
+                </p>
+              </div>
+              <span style={{
+                color: '#667788', fontSize: '18px', flexShrink: 0,
+                transform: isOpen ? 'rotate(180deg)' : 'rotate(0)',
+                transition: 'transform 0.3s ease',
               }}>
-                {member.name}
-              </p>
-              <p style={{ ...S.body, fontSize: '13px', lineHeight: 1.5 }}>{member.bio}</p>
+                &#9662;
+              </span>
+
+              {isOpen && (
+                <div style={{
+                  width: '100%', paddingTop: '12px', marginTop: '8px',
+                  borderTop: '1px solid rgba(255,255,255,0.06)',
+                }}>
+                  <p style={{ ...S.body, fontSize: '14px', lineHeight: 1.6 }}>
+                    {member.bio}
+                  </p>
+                </div>
+              )}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
