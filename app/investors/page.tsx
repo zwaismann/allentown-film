@@ -208,6 +208,9 @@ export default function InvestorsPage() {
   const [gateVisible, setGateVisible] = useState(false);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && sessionStorage.getItem('allentown-investor-access') === 'true') {
+      setUnlocked(true);
+    }
     requestAnimationFrame(() => setGateVisible(true));
   }, []);
 
@@ -216,6 +219,7 @@ export default function InvestorsPage() {
     if (password === 'Allentown2026') {
       setUnlocked(true);
       setError(false);
+      sessionStorage.setItem('allentown-investor-access', 'true');
     } else {
       setError(true);
       setTimeout(() => setError(false), 2000);
