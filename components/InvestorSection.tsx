@@ -47,7 +47,7 @@ export default function InvestorSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'RustBeltFairytale') {
+    if (password === 'Allentown2026') {
       setUnlocked(true);
       setError(false);
     } else {

@@ -91,10 +91,9 @@ export default function Header({ visible, onInvestorClick }: { visible: boolean;
   }, [fading]);
 
   const handleInvestorClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
     setMenuOpen(false);
-    onInvestorClick?.();
-  }, [onInvestorClick]);
+    // Navigate to /investors page (default link behavior)
+  }, []);
 
   return (
     <>
@@ -146,7 +145,7 @@ export default function Header({ visible, onInvestorClick }: { visible: boolean;
             </a>
           ))}
           <a
-            href="#investors"
+            href="/investors"
             className="nav-link"
             onClick={handleInvestorClick}
             style={{ color: 'rgba(212,148,58,0.7)' }}
@@ -233,7 +232,7 @@ export default function Header({ visible, onInvestorClick }: { visible: boolean;
             </a>
           ))}
           <a
-            href="#investors"
+            href="/investors"
             className="mobile-nav-link"
             onClick={handleInvestorClick}
             style={{ color: 'rgba(212,148,58,0.85)' }}

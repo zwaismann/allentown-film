@@ -53,7 +53,7 @@ export default function InvestorModal({ open, onClose }: { open: boolean; onClos
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'RustBeltFairytale') {
+    if (password === 'Allentown2026') {
       setUnlocked(true);
       setError(false);
     } else {
