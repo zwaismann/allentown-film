@@ -763,7 +763,7 @@ function AttachmentsSection() {
         <div style={{
           width: '80px', height: '80px', borderRadius: '50%', flexShrink: 0,
           backgroundImage: 'url(/images/dane-dehaan.png)',
-          backgroundSize: 'cover', backgroundPosition: 'center 35%',
+          backgroundSize: 'cover', backgroundPosition: 'center 45%',
           border: '2px solid rgba(212,148,58,0.4)',
         }} />
         <div>
@@ -803,7 +803,7 @@ function AttachmentsSection() {
         <div style={{
           width: '80px', height: '80px', borderRadius: '50%', flexShrink: 0,
           backgroundImage: 'url(/images/matt-wood-headshot.jpg)',
-          backgroundSize: '115%', backgroundPosition: 'center 30%',
+          backgroundSize: '145%', backgroundPosition: 'center 25%',
           border: '2px solid rgba(212,148,58,0.4)',
         }} />
         <div>
