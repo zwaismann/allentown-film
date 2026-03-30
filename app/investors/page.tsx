@@ -13,7 +13,6 @@ const ASPIRATIONAL_COMPS = [
 
 const DIRECT_COMPS = [
   { title: 'THE FLORIDA PROJECT', budget: '$2M', gross: '$10.8M', roi: '440%' },
-  { title: 'THE BIG SICK', budget: '$5M', gross: '$56.4M', roi: '1028%' },
   { title: 'CAPTAIN FANTASTIC', budget: '$5M', gross: '$22.8M', roi: '356%' },
   { title: 'SHORT TERM 12', budget: '$1M', gross: '$3.5M', roi: '250%' },
 ];
@@ -59,37 +58,37 @@ const TEAM_MEMBERS = [
     role: 'PRODUCER',
     name: 'Gary Foster',
     image: '/images/gary-foster.webp',
-    bio: 'Sleepless in Seattle ($228M global gross), The Score ($113M), Tin Cup, Community, and Daredevil. A track record of high-ROI films and TV.',
+    bio: 'President of Krasnoff/Foster Entertainment with 40+ years in the industry. Most recently produced Bedford Park (2026 Sundance, Special Jury Award, acquired by Sony Pictures Classics) and Finestkind (2023, Paramount+). Earlier credits include Denial (2016, BAFTA nominated), Community (TV), and the Oscar-nominated Sleepless in Seattle ($300M+ worldwide). Also produced Daredevil, Elektra, and Ghost Rider for Marvel.',
   },
   {
     role: 'DIRECTOR / CO-WRITER',
     name: 'Ze\'ev Waismann',
     image: '/images/zev-waismann.webp',
-    bio: 'Accomplished commercial director with over a decade of expertise, delivering a bold vision blending gritty realism with heartfelt storytelling.',
+    bio: 'Commercial director with over a decade of experience directing campaigns for Nike, Adidas, Chevrolet, Scout Motors, and Unilever. Brings a cinematic eye and narrative precision to his first feature, blending gritty realism with heartfelt storytelling.',
   },
   {
     role: 'WRITER',
     name: 'Conrad Sylvia',
     image: '/images/conrad-sylvia.webp',
-    bio: 'A TV veteran who crafts compelling, moving scripts.',
+    bio: 'Writer, director, and creator of The Week in Television, a respected industry newsletter covering the television landscape. Credits include Aliens vs. Predator: Requiem and Deck the Halls. Develops projects for studios and production companies, with deep expertise in the current TV and international marketplace.',
   },
   {
     role: 'WRITER',
     name: 'Pat Taggart',
     image: '/images/pat-taggart.webp',
-    bio: 'An Allentown native, rooting the script in his hometown\'s authenticity.',
+    bio: 'Allentown native and the filmmaker who brought this story to light. Directed the Billboard Boys documentary (2017), which premiered at film festivals and was featured in The Philadelphia Inquirer, WHYY, and PhillyVoice. His personal connection to the Lehigh Valley and years of research into the billboard sitters give the script its authenticity.',
   },
   {
     role: 'EXECUTIVE PRODUCER',
     name: 'Roberto Alcazar',
     image: '/images/roberto-alcazar.webp',
-    bio: 'International experience ensuring operational excellence, streamlining the $2.3M production.',
+    bio: 'Managing Partner at EO Integration with extensive experience in impact-driven entertainment. Executive produced 200 Cartas (starring Lin-Manuel Miranda) and produced the documentary YASUNI, which premiered at the Miami International Film Festival. Also produced and directed CASI 10, featured in 25+ film festivals worldwide.',
   },
   {
     role: 'EXECUTIVE PRODUCER',
     name: 'Pilar de Posadas',
     image: '/images/pilar-de-posadas.webp',
-    bio: 'Global market expert, securing worldwide distribution and maximizing appeal for streaming and international sales.',
+    bio: 'International content and distribution specialist. Associate at Scenic Rights (Los Angeles), with prior roles as Television Development and Acquisitions Head at Herrick Entertainment and International Sales Consultant for Dopamine Content and Zebra Producciones. Brings deep expertise in international sales, acquisitions, and scripted content development.',
   },
 ];
 
