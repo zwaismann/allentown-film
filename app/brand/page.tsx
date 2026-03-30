@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useCallback } from 'react';
+import { useCallback } from 'react';
 
 /* ─── Brand Data ─── */
 
@@ -93,33 +93,47 @@ const S = {
 /* ─── Page ─── */
 
 export default function BrandGuidePage() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  const downloadPNG = useCallback((svgFile: string, name: string) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+  const downloadPNG = useCallback((color: string, name: string, includeBar = false) => {
+    const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.onload = () => {
-      canvas.width = 1600;
-      canvas.height = img.height * (1600 / img.width);
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-      const link = document.createElement('a');
-      link.download = `${name}.png`;
-      link.href = canvas.toDataURL('image/png');
-      link.click();
-    };
-    img.src = `/brand/${svgFile}.svg`;
+    canvas.width = 1600;
+    canvas.height = includeBar ? 320 : 240;
+
+    // Transparent background
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw text using Anton font
+    ctx.font = '180px Anton';
+    ctx.fillStyle = color;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.letterSpacing = '0.06em';
+    ctx.fillText('ALLENTOWN', canvas.width / 2, includeBar ? 120 : canvas.height / 2);
+
+    // Draw tri-color bar if needed
+    if (includeBar) {
+      const barY = 230;
+      const barW = 200;
+      const barH = 8;
+      const startX = (canvas.width - barW * 3) / 2;
+      ctx.fillStyle = '#E84B2B';
+      ctx.fillRect(startX, barY, barW, barH);
+      ctx.fillStyle = '#C4713B';
+      ctx.fillRect(startX + barW, barY, barW, barH);
+      ctx.fillStyle = '#D4943A';
+      ctx.fillRect(startX + barW * 2, barY, barW, barH);
+    }
+
+    const link = document.createElement('a');
+    link.download = `${name}.png`;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
   }, []);
 
   return (
     <div style={{ background: 'var(--color-bg)', minHeight: '100vh' }}>
-      <canvas ref={canvasRef} style={{ display: 'none' }} />
-
       {/* ──── HEADER ──── */}
       <header style={{
         textAlign: 'center',
@@ -400,7 +414,7 @@ export default function BrandGuidePage() {
       <section style={{ ...S.section, paddingBottom: 'clamp(80px, 12vh, 140px)' }}>
         <p style={S.heading}>Logo Downloads</p>
         <p style={{ ...S.body, marginBottom: '32px' }}>
-          All logos are provided as SVG (vector, scalable) and can be downloaded as PNG (transparent background).
+          Download the ALLENTOWN wordmark as PNG with transparent background.
           Use the appropriate variant for your background.
         </p>
 
@@ -410,23 +424,35 @@ export default function BrandGuidePage() {
               ...S.card,
               overflow: 'hidden',
             }}>
-              {/* Preview */}
+              {/* Preview - rendered in HTML with actual Anton font */}
               <div style={{
                 background: variant.bg,
                 padding: '40px 32px',
                 display: 'flex',
+                flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 borderBottom: '1px solid rgba(255,255,255,0.06)',
               }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`/brand/${variant.file}.svg`}
-                  alt={variant.name}
-                  style={{ maxWidth: '400px', width: '100%', height: 'auto' }}
-                />
+                <p style={{
+                  fontFamily: "'Anton', sans-serif",
+                  fontSize: 'clamp(36px, 6vw, 64px)',
+                  letterSpacing: '0.06em',
+                  color: variant.textColor,
+                  textTransform: 'uppercase',
+                  lineHeight: 1,
+                }}>
+                  ALLENTOWN
+                </p>
+                {variant.file === 'allentown-tricolor' && (
+                  <div style={{ display: 'flex', gap: '0', marginTop: '12px' }}>
+                    <div style={{ width: '40px', height: '4px', background: '#E84B2B', borderRadius: '2px 0 0 2px' }} />
+                    <div style={{ width: '40px', height: '4px', background: '#C4713B' }} />
+                    <div style={{ width: '40px', height: '4px', background: '#D4943A', borderRadius: '0 2px 2px 0' }} />
+                  </div>
+                )}
               </div>
-              {/* Info + Downloads */}
+              {/* Info + Download */}
               <div style={{
                 padding: '20px 24px',
                 display: 'flex',
@@ -444,36 +470,24 @@ export default function BrandGuidePage() {
                   </p>
                   <p style={S.muted}>{variant.desc}</p>
                 </div>
-                <div style={{ display: 'flex', gap: '8px' }}>
-                  <a
-                    href={`/brand/${variant.file}.svg`}
-                    download={`allentown-${variant.file}.svg`}
-                    style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 600,
-                      letterSpacing: '0.1em', textTransform: 'uppercase',
-                      padding: '8px 16px', borderRadius: '4px',
-                      border: '1px solid rgba(255,255,255,0.15)',
-                      color: '#E8DCC8', textDecoration: 'none',
-                      transition: 'all 0.2s ease',
-                    }}
-                  >
-                    SVG
-                  </a>
-                  <button
-                    onClick={() => downloadPNG(variant.file, `allentown-${variant.file}`)}
-                    style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 600,
-                      letterSpacing: '0.1em', textTransform: 'uppercase',
-                      padding: '8px 16px', borderRadius: '4px',
-                      border: '1px solid rgba(212,148,58,0.5)',
-                      background: 'transparent',
-                      color: '#D4943A', cursor: 'pointer',
-                      transition: 'all 0.2s ease',
-                    }}
-                  >
-                    PNG
-                  </button>
-                </div>
+                <button
+                  onClick={() => downloadPNG(
+                    variant.textColor,
+                    `allentown-${variant.file}`,
+                    variant.file === 'allentown-tricolor'
+                  )}
+                  style={{
+                    fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 600,
+                    letterSpacing: '0.1em', textTransform: 'uppercase',
+                    padding: '10px 20px', borderRadius: '4px',
+                    border: '1px solid rgba(212,148,58,0.5)',
+                    background: 'transparent',
+                    color: '#D4943A', cursor: 'pointer',
+                    transition: 'all 0.2s ease',
+                  }}
+                >
+                  Download PNG
+                </button>
               </div>
             </div>
           ))}
