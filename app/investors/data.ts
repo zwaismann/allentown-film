@@ -301,6 +301,12 @@ export const TEAM_MEMBERS = [
 
 export const DOCUMENTS = [
   {
+    title: 'Business Plan',
+    description: 'Full investor business plan - financial projections, waterfall, terms',
+    href: '/investors/business-plan',
+    type: 'LINK' as const,
+  },
+  {
     title: 'Screenplay',
     description: 'Revised draft by Pat Taggart, Conrad Sylvia, and Ze\'ev Waismann',
     href: '/docs/ALLENTOWN_Script.pdf',
