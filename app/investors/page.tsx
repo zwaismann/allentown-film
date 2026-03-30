@@ -6,15 +6,15 @@ import Link from 'next/link';
 /* ─── Data ─── */
 
 const ASPIRATIONAL_COMPS = [
-  { title: 'I, TONYA', budget: '$11M', gross: '$56M', roi: '408%' },
-  { title: 'THREE BILLBOARDS', budget: '$15M', gross: '$160M', roi: '967%' },
-  { title: 'MONEYBALL', budget: '$50M', gross: '$222.6M', roi: '345%' },
+  { title: 'I, TONYA', budget: '$11M', gross: '$56M', roi: '408%', poster: '/images/poster-i-tonya.jpg' },
+  { title: 'THREE BILLBOARDS', budget: '$15M', gross: '$160M', roi: '967%', poster: '/images/poster-three-billboards.jpg' },
+  { title: 'MONEYBALL', budget: '$50M', gross: '$222.6M', roi: '345%', poster: '/images/poster-moneyball.jpg' },
 ];
 
 const DIRECT_COMPS = [
-  { title: 'THE FLORIDA PROJECT', budget: '$2M', gross: '$10.8M', roi: '440%' },
-  { title: 'CAPTAIN FANTASTIC', budget: '$5M', gross: '$22.8M', roi: '356%' },
-  { title: 'SHORT TERM 12', budget: '$1M', gross: '$3.5M', roi: '250%' },
+  { title: 'THE FLORIDA PROJECT', budget: '$2M', gross: '$10.8M', roi: '440%', poster: '/images/poster-florida-project.jpg' },
+  { title: 'CAPTAIN FANTASTIC', budget: '$5M', gross: '$22.8M', roi: '356%', poster: '/images/poster-captain-fantastic.jpg' },
+  { title: 'SHORT TERM 12', budget: '$1M', gross: '$3.5M', roi: '250%', poster: '/images/poster-short-term-12.jpg' },
 ];
 
 const REVENUE_BREAKDOWN = [
@@ -505,35 +505,49 @@ function ExecutiveSummarySection() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
         gap: '16px',
         marginBottom: '32px',
       }}>
         {ASPIRATIONAL_COMPS.map((film) => (
           <div key={film.title} style={{
-            padding: '24px',
             background: 'rgba(255,255,255,0.03)',
             border: '1px solid rgba(255,255,255,0.08)',
             borderRadius: '6px',
+            overflow: 'hidden',
           }}>
+            <div style={{ display: 'flex', gap: '16px', padding: '16px' }}>
+              <div style={{
+                width: '80px', height: '120px', flexShrink: 0,
+                backgroundImage: `url(${film.poster})`,
+                backgroundSize: 'cover', backgroundPosition: 'center',
+                borderRadius: '4px',
+              }} />
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <p style={{ ...S.muted, marginBottom: '4px', fontSize: '12px' }}>
+                  Budget: <span style={{ color: '#E8DCC8' }}>{film.budget}</span>
+                </p>
+                <p style={{ ...S.muted, marginBottom: '4px', fontSize: '12px' }}>
+                  Gross: <span style={{ color: '#E8DCC8' }}>{film.gross}</span>
+                </p>
+                <p style={{
+                  fontFamily: "'DM Sans', sans-serif", fontSize: '16px',
+                  fontWeight: 700, color: '#D4943A',
+                }}>
+                  {film.roi} ROI
+                </p>
+              </div>
+            </div>
             <p style={{
               fontFamily: "'Anton', sans-serif",
-              fontSize: 'clamp(16px, 1.8vw, 20px)',
-              color: '#E8DCC8', letterSpacing: '0.04em', marginBottom: '8px',
+              fontSize: '15px',
+              color: '#E8DCC8', letterSpacing: '0.04em',
+              textAlign: 'center',
+              padding: '10px 16px',
+              borderTop: '1px solid rgba(255,255,255,0.06)',
+              background: 'rgba(255,255,255,0.02)',
             }}>
               {film.title}
-            </p>
-            <p style={{ ...S.muted, marginBottom: '4px' }}>
-              Budget: <span style={{ color: '#E8DCC8' }}>{film.budget}</span>
-            </p>
-            <p style={{ ...S.muted, marginBottom: '4px' }}>
-              Gross: <span style={{ color: '#E8DCC8' }}>{film.gross}</span>
-            </p>
-            <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
-              fontWeight: 600, color: '#D4943A',
-            }}>
-              {film.roi} ROI
             </p>
           </div>
         ))}
@@ -550,35 +564,49 @@ function ExecutiveSummarySection() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
         gap: '16px',
         marginBottom: '32px',
       }}>
         {DIRECT_COMPS.map((film) => (
           <div key={film.title} style={{
-            padding: '24px',
             background: 'rgba(255,255,255,0.03)',
             border: '1px solid rgba(255,255,255,0.08)',
             borderRadius: '6px',
+            overflow: 'hidden',
           }}>
+            <div style={{ display: 'flex', gap: '16px', padding: '16px' }}>
+              <div style={{
+                width: '80px', height: '120px', flexShrink: 0,
+                backgroundImage: `url(${film.poster})`,
+                backgroundSize: 'cover', backgroundPosition: 'center',
+                borderRadius: '4px',
+              }} />
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <p style={{ ...S.muted, marginBottom: '4px', fontSize: '12px' }}>
+                  Budget: <span style={{ color: '#E8DCC8' }}>{film.budget}</span>
+                </p>
+                <p style={{ ...S.muted, marginBottom: '4px', fontSize: '12px' }}>
+                  Gross: <span style={{ color: '#E8DCC8' }}>{film.gross}</span>
+                </p>
+                <p style={{
+                  fontFamily: "'DM Sans', sans-serif", fontSize: '16px',
+                  fontWeight: 700, color: '#D4943A',
+                }}>
+                  {film.roi} ROI
+                </p>
+              </div>
+            </div>
             <p style={{
               fontFamily: "'Anton', sans-serif",
-              fontSize: 'clamp(16px, 1.8vw, 20px)',
-              color: '#E8DCC8', letterSpacing: '0.04em', marginBottom: '8px',
+              fontSize: '15px',
+              color: '#E8DCC8', letterSpacing: '0.04em',
+              textAlign: 'center',
+              padding: '10px 16px',
+              borderTop: '1px solid rgba(255,255,255,0.06)',
+              background: 'rgba(255,255,255,0.02)',
             }}>
               {film.title}
-            </p>
-            <p style={{ ...S.muted, marginBottom: '4px' }}>
-              Budget: <span style={{ color: '#E8DCC8' }}>{film.budget}</span>
-            </p>
-            <p style={{ ...S.muted, marginBottom: '4px' }}>
-              Gross: <span style={{ color: '#E8DCC8' }}>{film.gross}</span>
-            </p>
-            <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
-              fontWeight: 600, color: '#D4943A',
-            }}>
-              {film.roi} ROI
             </p>
           </div>
         ))}
@@ -730,7 +758,7 @@ function AttachmentsSection() {
       }}>
         <div style={{
           width: '80px', height: '80px', borderRadius: '50%', flexShrink: 0,
-          backgroundImage: 'url(/images/ron-kistler.webp)',
+          backgroundImage: 'url(/images/dane-dehaan.jpg)',
           backgroundSize: 'cover', backgroundPosition: 'center top',
           border: '2px solid rgba(212,148,58,0.4)',
         }} />
@@ -770,7 +798,7 @@ function AttachmentsSection() {
       }}>
         <div style={{
           width: '80px', height: '80px', borderRadius: '50%', flexShrink: 0,
-          backgroundImage: 'url(/images/mike-mackay.webp)',
+          backgroundImage: 'url(/images/matt-wood.jpg)',
           backgroundSize: 'cover', backgroundPosition: 'center top',
           border: '2px solid rgba(212,148,58,0.4)',
         }} />
