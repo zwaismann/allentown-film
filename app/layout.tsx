@@ -4,6 +4,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "ALLENTOWN",
   description: "Three men. A billboard. And the American Dream.",
+  openGraph: {
+    title: "ALLENTOWN",
+    description: "Three men. A billboard. And the American Dream.",
+    images: [{ url: "/og/og-home.png", width: 1200, height: 630 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ALLENTOWN",
+    description: "Three men. A billboard. And the American Dream.",
+    images: ["/og/og-home.png"],
+  },
 };
 
 export default function RootLayout({
