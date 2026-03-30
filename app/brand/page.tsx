@@ -285,7 +285,7 @@ export default function BrandGuidePage() {
                   flexShrink: 0,
                 }}
               >
-                PNG
+                Download PNG
               </button>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
@@ -306,7 +306,7 @@ export default function BrandGuidePage() {
                   flexShrink: 0,
                 }}
               >
-                PNG
+                Download PNG
               </button>
             </div>
           </div>
@@ -546,6 +546,66 @@ export default function BrandGuidePage() {
             </div>
           ))}
         </div>
+
+        {/* Tri-Color Bar Downloads */}
+        <p style={{ ...S.subheading, marginTop: '48px', marginBottom: '16px' }}>Tri-Color Bar</p>
+
+        {(['thick', 'thin'] as const).map((variant) => (
+          <div key={variant} style={{
+            ...S.card,
+            overflow: 'hidden',
+            marginBottom: '16px',
+          }}>
+            <div style={{
+              background: '#0D0F12',
+              padding: '40px 32px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderBottom: '1px solid rgba(255,255,255,0.06)',
+            }}>
+              <div style={{ display: 'flex', gap: '0' }}>
+                <div style={{ width: variant === 'thick' ? '120px' : '100px', height: variant === 'thick' ? '6px' : '3px', background: '#E84B2B', borderRadius: variant === 'thick' ? '3px 0 0 3px' : '1.5px 0 0 1.5px' }} />
+                <div style={{ width: variant === 'thick' ? '120px' : '100px', height: variant === 'thick' ? '6px' : '3px', background: '#C4713B' }} />
+                <div style={{ width: variant === 'thick' ? '120px' : '100px', height: variant === 'thick' ? '6px' : '3px', background: '#D4943A', borderRadius: variant === 'thick' ? '0 3px 3px 0' : '0 1.5px 1.5px 0' }} />
+              </div>
+            </div>
+            <div style={{
+              padding: '20px 24px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '12px',
+            }}>
+              <div>
+                <p style={{
+                  fontFamily: "'Anton', sans-serif", fontSize: '16px',
+                  color: '#E8DCC8', letterSpacing: '0.04em', marginBottom: '2px',
+                }}>
+                  {variant === 'thick' ? 'Thick Bar' : 'Thin Bar'}
+                </p>
+                <p style={S.muted}>
+                  {variant === 'thick' ? 'Section headers, major dividers' : 'Subsection dividers, subtle accents'}
+                </p>
+              </div>
+              <button
+                onClick={() => downloadBar(variant)}
+                style={{
+                  fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 600,
+                  letterSpacing: '0.1em', textTransform: 'uppercase',
+                  padding: '10px 20px', borderRadius: '4px',
+                  border: '1px solid rgba(212,148,58,0.5)',
+                  background: 'transparent',
+                  color: '#D4943A', cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                }}
+              >
+                Download PNG
+              </button>
+            </div>
+          </div>
+        ))}
 
         {/* Footer */}
         <div style={{ textAlign: 'center', marginTop: '60px' }}>
