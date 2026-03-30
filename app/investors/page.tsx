@@ -3,10 +3,12 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import {
-  ASPIRATIONAL_COMPS, BUDGET_BREAKDOWN, DISTRIBUTION_PHASES,
+  BUDGET_BREAKDOWN, DISTRIBUTION_PHASES,
   TEAM_MEMBERS, DOCUMENTS, CONTACTS, ENTITY_NAME,
   BUDGET_SHORTHAND, EQUITY_RAISE, TAX_CREDIT, PRODUCTION_PHASES,
 } from './data';
+import CastSection from './components/CastSection';
+import ComparablesSection from './components/ComparablesSection';
 
 /* ─── Utility: section fade-in hook ─── */
 
@@ -207,6 +209,12 @@ export default function InvestorsPage() {
       {/* ──── EXECUTIVE SUMMARY ──── */}
       <ExecutiveSummarySection />
 
+      {/* ──── CAST ──── */}
+      <CastSection />
+
+      {/* ──── COMPARABLE FILMS ──── */}
+      <ComparablesSection />
+
       {/* ──── MARKET ANALYSIS ──── */}
       <MarketAnalysisSection />
 
@@ -350,51 +358,6 @@ function ExecutiveSummarySection() {
         <strong style={{ ...S.bold, color: '#D4943A' }}>$5.75M (150% ROI)</strong> spans festivals (Sundance),
         limited theatrical, streaming (Netflix, Amazon), and international sales.
       </p>
-
-      {/* Comparable films */}
-      <p style={{
-        fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
-        letterSpacing: '0.2em', textTransform: 'uppercase',
-        color: '#8899AA', marginBottom: '16px',
-      }}>
-        Comparable Films
-      </p>
-
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-        gap: '16px',
-        marginBottom: '32px',
-      }}>
-        {ASPIRATIONAL_COMPS.map((film) => (
-          <div key={film.title} style={{
-            padding: '24px',
-            background: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(255,255,255,0.08)',
-            borderRadius: '6px',
-          }}>
-            <p style={{
-              fontFamily: "'Anton', sans-serif",
-              fontSize: 'clamp(16px, 1.8vw, 20px)',
-              color: '#E8DCC8', letterSpacing: '0.04em', marginBottom: '8px',
-            }}>
-              {film.title}
-            </p>
-            <p style={{ ...S.muted, marginBottom: '4px' }}>
-              Budget: <span style={{ color: '#E8DCC8' }}>{film.budget}</span>
-            </p>
-            <p style={{ ...S.muted, marginBottom: '4px' }}>
-              Worldwide: <span style={{ color: '#E8DCC8' }}>{film.worldwide}</span>
-            </p>
-            <p style={{
-              fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
-              fontWeight: 600, color: '#D4943A',
-            }}>
-              {film.roi} ROI
-            </p>
-          </div>
-        ))}
-      </div>
 
       <p style={S.body}>
         Led by producer <strong style={S.bold}>Gary Foster</strong> (<em>Sleepless in Seattle</em>), the team
