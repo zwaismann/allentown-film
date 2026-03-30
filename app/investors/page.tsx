@@ -5,10 +5,17 @@ import Link from 'next/link';
 
 /* ─── Data ─── */
 
-const COMPARABLES = [
+const ASPIRATIONAL_COMPS = [
   { title: 'I, TONYA', budget: '$11M', gross: '$56M', roi: '408%' },
   { title: 'THREE BILLBOARDS', budget: '$15M', gross: '$160M', roi: '967%' },
   { title: 'MONEYBALL', budget: '$50M', gross: '$222.6M', roi: '345%' },
+];
+
+const DIRECT_COMPS = [
+  { title: 'THE FLORIDA PROJECT', budget: '$2M', gross: '$10.8M', roi: '440%' },
+  { title: 'THE BIG SICK', budget: '$5M', gross: '$56.4M', roi: '1028%' },
+  { title: 'CAPTAIN FANTASTIC', budget: '$5M', gross: '$22.8M', roi: '356%' },
+  { title: 'SHORT TERM 12', budget: '$1M', gross: '$3.5M', roi: '250%' },
 ];
 
 const REVENUE_BREAKDOWN = [
@@ -474,13 +481,13 @@ function ExecutiveSummarySection() {
         limited theatrical, streaming (Netflix, Amazon), and international sales.
       </p>
 
-      {/* Comparable films */}
+      {/* Aspirational comps */}
       <p style={{
         fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
         letterSpacing: '0.2em', textTransform: 'uppercase',
         color: '#8899AA', marginBottom: '16px',
       }}>
-        Comparable Films
+        Genre Ceiling
       </p>
 
       <div style={{
@@ -489,7 +496,52 @@ function ExecutiveSummarySection() {
         gap: '16px',
         marginBottom: '32px',
       }}>
-        {COMPARABLES.map((film) => (
+        {ASPIRATIONAL_COMPS.map((film) => (
+          <div key={film.title} style={{
+            padding: '24px',
+            background: 'rgba(255,255,255,0.03)',
+            border: '1px solid rgba(255,255,255,0.08)',
+            borderRadius: '6px',
+          }}>
+            <p style={{
+              fontFamily: "'Anton', sans-serif",
+              fontSize: 'clamp(16px, 1.8vw, 20px)',
+              color: '#E8DCC8', letterSpacing: '0.04em', marginBottom: '8px',
+            }}>
+              {film.title}
+            </p>
+            <p style={{ ...S.muted, marginBottom: '4px' }}>
+              Budget: <span style={{ color: '#E8DCC8' }}>{film.budget}</span>
+            </p>
+            <p style={{ ...S.muted, marginBottom: '4px' }}>
+              Gross: <span style={{ color: '#E8DCC8' }}>{film.gross}</span>
+            </p>
+            <p style={{
+              fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
+              fontWeight: 600, color: '#D4943A',
+            }}>
+              {film.roi} ROI
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Budget-range comps */}
+      <p style={{
+        fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 500,
+        letterSpacing: '0.2em', textTransform: 'uppercase',
+        color: '#8899AA', marginBottom: '16px',
+      }}>
+        Budget-Range Comparables
+      </p>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+        gap: '16px',
+        marginBottom: '32px',
+      }}>
+        {DIRECT_COMPS.map((film) => (
           <div key={film.title} style={{
             padding: '24px',
             background: 'rgba(255,255,255,0.03)',
@@ -520,9 +572,9 @@ function ExecutiveSummarySection() {
       </div>
 
       <p style={S.body}>
-        Led by producer <strong style={S.bold}>Gary Foster</strong> (<em>Sleepless in Seattle</em>), the team
-        ensures execution and global appeal. Pennsylvania's incentives and the lean $2.3M budget mitigate risk,
-        positioning Allentown as a profitable, uplifting investment.
+        Led by producer <strong style={S.bold}>Gary Foster</strong> (<em>Bedford Park</em>, 2026 Sundance,
+        <em> Sleepless in Seattle</em>), the team ensures execution and global appeal. Pennsylvania's incentives
+        and the lean $2.3M budget mitigate risk, positioning Allentown as a profitable, uplifting investment.
       </p>
     </section>
   );
@@ -531,20 +583,7 @@ function ExecutiveSummarySection() {
 function MarketAnalysisSection() {
   const { ref, visible } = useFadeIn();
   return (
-    <section ref={ref} style={{
-      ...S.section(visible),
-      position: 'relative',
-    }}>
-      {/* Subtle side image */}
-      <div style={{
-        position: 'absolute', top: '10%', right: '-5%',
-        width: '300px', height: '400px',
-        backgroundImage: 'url(/images/hero-billboard.webp)',
-        backgroundSize: 'cover', backgroundPosition: 'center',
-        opacity: 0.06, borderRadius: '8px',
-        pointerEvents: 'none',
-      }} />
-
+    <section ref={ref} style={S.section(visible)}>
       <div className="tri-bar-thin" style={{ width: '40px', marginBottom: '24px', opacity: 0.6 }} />
       <p style={S.sectionHeading}>Market Analysis</p>
 
@@ -666,18 +705,7 @@ function ProductionPlanSection() {
   return (
     <section ref={ref} style={{
       ...S.section(visible),
-      position: 'relative',
     }}>
-      {/* Subtle background image */}
-      <div style={{
-        position: 'absolute', top: '5%', left: '-5%',
-        width: '280px', height: '350px',
-        backgroundImage: 'url(/images/recession-decay.webp)',
-        backgroundSize: 'cover', backgroundPosition: 'center',
-        opacity: 0.06, borderRadius: '8px',
-        pointerEvents: 'none',
-      }} />
-
       <div className="tri-bar-thin" style={{ width: '40px', marginBottom: '24px', opacity: 0.6 }} />
       <p style={S.sectionHeading}>Production Plan</p>
 
