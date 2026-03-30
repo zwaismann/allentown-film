@@ -9,6 +9,8 @@ import {
 } from './data';
 import CastSection from './components/CastSection';
 import ComparablesSection from './components/ComparablesSection';
+import ScenariosSection from './components/ScenariosSection';
+import SensitivitySection from './components/SensitivitySection';
 
 /* ─── Utility: section fade-in hook ─── */
 
@@ -220,6 +222,12 @@ export default function InvestorsPage() {
 
       {/* ──── FINANCIAL PLAN ──── */}
       <FinancialPlanSection />
+
+      {/* ──── RETURN SCENARIOS ──── */}
+      <ScenariosSection />
+
+      {/* ──── SENSITIVITY ANALYSIS ──── */}
+      <SensitivitySection />
 
       {/* ──── PRODUCTION PLAN ──── */}
       <ProductionPlanSection />
