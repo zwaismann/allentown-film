@@ -10,21 +10,15 @@ const WIDTH = 1200;
 const HEIGHT = 630;
 const OUT_DIR = path.join(__dirname, '..', 'public', 'og');
 
-// Try to register Anton font if available locally
-try {
-  // Check common paths for Anton
-  const fontPaths = [
-    path.join(__dirname, '..', 'public', 'fonts', 'Anton-Regular.ttf'),
-    '/Users/zeevwaismann/Library/Fonts/Anton-Regular.ttf',
-  ];
-  for (const fp of fontPaths) {
-    if (fs.existsSync(fp)) {
-      registerFont(fp, { family: 'Anton' });
-      break;
-    }
-  }
-} catch (e) {
-  console.log('Anton font not found locally, using fallback');
+// Register Anton font - MUST happen before any createCanvas calls
+const FONT_PATH = path.join(__dirname, '..', 'public', 'fonts', 'Anton-Regular.ttf');
+if (fs.existsSync(FONT_PATH)) {
+  registerFont(FONT_PATH, { family: 'Anton' });
+  console.log('Anton font registered from', FONT_PATH);
+} else {
+  console.error('ERROR: Anton font not found at', FONT_PATH);
+  console.error('Download it first: curl -L -o public/fonts/Anton-Regular.ttf "https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf"');
+  process.exit(1);
 }
 
 const PAGES = [
@@ -74,7 +68,7 @@ for (const page of PAGES) {
   ctx.strokeRect(40, 40, WIDTH - 80, HEIGHT - 80);
 
   // Title
-  ctx.font = '120px "Anton", "Impact", sans-serif';
+  ctx.font = '120px Anton';
   ctx.fillStyle = '#E8DCC8';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';

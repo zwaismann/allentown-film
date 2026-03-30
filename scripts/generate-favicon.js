@@ -1,9 +1,19 @@
 // Generate favicon for Allentown
 // Run: node scripts/generate-favicon.js
 
-const { createCanvas } = require('canvas');
+const { createCanvas, registerFont } = require('canvas');
 const fs = require('fs');
 const path = require('path');
+
+// Register Anton font - MUST happen before any createCanvas calls
+const FONT_PATH = path.join(__dirname, '..', 'public', 'fonts', 'Anton-Regular.ttf');
+if (fs.existsSync(FONT_PATH)) {
+  registerFont(FONT_PATH, { family: 'Anton' });
+  console.log('Anton font registered');
+} else {
+  console.error('ERROR: Anton font not found at', FONT_PATH);
+  process.exit(1);
+}
 
 const sizes = [
   { size: 32, name: 'favicon-32x32.png' },
@@ -26,7 +36,7 @@ for (const { size, name } of sizes) {
 
   // "A" in Anton-style (bold, condensed)
   const fontSize = Math.round(size * 0.7);
-  ctx.font = `bold ${fontSize}px "Anton", "Impact", sans-serif`;
+  ctx.font = `bold ${fontSize}px Anton`;
   ctx.fillStyle = '#E8DCC8';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
@@ -59,7 +69,7 @@ const ico = createCanvas(32, 32);
 const ictx = ico.getContext('2d');
 ictx.fillStyle = '#0D0F12';
 ictx.fillRect(0, 0, 32, 32);
-ictx.font = 'bold 22px "Anton", "Impact", sans-serif';
+ictx.font = 'bold 22px Anton';
 ictx.fillStyle = '#E8DCC8';
 ictx.textAlign = 'center';
 ictx.textBaseline = 'middle';
