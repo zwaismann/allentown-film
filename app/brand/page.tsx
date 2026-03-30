@@ -132,6 +132,30 @@ export default function BrandGuidePage() {
     link.click();
   }, []);
 
+  const downloadBar = useCallback((variant: 'thick' | 'thin') => {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const barH = variant === 'thick' ? 16 : 8;
+    canvas.width = 1200;
+    canvas.height = barH;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const segW = canvas.width / 3;
+    ctx.fillStyle = '#E84B2B';
+    ctx.fillRect(0, 0, segW, barH);
+    ctx.fillStyle = '#C4713B';
+    ctx.fillRect(segW, 0, segW, barH);
+    ctx.fillStyle = '#D4943A';
+    ctx.fillRect(segW * 2, 0, segW, barH);
+
+    const link = document.createElement('a');
+    link.download = `allentown-tricolor-bar-${variant}.png`;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  }, []);
+
   return (
     <div style={{ background: 'var(--color-bg)', minHeight: '100vh' }}>
       {/* ──── HEADER ──── */}
@@ -242,19 +266,49 @@ export default function BrandGuidePage() {
             The signature tri-color gradient bar is used as a section divider and brand accent throughout all materials.
             It runs left to right: Rust Red, Rust, Amber. Available in thick (4px) and thin (2px) variants.
           </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            <div style={{ display: 'flex', gap: '0' }}>
-              <div style={{ width: '80px', height: '4px', background: '#E84B2B', borderRadius: '2px 0 0 2px' }} />
-              <div style={{ width: '80px', height: '4px', background: '#C4713B' }} />
-              <div style={{ width: '80px', height: '4px', background: '#D4943A', borderRadius: '0 2px 2px 0' }} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+              <div style={{ display: 'flex', gap: '0' }}>
+                <div style={{ width: '80px', height: '4px', background: '#E84B2B', borderRadius: '2px 0 0 2px' }} />
+                <div style={{ width: '80px', height: '4px', background: '#C4713B' }} />
+                <div style={{ width: '80px', height: '4px', background: '#D4943A', borderRadius: '0 2px 2px 0' }} />
+              </div>
+              <p style={{ ...S.muted, flex: 1 }}>Thick variant - section headers, major dividers</p>
+              <button
+                onClick={() => downloadBar('thick')}
+                style={{
+                  fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600,
+                  letterSpacing: '0.1em', textTransform: 'uppercase',
+                  padding: '6px 12px', borderRadius: '4px',
+                  border: '1px solid rgba(212,148,58,0.5)',
+                  background: 'transparent', color: '#D4943A', cursor: 'pointer',
+                  flexShrink: 0,
+                }}
+              >
+                PNG
+              </button>
             </div>
-            <p style={S.muted}>Thick variant (4px) - section headers, major dividers</p>
-            <div style={{ display: 'flex', gap: '0' }}>
-              <div style={{ width: '60px', height: '2px', background: '#E84B2B', borderRadius: '1px 0 0 1px' }} />
-              <div style={{ width: '60px', height: '2px', background: '#C4713B' }} />
-              <div style={{ width: '60px', height: '2px', background: '#D4943A', borderRadius: '0 1px 1px 0' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+              <div style={{ display: 'flex', gap: '0' }}>
+                <div style={{ width: '60px', height: '2px', background: '#E84B2B', borderRadius: '1px 0 0 1px' }} />
+                <div style={{ width: '60px', height: '2px', background: '#C4713B' }} />
+                <div style={{ width: '60px', height: '2px', background: '#D4943A', borderRadius: '0 1px 1px 0' }} />
+              </div>
+              <p style={{ ...S.muted, flex: 1 }}>Thin variant - subsection dividers, subtle accents</p>
+              <button
+                onClick={() => downloadBar('thin')}
+                style={{
+                  fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 600,
+                  letterSpacing: '0.1em', textTransform: 'uppercase',
+                  padding: '6px 12px', borderRadius: '4px',
+                  border: '1px solid rgba(212,148,58,0.5)',
+                  background: 'transparent', color: '#D4943A', cursor: 'pointer',
+                  flexShrink: 0,
+                }}
+              >
+                PNG
+              </button>
             </div>
-            <p style={S.muted}>Thin variant (2px) - subsection dividers, subtle accents</p>
           </div>
         </div>
       </section>
