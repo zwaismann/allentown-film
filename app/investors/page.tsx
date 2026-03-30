@@ -762,8 +762,8 @@ function AttachmentsSection() {
       }}>
         <div style={{
           width: '80px', height: '80px', borderRadius: '50%', flexShrink: 0,
-          backgroundImage: 'url(/images/dane-dehaan.webp)',
-          backgroundSize: 'cover', backgroundPosition: 'center 15%',
+          backgroundImage: 'url(/images/dane-dehaan.png)',
+          backgroundSize: 'cover', backgroundPosition: 'center center',
           border: '2px solid rgba(212,148,58,0.4)',
         }} />
         <div>

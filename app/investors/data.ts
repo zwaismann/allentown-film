@@ -173,7 +173,7 @@ export const CAST = [
   {
     name: 'Dane DeHaan',
     role: 'Ron Kistler',
-    image: '/images/ron-kistler.webp',
+    image: '/images/dane-dehaan.png',
     credits: 'Chronicle ($126M worldwide), The Amazing Spider-Man 2, Valerian and the City of a Thousand Planets, A Cure for Wellness, ZeroZeroZero',
     value: 'Internationally recognized name that elevates distribution value, drives streaming platform interest, and strengthens international pre-sale positioning.',
     status: 'Attached',
