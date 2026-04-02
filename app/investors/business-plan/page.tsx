@@ -548,7 +548,7 @@ export default function BusinessPlanPage() {
 
         <div className="bp-h3">International Strategy</div>
         <p>
-          Pilar de Posadas (EP, Scenic Rights) leads international sales strategy with established relationships across European, Asian, and Latin American markets. Dane DeHaan's <em>Valerian</em> performance has a meaningful footprint in French, German, and Japanese markets. International pre-sales will be pursued in parallel with domestic festival strategy.
+          Pilar de Posadas (Producer, Scenic Rights) leads international sales strategy with established relationships across European, Asian, and Latin American markets. Dane DeHaan's <em>Valerian</em> performance has a meaningful footprint in French, German, and Japanese markets. International pre-sales will be pursued in parallel with domestic festival strategy.
         </p>
       </div>
 

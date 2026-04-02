@@ -98,7 +98,7 @@ export default function InvestorSection() {
           </p>
 
           <form onSubmit={handleSubmit} style={{
-            display: 'flex', gap: '12px', justifyContent: 'center', alignItems: 'center',
+            display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center', alignItems: 'center',
           }}>
             <input
               type="password"
@@ -115,7 +115,7 @@ export default function InvestorSection() {
                 borderRadius: '4px',
                 color: '#E8DCC8',
                 outline: 'none',
-                width: '220px',
+                width: 'min(100%, 220px)',
                 transition: 'border-color 0.3s ease',
               }}
             />

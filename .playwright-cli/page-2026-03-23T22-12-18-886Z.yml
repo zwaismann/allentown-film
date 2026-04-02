@@ -1,0 +1,276 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "getdetox" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - button "Toggle menu" [ref=e5] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e13]:
+        - paragraph [ref=e14]: Planning & Timelines
+        - heading "How Long Does Detox Take? Timelines for Every Substance" [level=1] [ref=e15]
+        - paragraph [ref=e16]: Withdrawal looks different depending on what you are detoxing from. Here is what to expect, phase by phase, for the most commonly used substances.
+      - generic [ref=e18]: Scroll to learn more
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: The Variables
+        - heading "What Determines How Long Detox Takes?" [level=2] [ref=e24]
+      - generic [ref=e25]:
+        - paragraph [ref=e26]: No two people go through detox the same way. Your timeline depends on a combination of factors that are unique to your body and your history of use.
+        - paragraph [ref=e27]: "Before looking at specific substance timelines, it helps to understand the variables that shape how long withdrawal lasts and how intense it gets. These are the main factors that determine your detox duration:"
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - heading "Substance Type" [level=4] [ref=e30]
+          - paragraph [ref=e31]: Different drugs create different types of physical dependence. Opioid withdrawal is intense but relatively short. Benzodiazepine withdrawal can stretch for months. Alcohol withdrawal carries serious medical risks in its early phase. The substance itself is the single biggest predictor of your timeline.
+        - generic [ref=e32]:
+          - heading "Duration of Use" [level=4] [ref=e33]
+          - paragraph [ref=e34]: Someone who has been using for a few weeks will generally have a shorter, less severe withdrawal than someone who has been using daily for years. Long-term use gives your body more time to adapt to the substance, which means it takes longer to readjust without it.
+        - generic [ref=e35]:
+          - heading "Dosage and Frequency" [level=4] [ref=e36]
+          - paragraph [ref=e37]: Higher doses and more frequent use create deeper physical dependence. If you have been taking large amounts regularly, your body has to do more work to recalibrate during withdrawal, which often means a longer and more uncomfortable process.
+        - generic [ref=e38]:
+          - heading "Metabolism and Physical Health" [level=4] [ref=e39]
+          - paragraph [ref=e40]: Age, weight, liver function, kidney function, and overall physical condition all affect how quickly your body processes and eliminates substances. Better baseline health generally supports a smoother detox, though it does not eliminate withdrawal.
+        - generic [ref=e41]:
+          - heading "Co-Occurring Conditions" [level=4] [ref=e42]
+          - paragraph [ref=e43]: If you are also dealing with anxiety, depression, chronic pain, or other mental or physical health conditions, withdrawal can be more complex. These conditions can intensify certain symptoms and may require additional medical management during detox.
+        - generic [ref=e44]:
+          - heading "Polysubstance Use" [level=4] [ref=e45]
+          - paragraph [ref=e46]: Using multiple substances at the same time creates overlapping withdrawal syndromes. If you are detoxing from opioids and benzodiazepines simultaneously, for example, the process is more complicated and typically takes longer than detoxing from one substance alone.
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - paragraph [ref=e50]: Substance Timeline
+        - heading "Opioid Withdrawal Timeline" [level=2] [ref=e51]
+      - generic [ref=e52]:
+        - paragraph [ref=e53]: Opioid withdrawal is rarely life-threatening, but it is intensely uncomfortable. Most people describe the acute phase as a severe flu combined with overwhelming anxiety and restlessness.
+        - paragraph [ref=e54]:
+          - text: The timeline below applies to short-acting opioids like heroin, fentanyl, and oxycodone. Long-acting opioids like methadone have a delayed onset and longer duration. For a deeper look at the full process, read our
+          - link "complete opioid detox guide" [ref=e55] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - text: .
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]: Phase 1
+          - 'heading "Hours 8-24: Early Withdrawal" [level=4] [ref=e59]'
+          - paragraph [ref=e60]: Symptoms begin within 8-24 hours of the last dose. You may feel anxiety, muscle aches, restlessness, excessive yawning, watery eyes, and a runny nose. Sleep becomes difficult. These early symptoms are uncomfortable but manageable.
+        - generic [ref=e61]:
+          - generic [ref=e62]: Phase 2
+          - 'heading "Hours 24-72: Peak Symptoms" [level=4] [ref=e63]'
+          - paragraph [ref=e64]: This is the hardest stretch. Symptoms intensify to include nausea, vomiting, diarrhea, abdominal cramps, goosebumps, dilated pupils, and rapid heart rate. Cravings are at their strongest. Most people who relapse during detox do so in this window.
+        - generic [ref=e65]:
+          - generic [ref=e66]: Phase 3
+          - 'heading "Days 3-5: Gradual Improvement" [level=4] [ref=e67]'
+          - paragraph [ref=e68]: The worst physical symptoms start to ease. Nausea and cramping subside. Sleep may still be disrupted, and you will likely feel fatigued and emotionally drained. Appetite slowly begins to return. You are past the peak, but your body is still adjusting.
+        - generic [ref=e69]:
+          - generic [ref=e70]: Phase 4
+          - 'heading "Days 5-7+: Resolution" [level=4] [ref=e71]'
+          - paragraph [ref=e72]:
+            - text: Most acute physical symptoms have resolved. Lingering effects like low energy, irritability, and sleep problems can continue for one to two weeks. Psychological cravings may persist much longer and are best addressed through ongoing treatment, counseling, or
+            - link "medication-assisted support" [ref=e73] [cursor=pointer]:
+              - /url: /withdrawal-symptoms/
+            - text: .
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: Substance Timeline
+        - heading "Alcohol Withdrawal Timeline" [level=2] [ref=e78]
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: Alcohol withdrawal can be medically dangerous. Unlike opioid withdrawal, alcohol withdrawal can cause seizures and a life-threatening condition called delirium tremens (DTs). Medical supervision is strongly recommended.
+        - paragraph [ref=e81]:
+          - text: The severity of alcohol withdrawal depends on how long and how heavily you have been drinking. If you have a history of heavy daily use, do not attempt to stop suddenly without medical support. Read our
+          - link "alcohol detox guide" [ref=e82] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - text: for a full breakdown of the medical protocols involved.
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]: Phase 1
+          - 'heading "Hours 6-12: Early Symptoms" [level=4] [ref=e86]'
+          - paragraph [ref=e87]: Withdrawal begins quickly. Early symptoms include anxiety, hand tremors, headache, nausea, insomnia, and sweating. Heart rate and blood pressure may increase. These symptoms can feel similar to a bad hangover but will get worse instead of better.
+        - generic [ref=e88]:
+          - generic [ref=e89]: Phase 2
+          - 'heading "Hours 12-48: Escalation" [level=4] [ref=e90]'
+          - paragraph [ref=e91]: Symptoms intensify. Some people experience hallucinations (visual, auditory, or tactile) beginning around 12-24 hours. Seizures can occur in this window, most commonly at 24-48 hours. This is why medical monitoring during this phase is critical.
+        - generic [ref=e92]:
+          - generic [ref=e93]: Phase 3
+          - 'heading "Hours 48-72: Highest Risk" [level=4] [ref=e94]'
+          - paragraph [ref=e95]: This is the most dangerous period. Delirium tremens (DTs) typically emerge between 48-72 hours and can include severe confusion, agitation, fever, rapid heartbeat, and hallucinations. DTs occur in roughly 3-5% of people withdrawing from alcohol and require emergency medical treatment.
+        - generic [ref=e96]:
+          - generic [ref=e97]: Phase 4
+          - 'heading "Days 3-7: Recovery Phase" [level=4] [ref=e98]'
+          - paragraph [ref=e99]: For most people, acute symptoms begin to resolve after 72 hours. Tremors subside, sleep starts to improve, and anxiety decreases. Full resolution of symptoms typically takes 5-7 days, though some people experience lingering mood disturbances and sleep problems for several weeks.
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - paragraph [ref=e103]: Substance Timeline
+        - heading "Benzodiazepine Withdrawal Timeline" [level=2] [ref=e104]
+      - generic [ref=e105]:
+        - paragraph [ref=e106]: Benzodiazepine withdrawal is one of the longest and most unpredictable detox processes. Like alcohol, benzo withdrawal can cause seizures and should never be done without medical guidance.
+        - paragraph [ref=e107]: Benzos include medications like Xanax (alprazolam), Valium (diazepam), Klonopin (clonazepam), and Ativan (lorazepam). The standard medical approach is a slow, gradual taper rather than abrupt cessation. Stopping benzodiazepines suddenly after prolonged use can be life-threatening.
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e110]: Phase 1
+          - 'heading "Days 1-4: Onset" [level=4] [ref=e111]'
+          - paragraph [ref=e112]: Withdrawal onset depends on the specific benzodiazepine. Short-acting benzos like Xanax can produce symptoms within 6-8 hours. Longer-acting benzos like Valium may not produce noticeable withdrawal for 24-48 hours or longer. Early symptoms include rebound anxiety, insomnia, and restlessness.
+        - generic [ref=e113]:
+          - generic [ref=e114]: Phase 2
+          - 'heading "Days 5-14: Acute Withdrawal" [level=4] [ref=e115]'
+          - paragraph [ref=e116]: Symptoms can intensify significantly. This phase may include increased anxiety, panic attacks, tremors, muscle tension and pain, difficulty concentrating, nausea, sweating, and heightened sensitivity to light, sound, and touch. Seizure risk is present, especially if quitting without a taper.
+        - generic [ref=e117]:
+          - generic [ref=e118]: Phase 3
+          - 'heading "Weeks 2-4: Gradual Reduction" [level=4] [ref=e119]'
+          - paragraph [ref=e120]: With a medically supervised taper, acute symptoms begin to ease during this phase. Sleep slowly improves. Anxiety remains elevated compared to baseline but is less intense. Physical symptoms like muscle tension and GI issues start to resolve. This is where many people notice incremental daily improvement.
+        - generic [ref=e121]:
+          - generic [ref=e122]: Phase 4
+          - 'heading "Months 1-6+: Protracted Withdrawal" [level=4] [ref=e123]'
+          - paragraph [ref=e124]: Many people experience protracted withdrawal symptoms for months after their last dose. These can include waves of anxiety, depression, insomnia, cognitive fog, and emotional blunting. This phase is not dangerous, but it is discouraging. Understanding that it is normal can help you stay the course.
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - paragraph [ref=e128]: Substance Timeline
+        - heading "Stimulant Withdrawal Timeline" [level=2] [ref=e129]
+      - generic [ref=e130]:
+        - paragraph [ref=e131]: Stimulant withdrawal from cocaine, methamphetamine, or prescription amphetamines is primarily psychological rather than physical. It is not usually medically dangerous, but the emotional crash can be severe.
+        - paragraph [ref=e132]:
+          - text: Unlike opioid and alcohol withdrawal, there is no standard medication protocol for stimulant detox. The primary risks are depression, fatigue, and intense cravings that can drive relapse. For a broader look at
+          - link "what withdrawal feels like" [ref=e133] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - text: across different substances, see our symptoms guide.
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - generic [ref=e136]: Phase 1
+          - 'heading "Hours 12-48: The Crash" [level=4] [ref=e137]'
+          - paragraph [ref=e138]: Within hours of the last dose, you may experience a dramatic energy crash. Symptoms include extreme fatigue, increased appetite, depression, agitation, and an intense need for sleep. Some people sleep for extended periods during this phase. The crash is your body compensating for the overstimulation.
+        - generic [ref=e139]:
+          - generic [ref=e140]: Phase 2
+          - 'heading "Days 3-10: Acute Withdrawal" [level=4] [ref=e141]'
+          - paragraph [ref=e142]: After the initial crash, ongoing symptoms include persistent low mood, difficulty experiencing pleasure (anhedonia), vivid or unpleasant dreams, irritability, slowed thinking, and continued fatigue. Cravings can be strong during this period, particularly in environments or situations associated with past use.
+        - generic [ref=e143]:
+          - generic [ref=e144]: Phase 3
+          - 'heading "Weeks 2-3+: Stabilization" [level=4] [ref=e145]'
+          - paragraph [ref=e146]: Most acute symptoms fade within two to three weeks. Energy levels return, mood stabilizes, and sleep normalizes. However, intermittent cravings and episodes of low mood can continue for several weeks to months, especially without behavioral support or therapy. This is where ongoing treatment plays a critical role in preventing relapse.
+    - generic [ref=e148]:
+      - generic [ref=e149]:
+        - paragraph [ref=e150]: Beyond Acute Withdrawal
+        - heading "Post-Acute Withdrawal Syndrome (PAWS)" [level=2] [ref=e151]
+      - generic [ref=e152]:
+        - paragraph [ref=e153]: Even after the acute detox phase ends, many people experience lingering symptoms that can last for weeks to months. This is called post-acute withdrawal syndrome, or PAWS.
+        - paragraph [ref=e154]: PAWS is not a sign that something went wrong with your detox. It is a normal part of your brain and body recalibrating after prolonged substance use. Understanding that PAWS is temporary and expected can help you push through difficult stretches without giving up.
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - heading "Common PAWS Symptoms" [level=3] [ref=e157]
+          - list [ref=e158]:
+            - listitem [ref=e159]: Mood swings and emotional instability
+            - listitem [ref=e160]: Anxiety and irritability
+            - listitem [ref=e161]: Sleep disturbances and insomnia
+            - listitem [ref=e162]: Fatigue and low energy
+            - listitem [ref=e163]: Difficulty concentrating or thinking clearly
+            - listitem [ref=e164]: Reduced ability to feel pleasure
+            - listitem [ref=e165]: Intermittent cravings
+        - generic [ref=e167]:
+          - heading "Which Substances Cause PAWS?" [level=3] [ref=e168]
+          - paragraph [ref=e169]:
+            - text: PAWS is most commonly associated with long-term use of
+            - link "opioids" [ref=e170] [cursor=pointer]:
+              - /url: /opioid-detox/
+            - text: ","
+            - link "alcohol" [ref=e171] [cursor=pointer]:
+              - /url: /alcohol-detox/
+            - text: ", and benzodiazepines, though it can occur with stimulants and other substances as well."
+          - paragraph [ref=e172]:
+            - strong [ref=e173]: "Duration:"
+            - text: PAWS typically lasts 6 months to 2 years, with symptoms coming in waves rather than being constant. The waves get shorter and less intense over time.
+          - paragraph [ref=e174]:
+            - strong [ref=e175]: "Management:"
+            - text: Regular exercise, consistent sleep habits, a healthy diet, counseling, and support groups are all shown to help reduce PAWS symptoms. Medication-assisted treatment can also help for opioid and alcohol-related PAWS.
+    - generic [ref=e177]:
+      - generic [ref=e178]:
+        - paragraph [ref=e179]: Treatment Settings
+        - 'heading "Inpatient vs. Outpatient: How Setting Affects Duration" [level=2] [ref=e180]'
+      - paragraph [ref=e182]: Where you detox can affect how long the process takes, how safe it is, and what kind of support you receive during and after withdrawal.
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - heading "Inpatient Medical Detox" [level=4] [ref=e185]
+          - paragraph [ref=e186]:
+            - strong [ref=e187]: "Typical stay:"
+            - text: 3-10 days, depending on the substance and severity.
+          - paragraph [ref=e188]: Inpatient detox provides 24/7 medical monitoring, medication management, and a controlled environment. This is the recommended setting for alcohol and benzodiazepine withdrawal due to the risk of seizures and other medical complications. It is also preferred for polysubstance use or people with serious co-occurring health conditions.
+          - paragraph [ref=e189]:
+            - text: To understand how pricing works, read our
+            - link "detox cost breakdown" [ref=e190] [cursor=pointer]:
+              - /url: /detox-cost/
+            - text: .
+        - generic [ref=e191]:
+          - heading "Outpatient Detox" [level=4] [ref=e192]
+          - paragraph [ref=e193]:
+            - strong [ref=e194]: "Typical duration:"
+            - text: 1-4 weeks, with regular check-ins and appointments.
+          - paragraph [ref=e195]: Outpatient programs allow you to live at home while attending scheduled medical visits for monitoring, medication adjustments, and support. This can work for opioid withdrawal with medication-assisted treatment or mild to moderate substance dependence. It requires a stable home environment and a strong support system.
+          - paragraph [ref=e196]:
+            - text: Wondering if
+            - link "detoxing at home" [ref=e197] [cursor=pointer]:
+              - /url: /detox-at-home/
+            - text: is safe for your situation? Our guide covers when it may work and when it is not worth the risk.
+    - generic [ref=e200]:
+      - heading "These Timelines Are Guides, Not Guarantees" [level=3] [ref=e201]
+      - paragraph [ref=e202]: Every person's withdrawal experience is different. The timelines on this page are based on general medical patterns and clinical data, but your actual experience may be shorter or longer depending on the factors discussed above.
+      - paragraph [ref=e203]: If you are planning to detox, the most important step you can take is to get a medical evaluation first. A doctor can assess your specific risk factors, recommend the safest setting, and prescribe medications that can significantly reduce discomfort and risk.
+      - paragraph [ref=e204]:
+        - text: Not sure which type of detox is right for you?
+        - link "Rapid detox" [ref=e205] [cursor=pointer]:
+          - /url: /rapid-detox/
+        - text: is one option worth understanding, though it is not right for everyone. The best approach is the one you will actually follow through on, with the support you need to do it safely.
+    - generic [ref=e209]:
+      - generic [ref=e210]:
+        - paragraph [ref=e211]: You Don't Have to Do This Alone
+        - heading "Ready to Talk to Someone?" [level=2] [ref=e212]
+        - paragraph [ref=e213]: These free, confidential resources are available 24/7. No insurance needed, no commitment required. Just a conversation.
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - heading "SAMHSA National Helpline" [level=3] [ref=e216]
+          - link "1-800-662-4357" [ref=e217] [cursor=pointer]:
+            - /url: tel:18006624357
+          - paragraph [ref=e218]: Free, confidential, 24/7 treatment referral and information. Available in English and Spanish.
+        - generic [ref=e219]:
+          - heading "Crisis Text Line" [level=3] [ref=e220]
+          - paragraph [ref=e221]:
+            - text: Text
+            - strong [ref=e222]: HOME
+            - text: to
+            - strong [ref=e223]: "741741"
+          - paragraph [ref=e224]: Free, 24/7 crisis support via text message. Trained counselors available anytime.
+        - generic [ref=e225]:
+          - heading "988 Suicide & Crisis Lifeline" [level=3] [ref=e226]
+          - link "988" [ref=e227] [cursor=pointer]:
+            - /url: tel:988
+          - paragraph [ref=e228]: Call or text. For anyone in emotional distress, including substance-related crises.
+  - contentinfo [ref=e229]:
+    - generic [ref=e230]:
+      - generic [ref=e231]:
+        - generic [ref=e232]:
+          - link "getdetox" [ref=e233] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e234]: An informational resource about drug and alcohol detoxification. This site does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
+        - generic [ref=e235]:
+          - heading "Topics" [level=4] [ref=e236]
+          - link "Opioid Detox" [ref=e237] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - link "Alcohol Detox" [ref=e238] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - link "Rapid Detox" [ref=e239] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - link "Detox Timeline" [ref=e240] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - link "Detox Cost" [ref=e241] [cursor=pointer]:
+            - /url: /detox-cost/
+          - link "Withdrawal Symptoms" [ref=e242] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - link "Detox at Home" [ref=e243] [cursor=pointer]:
+            - /url: /detox-at-home/
+        - generic [ref=e244]:
+          - heading "Get Help" [level=4] [ref=e245]
+          - 'link "SAMHSA: 1-800-662-4357" [ref=e246] [cursor=pointer]':
+            - /url: tel:18006624357
+          - 'link "Crisis Line: 988" [ref=e247] [cursor=pointer]':
+            - /url: tel:988
+          - link "FindTreatment.gov" [ref=e248] [cursor=pointer]:
+            - /url: https://findtreatment.gov
+      - generic [ref=e249]:
+        - paragraph [ref=e250]: © 2026 GetDetox. For informational purposes only.
+        - paragraph [ref=e251]: If you are experiencing a medical emergency, call 911.

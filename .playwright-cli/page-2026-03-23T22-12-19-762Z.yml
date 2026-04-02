@@ -1,0 +1,323 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "getdetox" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - button "Toggle menu" [ref=e5] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e12]:
+      - navigation "Breadcrumb" [ref=e13]:
+        - link "Home" [ref=e14] [cursor=pointer]:
+          - /url: /
+        - text: › Detox at Home
+      - heading "Can You Detox at Home? What You Need to Know First" [level=1] [ref=e16]
+      - paragraph [ref=e18]: Many people search for ways to detox at home, and we understand why. It feels more private, more comfortable, and more in your control. But home detox is not safe for everyone, and in some cases it can be life-threatening. This guide will help you figure out whether home detox is an option for you, how to prepare if it is, and when you absolutely need medical help.
+    - generic [ref=e21]:
+      - strong [ref=e22]: "Important Safety Warning:"
+      - text: Some withdrawals are medical emergencies. Alcohol and benzodiazepine withdrawal can cause seizures and death. Never attempt home detox from these substances without medical guidance. If you are unsure, call your doctor or the SAMHSA helpline at
+      - link "1-800-662-4357" [ref=e23] [cursor=pointer]:
+        - /url: tel:18006624357
+      - text: .
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - paragraph [ref=e27]: Understanding Your Options
+        - heading "When Home Detox May Be an Option" [level=2] [ref=e28]
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: "Home detox is not the right choice for most people, but there are situations where it can be a reasonable option, particularly if you have medical guidance along the way. You may be a candidate for home detox if:"
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - text: You have a
+            - strong [ref=e33]: mild
+            - text: level of physical dependence, such as short-term opioid use at lower doses
+          - listitem [ref=e34]: Your history of use is relatively short (weeks rather than months or years)
+          - listitem [ref=e35]: You have a strong support system, meaning someone who can stay with you throughout the process
+          - listitem [ref=e36]: A doctor or medical professional is available to advise you and can be reached if something goes wrong
+          - listitem [ref=e37]: You have no history of seizures, severe withdrawal, or delirium tremens
+          - listitem [ref=e38]: You are only dependent on one substance, not multiple
+        - paragraph [ref=e39]:
+          - text: Even in these situations, medical detox, whether inpatient or
+          - link "outpatient" [ref=e40] [cursor=pointer]:
+            - /url: /detox-cost/
+          - text: ", will always be safer and more comfortable than going it alone. Medications like buprenorphine for"
+          - link "opioid withdrawal" [ref=e41] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - text: or benzodiazepine tapers for
+          - link "alcohol withdrawal" [ref=e42] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - text: can dramatically reduce suffering and improve outcomes.
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - paragraph [ref=e46]: Critical Safety Information
+        - heading "When Home Detox Is NOT Safe" [level=2] [ref=e47]
+      - paragraph [ref=e49]: There are situations where attempting to detox at home is genuinely dangerous. If any of the following apply to you, please seek medical detox. This is not about willpower. It is about biology.
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: High Risk
+          - heading "Alcohol Dependence" [level=4] [ref=e53]
+          - paragraph [ref=e54]:
+            - text: Alcohol withdrawal can cause grand mal seizures, delirium tremens, and death. The risk is highest 48 to 72 hours after your last drink. Even moderate daily drinking over an extended period can produce dangerous withdrawal. Medical supervision is essential. Read our full
+            - link "alcohol detox guide" [ref=e55] [cursor=pointer]:
+              - /url: /alcohol-detox/
+            - text: .
+        - generic [ref=e56]:
+          - generic [ref=e57]: High Risk
+          - heading "Benzodiazepine Dependence" [level=4] [ref=e58]
+          - paragraph [ref=e59]:
+            - text: Benzodiazepine withdrawal (Xanax, Valium, Klonopin, Ativan) can also cause life-threatening seizures. These medications require a carefully supervised medical taper. Stopping cold turkey is never safe. Check our
+            - link "withdrawal symptoms guide" [ref=e60] [cursor=pointer]:
+              - /url: /withdrawal-symptoms/
+            - text: for more details.
+        - generic [ref=e61]:
+          - generic [ref=e62]: Increased Risk
+          - heading "Long-Term Heavy Use" [level=4] [ref=e63]
+          - paragraph [ref=e64]: The longer and heavier your use, the more severe withdrawal tends to be. Years of daily opioid use, heavy drinking, or high-dose benzodiazepine use all increase the likelihood of serious complications. Your body has had more time to adapt, and the readjustment will be more intense.
+        - generic [ref=e65]:
+          - generic [ref=e66]: Increased Risk
+          - heading "History of Seizures or DTs" [level=4] [ref=e67]
+          - paragraph [ref=e68]: If you have experienced seizures, delirium tremens, or other severe withdrawal symptoms in the past, you are at higher risk of experiencing them again. Each withdrawal episode can be worse than the last, a phenomenon called kindling. Medical monitoring is critical.
+        - generic [ref=e69]:
+          - generic [ref=e70]: Increased Risk
+          - heading "Polysubstance Use" [level=4] [ref=e71]
+          - paragraph [ref=e72]: Using multiple substances at the same time (for example, opioids and benzodiazepines, or alcohol and stimulants) creates unpredictable and potentially dangerous withdrawal patterns. The interactions between withdrawals make home detox significantly more risky.
+        - generic [ref=e73]:
+          - generic [ref=e74]: Practical Risk
+          - heading "No Support System" [level=4] [ref=e75]
+          - paragraph [ref=e76]: Detoxing alone at home, with no one to check on you, help you stay hydrated, or call for help if something goes wrong, is never recommended. If you do not have someone who can be present with you through the process, medical detox provides the supervision you need.
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: Side by Side
+        - heading "Home Detox vs. Medical Detox" [level=2] [ref=e81]
+      - paragraph [ref=e83]: Understanding the differences can help you make the right decision for your situation. Neither option is one-size-fits-all, but medical detox offers critical advantages when safety is a concern.
+      - generic [ref=e84]:
+        - generic [ref=e86]:
+          - heading "Home Detox" [level=3] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]: More privacy and comfort in familiar surroundings
+            - listitem [ref=e90]: No facility costs or insurance requirements
+            - listitem [ref=e91]: You control the environment and pace
+          - heading "Drawbacks" [level=4] [ref=e92]
+          - list [ref=e93]:
+            - listitem [ref=e94]: No medical monitoring for dangerous symptoms
+            - listitem [ref=e95]: No access to medications that reduce withdrawal severity
+            - listitem [ref=e96]: Higher risk of relapse due to access to substances
+            - listitem [ref=e97]: No professional support during the hardest moments
+            - listitem [ref=e98]: Can be life-threatening for alcohol and benzo withdrawal
+        - generic [ref=e100]:
+          - heading "Medical Detox" [level=3] [ref=e101]
+          - list [ref=e102]:
+            - listitem [ref=e103]: 24/7 monitoring by medical professionals
+            - listitem [ref=e104]: Medications to manage pain, nausea, anxiety, and cravings
+            - listitem [ref=e105]: Immediate response if complications arise (seizures, cardiac events)
+            - listitem [ref=e106]: Structured environment away from triggers and access to substances
+            - listitem [ref=e107]: Higher completion rates and smoother transition to ongoing treatment
+          - heading "Drawbacks" [level=4] [ref=e108]
+          - list [ref=e109]:
+            - listitem [ref=e110]:
+              - text: Can be expensive without insurance (see our
+              - link "cost guide" [ref=e111] [cursor=pointer]:
+                - /url: /detox-cost/
+              - text: )
+            - listitem [ref=e112]: Requires time away from work and family
+            - listitem [ref=e113]: Less personal control over your environment
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - paragraph [ref=e117]: If You Choose Home Detox
+        - heading "How to Prepare for Home Detox" [level=2] [ref=e118]
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: If you and your doctor have determined that home detox is appropriate for your situation, preparation is everything. Do not start until you have checked off every item on this list.
+        - list [ref=e121]:
+          - listitem [ref=e122]:
+            - strong [ref=e123]: Talk to your doctor first.
+            - text: Get medical guidance specific to your substance, dosage, and health history. Ask about medications that can help manage symptoms.
+          - listitem [ref=e124]:
+            - strong [ref=e125]: Clear your schedule.
+            - text: Plan for at least 5 to 7 days where you have no obligations. Withdrawal is physically and mentally exhausting. You will not be able to work or handle responsibilities. See our
+            - link "detox timeline guide" [ref=e126] [cursor=pointer]:
+              - /url: /detox-timeline/
+            - text: for substance-specific timeframes.
+          - listitem [ref=e127]:
+            - strong [ref=e128]: Arrange a support person.
+            - text: Someone needs to be with you, or at minimum checking on you every few hours. They should know what to expect and when to call 911.
+          - listitem [ref=e129]:
+            - strong [ref=e130]: Stock up on supplies.
+            - text: Hydration, nutrition, OTC medications, and comfort items (detailed in the next section).
+          - listitem [ref=e131]:
+            - strong [ref=e132]: Remove all substances from your home.
+            - text: This includes alcohol, prescription medications you are misusing, and any paraphernalia. If you have access during withdrawal, the temptation will be overwhelming.
+          - listitem [ref=e133]:
+            - strong [ref=e134]: Write down your emergency plan.
+            - text: Know your doctor's number, your nearest emergency room, and the specific symptoms that mean you need to call 911 immediately.
+          - listitem [ref=e135]:
+            - strong [ref=e136]: Set up your space.
+            - text: Clean bedding, easy access to the bathroom, a comfortable temperature, and entertainment to help pass the time during the hardest days.
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - paragraph [ref=e140]: Your Home Detox Kit
+        - heading "What to Have On Hand" [level=2] [ref=e141]
+      - generic [ref=e142]:
+        - paragraph [ref=e143]:
+          - text: These items will not eliminate
+          - link "withdrawal symptoms" [ref=e144] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - text: ", but they can make the process more manageable. Have everything ready before you begin."
+        - list [ref=e145]:
+          - listitem [ref=e146]:
+            - strong [ref=e147]: Electrolyte drinks
+            - text: (Pedialyte, Gatorade, or electrolyte packets) to prevent dehydration from vomiting and diarrhea
+          - listitem [ref=e148]:
+            - strong [ref=e149]: Anti-diarrheal medication
+            - text: (loperamide/Imodium), especially important for opioid withdrawal
+          - listitem [ref=e150]:
+            - strong [ref=e151]: Anti-nausea medication
+            - text: (bismuth subsalicylate/Pepto-Bismol or doctor-prescribed ondansetron)
+          - listitem [ref=e152]:
+            - strong [ref=e153]: Over-the-counter pain relief
+            - text: (ibuprofen or acetaminophen) for body aches and headaches
+          - listitem [ref=e154]:
+            - strong [ref=e155]: Heating pad
+            - text: for muscle cramps, restless legs, and body pain
+          - listitem [ref=e156]:
+            - strong [ref=e157]: Clean bedding and towels
+            - text: ", with extras, because you will sweat through them"
+          - listitem [ref=e158]:
+            - strong [ref=e159]: Bland, easy-to-digest foods
+            - text: (crackers, broth, bananas, rice, toast)
+          - listitem [ref=e160]:
+            - strong [ref=e161]: Water bottles
+            - text: at your bedside so you can sip constantly
+          - listitem [ref=e162]:
+            - strong [ref=e163]: Distractions
+            - text: like movies, audiobooks, podcasts, or music to get through long, uncomfortable hours
+          - listitem [ref=e164]:
+            - strong [ref=e165]: A thermometer
+            - text: to monitor for fever
+          - listitem [ref=e166]:
+            - strong [ref=e167]: Melatonin or chamomile tea
+            - text: for sleeplessness (ask your doctor before taking any sleep aids)
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - paragraph [ref=e171]: Staying Safer
+        - heading "Harm Reduction During Home Detox" [level=2] [ref=e172]
+      - generic [ref=e173]:
+        - paragraph [ref=e174]: If you are going to detox at home, these harm reduction practices can significantly reduce your risk. They are not optional. They could save your life.
+        - list [ref=e175]:
+          - listitem [ref=e176]:
+            - strong [ref=e177]: Keep Narcan (naloxone) available
+            - text: if you are detoxing from opioids. After even a few days of withdrawal, your tolerance drops dramatically. If you relapse, the dose you used to take can now be fatal. Make sure your support person knows how to administer it.
+          - listitem [ref=e178]:
+            - strong [ref=e179]: Never use alone.
+            - text: If you do relapse during or after home detox, using alone is the single biggest risk factor for fatal overdose. Have someone present or at minimum call the Never Use Alone hotline at
+            - link "1-800-484-2900" [ref=e180] [cursor=pointer]:
+              - /url: tel:18004842900
+            - text: .
+          - listitem [ref=e181]:
+            - strong [ref=e182]: Know when to call 911.
+            - text: Review the emergency symptoms in the section below and make sure your support person knows them too. Do not wait to see if it gets better. Call immediately.
+          - listitem [ref=e183]:
+            - strong [ref=e184]: Taper when possible, do not stop cold turkey.
+            - text: For many substances, a gradual reduction under medical guidance is safer and more tolerable than abrupt cessation. This is especially critical for alcohol and benzodiazepines. Your doctor can create a tapering schedule.
+          - listitem [ref=e185]:
+            - strong [ref=e186]: Stay hydrated constantly.
+            - text: Dehydration from vomiting and diarrhea can become severe quickly. Sip electrolyte drinks throughout the day, even if you do not feel thirsty.
+          - listitem [ref=e187]:
+            - strong [ref=e188]: Do not add new substances.
+            - text: Do not drink alcohol to ease opioid withdrawal, or take benzodiazepines without a prescription to manage anxiety. Adding substances creates new risks and new dependencies.
+    - generic [ref=e190]:
+      - generic [ref=e191]:
+        - paragraph [ref=e192]: Know the Red Flags
+        - heading "When to Go to the Emergency Room" [level=2] [ref=e193]
+      - paragraph [ref=e195]: If you or your support person notice any of these symptoms during home detox, call 911 or go to the emergency room immediately. These are signs that withdrawal has become a medical emergency.
+      - generic [ref=e196]:
+        - generic [ref=e197]:
+          - heading "Call 911 Immediately" [level=4] [ref=e198]
+          - list [ref=e199]:
+            - listitem [ref=e200]: Seizures or convulsions of any kind
+            - listitem [ref=e201]: Chest pain or difficulty breathing
+            - listitem [ref=e202]: Severe confusion, hallucinations, or delirium
+            - listitem [ref=e203]: Loss of consciousness or inability to wake up
+            - listitem [ref=e204]: Suicidal thoughts or plans to harm yourself
+        - generic [ref=e205]:
+          - heading "Go to the ER" [level=4] [ref=e206]
+          - list [ref=e207]:
+            - listitem [ref=e208]: Severe dehydration (no urine output, extreme dizziness, rapid heartbeat)
+            - listitem [ref=e209]: Persistent vomiting that prevents keeping down any fluids for 12+ hours
+            - listitem [ref=e210]: Fever above 103°F (39.4°C)
+            - listitem [ref=e211]: Heart rate consistently above 120 beats per minute at rest
+            - listitem [ref=e212]: Severe tremors that prevent you from holding a cup of water
+      - paragraph [ref=e214]: Do not let fear of judgment or legal consequences stop you from seeking emergency help. Emergency rooms are required to treat you regardless of what substances are involved. Your life is more important than your privacy.
+    - generic [ref=e216]:
+      - generic [ref=e217]:
+        - paragraph [ref=e218]: A Middle Ground
+        - 'heading "A Better Option: Outpatient Detox" [level=2] [ref=e219]'
+      - generic [ref=e220]:
+        - paragraph [ref=e221]: If the idea of checking into a facility feels overwhelming, but you recognize that home detox alone is risky, outpatient detox may be the right fit.
+        - paragraph [ref=e222]: Outpatient detox lets you live at home while visiting a clinic daily (or several times a week) for medical monitoring, medication management, and support. You get the safety benefits of medical supervision without needing to leave your life behind for a week or more.
+        - paragraph [ref=e223]:
+          - text: Outpatient programs can prescribe medications like buprenorphine (Suboxone) for
+          - link "opioid detox" [ref=e224] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - text: or provide supervised tapers for other substances. They monitor your vitals, adjust medications as needed, and connect you with counseling and ongoing support.
+        - paragraph [ref=e225]:
+          - text: Outpatient detox is also significantly less expensive than inpatient care and is covered by most insurance plans. Learn more about costs and coverage in our
+          - link "detox cost guide" [ref=e226] [cursor=pointer]:
+            - /url: /detox-cost/
+          - text: .
+        - paragraph [ref=e227]: For many people, outpatient detox offers the best balance of safety, comfort, and practicality. It is not giving up control. It is being smart about keeping yourself safe while you get through the hardest part.
+    - generic [ref=e231]:
+      - generic [ref=e232]:
+        - paragraph [ref=e233]: You Don't Have to Do This Alone
+        - heading "Ready to Talk to Someone?" [level=2] [ref=e234]
+        - paragraph [ref=e235]: These free, confidential resources are available 24/7. No insurance needed, no commitment required. Just a conversation.
+      - generic [ref=e236]:
+        - generic [ref=e237]:
+          - heading "SAMHSA National Helpline" [level=3] [ref=e238]
+          - link "1-800-662-4357" [ref=e239] [cursor=pointer]:
+            - /url: tel:18006624357
+          - paragraph [ref=e240]: Free, confidential, 24/7 treatment referral and information. Available in English and Spanish.
+        - generic [ref=e241]:
+          - heading "Crisis Text Line" [level=3] [ref=e242]
+          - paragraph [ref=e243]:
+            - text: Text
+            - strong [ref=e244]: HOME
+            - text: to
+            - strong [ref=e245]: "741741"
+          - paragraph [ref=e246]: Free, 24/7 crisis support via text message. Trained counselors available anytime.
+        - generic [ref=e247]:
+          - heading "988 Suicide & Crisis Lifeline" [level=3] [ref=e248]
+          - link "988" [ref=e249] [cursor=pointer]:
+            - /url: tel:988
+          - paragraph [ref=e250]: Call or text. For anyone in emotional distress, including substance-related crises.
+  - contentinfo [ref=e251]:
+    - generic [ref=e252]:
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - link "getdetox" [ref=e255] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e256]: An informational resource about drug and alcohol detoxification. This site does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
+        - generic [ref=e257]:
+          - heading "Topics" [level=4] [ref=e258]
+          - link "Opioid Detox" [ref=e259] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - link "Alcohol Detox" [ref=e260] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - link "Rapid Detox" [ref=e261] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - link "Detox Timeline" [ref=e262] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - link "Detox Cost" [ref=e263] [cursor=pointer]:
+            - /url: /detox-cost/
+          - link "Withdrawal Symptoms" [ref=e264] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - link "Detox at Home" [ref=e265] [cursor=pointer]:
+            - /url: /detox-at-home/
+        - generic [ref=e266]:
+          - heading "Get Help" [level=4] [ref=e267]
+          - 'link "SAMHSA: 1-800-662-4357" [ref=e268] [cursor=pointer]':
+            - /url: tel:18006624357
+          - 'link "Crisis Line: 988" [ref=e269] [cursor=pointer]':
+            - /url: tel:988
+          - link "FindTreatment.gov" [ref=e270] [cursor=pointer]:
+            - /url: https://findtreatment.gov
+      - generic [ref=e271]:
+        - paragraph [ref=e272]: © 2026 GetDetox. For informational purposes only.
+        - paragraph [ref=e273]: If you are experiencing a medical emergency, call 911.

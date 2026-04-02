@@ -231,7 +231,7 @@ export default function BrandGuidePage() {
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
           gap: '16px',
         }}>
           {COLORS.map((color) => (
@@ -267,13 +267,13 @@ export default function BrandGuidePage() {
             It runs left to right: Rust Red, Rust, Amber. Available in thick (4px) and thin (2px) variants.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
               <div style={{ display: 'flex', gap: '0' }}>
                 <div style={{ width: '80px', height: '4px', background: '#E84B2B', borderRadius: '2px 0 0 2px' }} />
                 <div style={{ width: '80px', height: '4px', background: '#C4713B' }} />
                 <div style={{ width: '80px', height: '4px', background: '#D4943A', borderRadius: '0 2px 2px 0' }} />
               </div>
-              <p style={{ ...S.muted, flex: 1 }}>Thick variant - section headers, major dividers</p>
+              <p style={{ ...S.muted, flex: 1, minWidth: 0 }}>Thick variant - section headers, major dividers</p>
               <button
                 onClick={() => downloadBar('thick')}
                 style={{
@@ -288,13 +288,13 @@ export default function BrandGuidePage() {
                 Download PNG
               </button>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
               <div style={{ display: 'flex', gap: '0' }}>
                 <div style={{ width: '60px', height: '2px', background: '#E84B2B', borderRadius: '1px 0 0 1px' }} />
                 <div style={{ width: '60px', height: '2px', background: '#C4713B' }} />
                 <div style={{ width: '60px', height: '2px', background: '#D4943A', borderRadius: '0 1px 1px 0' }} />
               </div>
-              <p style={{ ...S.muted, flex: 1 }}>Thin variant - subsection dividers, subtle accents</p>
+              <p style={{ ...S.muted, flex: 1, minWidth: 0 }}>Thin variant - subsection dividers, subtle accents</p>
               <button
                 onClick={() => downloadBar('thin')}
                 style={{
@@ -432,7 +432,7 @@ export default function BrandGuidePage() {
 
           <div style={{ ...S.card, padding: '28px' }}>
             <p style={S.subheading}>Do's and Don'ts</p>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px' }}>
               <div>
                 <p style={{ ...S.muted, fontSize: '11px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#D4943A', marginBottom: '12px' }}>Do</p>
                 {[

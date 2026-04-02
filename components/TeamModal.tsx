@@ -49,7 +49,7 @@ const TEAM_BIOS: TeamMemberData[] = [
   },
   {
     name: 'ROBERTO ALCAZAR',
-    role: 'Executive Producer',
+    role: 'Producer',
     image: '/images/roberto-alcazar.webp',
     imagePosition: 'center 10%',
     imageScale: 1.32,

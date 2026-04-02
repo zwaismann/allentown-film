@@ -78,6 +78,7 @@ export default function InvestorModal({ open, onClose }: { open: boolean; onClos
       <div
         onClick={(e) => e.stopPropagation()}
         style={{
+          position: 'relative',
           background: '#14171B',
           border: '1px solid rgba(255,255,255,0.08)',
           borderRadius: '8px',
@@ -85,7 +86,7 @@ export default function InvestorModal({ open, onClose }: { open: boolean; onClos
           width: '100%',
           maxHeight: '80vh',
           overflowY: 'auto',
-          padding: 'clamp(32px, 5vw, 48px)',
+          padding: 'clamp(20px, 5vw, 48px)',
           opacity: visible ? 1 : 0,
           transform: visible ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.98)',
           transition: 'opacity 0.3s ease, transform 0.3s ease',

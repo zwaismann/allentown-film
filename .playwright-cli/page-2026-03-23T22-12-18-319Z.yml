@@ -1,0 +1,243 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "getdetox" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - button "Toggle menu" [ref=e5] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e12]:
+      - paragraph [ref=e13]: Substance Guide
+      - 'heading "Alcohol Detox: Why Medical Supervision Saves Lives" [level=1] [ref=e14]'
+      - paragraph [ref=e15]: Alcohol is one of the few substances where withdrawal itself can be fatal. If you or someone you care about is ready to stop drinking, understanding the risks and the process can make the difference between a safe detox and a dangerous one.
+    - generic [ref=e18]:
+      - heading "⚠ Medical Warning" [level=3] [ref=e19]
+      - paragraph [ref=e20]:
+        - strong [ref=e21]: Alcohol withdrawal can be life-threatening.
+        - text: Severe withdrawal can cause grand mal seizures, delirium tremens (DTs), and cardiovascular collapse. If you are a heavy or long-term drinker, do not attempt to stop drinking suddenly without medical guidance. If you or someone near you is experiencing confusion, seizures, high fever, or hallucinations after stopping alcohol, call 911 immediately.
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: The Science
+        - heading "Why Alcohol Withdrawal Is Different" [level=2] [ref=e26]
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: Most substance withdrawals are miserable. Alcohol withdrawal can kill you. Understanding why requires a quick look at what alcohol does to your brain.
+        - paragraph [ref=e29]: Alcohol enhances the effect of GABA, your brain's primary calming neurotransmitter, while suppressing glutamate, the main excitatory neurotransmitter. Over time, your brain compensates by producing less GABA and more glutamate to maintain balance. It essentially rewires itself to function with alcohol present.
+        - paragraph [ref=e30]: When you suddenly stop drinking, that compensation backfires. Without alcohol dampening the system, your brain is left in a hyperexcitable state. Too little calming activity, too much excitatory activity. This neurochemical imbalance is what causes the tremors, anxiety, seizures, and in severe cases, the life-threatening cascade of delirium tremens.
+        - paragraph [ref=e31]:
+          - text: This is fundamentally different from
+          - link "opioid withdrawal" [ref=e32] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - text: ", which is intensely uncomfortable but rarely fatal. Alcohol and benzodiazepines are the two substance classes where withdrawal itself poses a direct risk of death. This is why medical detox is not just recommended for alcohol, it is essential for anyone with significant dependence."
+        - paragraph [ref=e33]:
+          - text: If you are unsure about your level of dependence, our
+          - link "withdrawal symptoms guide" [ref=e34] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - text: can help you understand what to look for.
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - paragraph [ref=e38]: Know What to Expect
+        - heading "Alcohol Withdrawal Symptoms" [level=2] [ref=e39]
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Alcohol withdrawal symptoms range from mild discomfort to medical emergencies. The severity depends on how much you drink, how long you have been drinking, your age, overall health, and whether you have gone through withdrawal before.
+        - paragraph [ref=e42]: Repeated withdrawals tend to get worse each time, a phenomenon called "kindling." This means someone who has detoxed before may face more severe symptoms the next time, even if their drinking pattern has not changed.
+      - generic [ref=e43]:
+        - heading "Physical Symptoms" [level=3] [ref=e44]
+        - list [ref=e45]:
+          - listitem [ref=e46]: Tremors and shaking (often the first sign, starting in the hands)
+          - listitem [ref=e47]: Nausea, vomiting, and loss of appetite
+          - listitem [ref=e48]: Sweating and clammy skin
+          - listitem [ref=e49]: Rapid heart rate and elevated blood pressure
+          - listitem [ref=e50]: Headache
+          - listitem [ref=e51]: Seizures (can occur as early as 12 hours after last drink)
+          - listitem [ref=e52]: Fever and hyperthermia
+        - heading "Psychological Symptoms" [level=3] [ref=e53]
+        - list [ref=e54]:
+          - listitem [ref=e55]: Anxiety and restlessness
+          - listitem [ref=e56]: Irritability and agitation
+          - listitem [ref=e57]: Insomnia and disturbed sleep
+          - listitem [ref=e58]: Difficulty concentrating
+          - listitem [ref=e59]: Depression and mood swings
+          - listitem [ref=e60]: Hallucinations (visual, auditory, or tactile)
+          - listitem [ref=e61]: Severe confusion and disorientation (delirium tremens)
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - paragraph [ref=e65]: Phase by Phase
+        - heading "Alcohol Withdrawal Timeline" [level=2] [ref=e66]
+      - paragraph [ref=e68]:
+        - text: Withdrawal follows a relatively predictable pattern, though the severity varies from person to person. Here is what typically happens after your last drink. For a broader comparison across substances, see our
+        - link "complete detox timeline guide" [ref=e69] [cursor=pointer]:
+          - /url: /detox-timeline/
+        - text: .
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]: Phase 1
+          - heading "6 - 12 Hours" [level=4] [ref=e73]
+          - paragraph [ref=e74]: Early symptoms begin. You may experience anxiety, tremors in your hands, nausea, sweating, headache, and insomnia. Heart rate and blood pressure start to rise. These symptoms can feel like a severe hangover, but they will get worse before they get better.
+        - generic [ref=e75]:
+          - generic [ref=e76]: Phase 2
+          - heading "12 - 48 Hours" [level=4] [ref=e77]
+          - paragraph [ref=e78]: Symptoms intensify. This is when hallucinations may begin, typically visual (seeing things that are not there) but sometimes auditory or tactile. Seizure risk increases significantly. Blood pressure and heart rate continue to climb. This is the period where medical monitoring becomes critical.
+        - generic [ref=e79]:
+          - generic [ref=e80]: Phase 3
+          - heading "48 - 72 Hours" [level=4] [ref=e81]
+          - paragraph [ref=e82]:
+            - strong [ref=e83]: The most dangerous window.
+            - text: This is when delirium tremens (DTs) can develop in severe cases. DTs involve profound confusion, agitation, high fever, hallucinations, and dangerous cardiovascular instability. Without medical treatment, DTs carry a mortality rate of up to 37%. With proper care, that drops to 1-4%.
+        - generic [ref=e84]:
+          - generic [ref=e85]: Phase 4
+          - heading "Days 5 - 7+" [level=4] [ref=e86]
+          - paragraph [ref=e87]: Acute symptoms gradually resolve for most people. Sleep begins to improve, vital signs stabilize, and the worst physical discomfort fades. However, some people experience post-acute withdrawal symptoms (PAWS), including anxiety, depression, irritability, and sleep disruption, that can persist for weeks or months.
+    - blockquote [ref=e90]: Asking for help is not giving up. It is refusing to give up.
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - paragraph [ref=e94]: Assessment
+        - heading "Alcohol Withdrawal Severity Levels" [level=2] [ref=e95]
+      - paragraph [ref=e97]: Medical professionals use assessment tools like the CIWA-Ar (Clinical Institute Withdrawal Assessment for Alcohol) to gauge severity and guide treatment. Withdrawal generally falls into three categories.
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - heading "Mild Withdrawal" [level=4] [ref=e100]
+          - paragraph [ref=e101]: Anxiety, mild tremors, slight sweating, nausea, and insomnia. Vital signs are mildly elevated. You feel uncomfortable but can function. Mild withdrawal may be manageable with outpatient monitoring and medication, but a medical evaluation is still important to rule out escalation risk.
+        - generic [ref=e102]:
+          - heading "Moderate Withdrawal" [level=4] [ref=e103]
+          - paragraph [ref=e104]: Pronounced tremors, significant sweating, increased heart rate and blood pressure, agitation, nausea and vomiting, and possible mild hallucinations. Moderate withdrawal typically requires inpatient or closely monitored outpatient care with benzodiazepine support. Seizure risk is present.
+        - generic [ref=e105]:
+          - heading "Severe Withdrawal" [level=4] [ref=e106]
+          - paragraph [ref=e107]: High fever, seizures, severe confusion, vivid hallucinations, extreme agitation, and cardiovascular instability. This is delirium tremens territory. Severe withdrawal is a medical emergency requiring ICU-level care, IV medications, continuous monitoring, and immediate intervention. Without treatment, it can be fatal.
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - paragraph [ref=e111]: The Process
+        - heading "What Happens During Medical Alcohol Detox" [level=2] [ref=e112]
+      - generic [ref=e113]:
+        - paragraph [ref=e114]: Medical detox is not about willpower. It is about keeping your body safe while your brain chemistry rebalances. A typical inpatient alcohol detox lasts 3 to 7 days, though some cases require longer.
+        - heading "Medications" [level=3] [ref=e115]
+        - paragraph [ref=e116]: "Benzodiazepines are the gold standard for managing alcohol withdrawal. They work on the same GABA receptors that alcohol affects, which allows doctors to gradually taper your nervous system down instead of letting it crash. Common options include:"
+        - list [ref=e117]:
+          - listitem [ref=e118]:
+            - strong [ref=e119]: Diazepam (Valium)
+            - text: "- long-acting, provides smooth symptom control"
+          - listitem [ref=e120]:
+            - strong [ref=e121]: Chlordiazepoxide (Librium)
+            - text: "- long-acting, commonly used for milder cases"
+          - listitem [ref=e122]:
+            - strong [ref=e123]: Lorazepam (Ativan)
+            - text: "- shorter-acting, preferred for patients with liver damage"
+        - paragraph [ref=e124]: Other medications may include anti-seizure drugs (carbamazepine, gabapentin), beta-blockers for heart rate and blood pressure, and antipsychotics for severe agitation or hallucinations.
+        - heading "Monitoring" [level=3] [ref=e125]
+        - paragraph [ref=e126]: Your vital signs, blood pressure, heart rate, temperature, and oxygen levels, are checked regularly, sometimes every 1-2 hours during peak withdrawal. Staff use the CIWA-Ar scale to track symptom severity and adjust medication doses accordingly. This "symptom-triggered" approach means you get exactly the medication you need, no more, no less.
+        - heading "Nutrition and Hydration" [level=3] [ref=e127]
+        - paragraph [ref=e128]: Chronic heavy drinking depletes essential vitamins and minerals. Thiamine (vitamin B1) is given to prevent Wernicke's encephalopathy, a serious neurological condition. IV fluids address dehydration. Folic acid, magnesium, and a balanced diet support recovery. Many people are surprised by how much better they feel once their body starts getting proper nutrition again.
+        - heading "Duration and Cost" [level=3] [ref=e129]
+        - paragraph [ref=e130]:
+          - text: Most people complete alcohol detox in 3-7 days. Mild cases may finish in 3-4 days. Severe cases with DTs may require 7-10 days or more. For details on what this costs and how to pay for it, see our
+          - link "detox cost guide" [ref=e131] [cursor=pointer]:
+            - /url: /detox-cost/
+          - text: .
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - paragraph [ref=e135]: Understanding the Difference
+        - heading "Alcohol Detox vs. Rehab" [level=2] [ref=e136]
+      - generic [ref=e137]:
+        - paragraph [ref=e138]: Detox and rehab are not the same thing, and understanding the difference matters. Detox addresses the physical dependence. Rehab addresses the underlying patterns, triggers, and behaviors that drive the addiction.
+        - paragraph [ref=e139]: Detox gets alcohol out of your system safely. It manages the acute medical crisis of withdrawal. But it does not teach you how to stay sober, deal with cravings, navigate triggers, or rebuild your life. Research consistently shows that detox alone, without follow-up treatment, has very high relapse rates.
+        - paragraph [ref=e140]: "Think of it this way: detox is the emergency room, and rehab is the recovery process that follows. You need both. Many treatment facilities offer integrated programs that transition directly from detox into inpatient or outpatient rehabilitation, so there is no gap in care."
+        - paragraph [ref=e141]:
+          - text: If you are considering a faster approach to the detox phase, read about
+          - link "rapid detox" [ref=e142] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - text: and whether it may be appropriate for your situation.
+    - generic [ref=e144]:
+      - generic [ref=e145]:
+        - paragraph [ref=e146]: What Comes Next
+        - heading "After Alcohol Detox" [level=2] [ref=e147]
+      - generic [ref=e148]:
+        - paragraph [ref=e149]: Completing detox is a significant accomplishment, but it is the beginning of recovery, not the end. What you do after detox has the biggest impact on whether sobriety lasts.
+        - heading "Transition to Treatment" [level=3] [ref=e150]
+        - paragraph [ref=e151]: The best outcomes happen when people move directly from detox into a structured treatment program. This might be inpatient rehabilitation (28-90 days), intensive outpatient programs (IOP), or regular outpatient counseling. The right level of care depends on the severity of your addiction, your support system, and your personal circumstances.
+        - heading "Medication-Assisted Treatment" [level=3] [ref=e152]
+        - paragraph [ref=e153]: "Several FDA-approved medications can help reduce cravings and prevent relapse after alcohol detox:"
+        - list [ref=e154]:
+          - listitem [ref=e155]:
+            - strong [ref=e156]: Naltrexone
+            - text: "- blocks the pleasurable effects of alcohol, reducing cravings"
+          - listitem [ref=e157]:
+            - strong [ref=e158]: Acamprosate (Campral)
+            - text: "- helps restore normal brain chemistry and reduces post-acute withdrawal symptoms"
+          - listitem [ref=e159]:
+            - strong [ref=e160]: Disulfiram (Antabuse)
+            - text: "- causes unpleasant reactions if you drink, serving as a deterrent"
+        - heading "Peer Support" [level=3] [ref=e161]
+        - paragraph [ref=e162]: "Connection with others in recovery is one of the strongest predictors of long-term sobriety. Options include:"
+        - list [ref=e163]:
+          - listitem [ref=e164]:
+            - strong [ref=e165]: Alcoholics Anonymous (AA)
+            - text: "- the most widely available 12-step program, with meetings in nearly every community"
+          - listitem [ref=e166]:
+            - strong [ref=e167]: SMART Recovery
+            - text: "- a science-based alternative that focuses on self-empowerment and cognitive behavioral techniques"
+          - listitem [ref=e168]:
+            - strong [ref=e169]: Refuge Recovery / Recovery Dharma
+            - text: "- mindfulness-based approaches to recovery"
+        - heading "Counseling and Therapy" [level=3] [ref=e170]
+        - paragraph [ref=e171]: Individual therapy, particularly cognitive behavioral therapy (CBT) and motivational interviewing, helps you understand the patterns behind your drinking and develop healthier coping strategies. Many people also benefit from family therapy, since addiction affects everyone close to you.
+        - paragraph [ref=e172]:
+          - text: If you are weighing whether to start the detox process at a facility or manage it on your own, our
+          - link "home detox safety guide" [ref=e173] [cursor=pointer]:
+            - /url: /detox-at-home/
+          - text: explains the risks and when it might, or might not, be appropriate.
+    - generic [ref=e177]:
+      - generic [ref=e178]:
+        - paragraph [ref=e179]: You Don't Have to Do This Alone
+        - heading "Ready to Talk to Someone?" [level=2] [ref=e180]
+        - paragraph [ref=e181]: These free, confidential resources are available 24/7. No insurance needed, no commitment required. Just a conversation.
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - heading "SAMHSA National Helpline" [level=3] [ref=e184]
+          - link "1-800-662-4357" [ref=e185] [cursor=pointer]:
+            - /url: tel:18006624357
+          - paragraph [ref=e186]: Free, confidential, 24/7 treatment referral and information. Available in English and Spanish.
+        - generic [ref=e187]:
+          - heading "Crisis Text Line" [level=3] [ref=e188]
+          - paragraph [ref=e189]:
+            - text: Text
+            - strong [ref=e190]: HOME
+            - text: to
+            - strong [ref=e191]: "741741"
+          - paragraph [ref=e192]: Free, 24/7 crisis support via text message. Trained counselors available anytime.
+        - generic [ref=e193]:
+          - heading "988 Suicide & Crisis Lifeline" [level=3] [ref=e194]
+          - link "988" [ref=e195] [cursor=pointer]:
+            - /url: tel:988
+          - paragraph [ref=e196]: Call or text. For anyone in emotional distress, including substance-related crises.
+  - contentinfo [ref=e197]:
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - generic [ref=e200]:
+          - link "getdetox" [ref=e201] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e202]: An informational resource about drug and alcohol detoxification. This site does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
+        - generic [ref=e203]:
+          - heading "Topics" [level=4] [ref=e204]
+          - link "Opioid Detox" [ref=e205] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - link "Alcohol Detox" [ref=e206] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - link "Rapid Detox" [ref=e207] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - link "Detox Timeline" [ref=e208] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - link "Detox Cost" [ref=e209] [cursor=pointer]:
+            - /url: /detox-cost/
+          - link "Withdrawal Symptoms" [ref=e210] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - link "Detox at Home" [ref=e211] [cursor=pointer]:
+            - /url: /detox-at-home/
+        - generic [ref=e212]:
+          - heading "Get Help" [level=4] [ref=e213]
+          - 'link "SAMHSA: 1-800-662-4357" [ref=e214] [cursor=pointer]':
+            - /url: tel:18006624357
+          - 'link "Crisis Line: 988" [ref=e215] [cursor=pointer]':
+            - /url: tel:988
+          - link "FindTreatment.gov" [ref=e216] [cursor=pointer]:
+            - /url: https://findtreatment.gov
+      - generic [ref=e217]:
+        - paragraph [ref=e218]: © 2026 GetDetox. For informational purposes only.
+        - paragraph [ref=e219]: If you are experiencing a medical emergency, call 911.

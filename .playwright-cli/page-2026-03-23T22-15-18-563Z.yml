@@ -1,0 +1,284 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "getdetox" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - button "Toggle menu" [ref=e5] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: Substance Guide
+      - 'heading "Opioid & Opiate Detox: A Complete Guide" [level=1] [ref=e15]'
+      - paragraph [ref=e16]: Everything you need to know about detoxing from opioids, including withdrawal symptoms, what the timeline looks like, treatment options, and how to stay safe through the process.
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Understanding the Substance
+        - heading "What Are Opioids?" [level=2] [ref=e21]
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: Opioids are a class of drugs that bind to opioid receptors in your brain and body, reducing pain signals and producing feelings of relaxation and euphoria. The terms "opioid" and "opiate" are often used interchangeably, though opiates technically refer to natural compounds derived from the poppy plant, while opioids include both natural and synthetic versions.
+        - paragraph [ref=e24]: "Common opioids include:"
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - strong [ref=e27]: Heroin
+            - text: "- an illegal opioid that is injected, smoked, or snorted"
+          - listitem [ref=e28]:
+            - strong [ref=e29]: Fentanyl
+            - text: "- a synthetic opioid up to 50 to 100 times stronger than morphine, increasingly found in street drugs"
+          - listitem [ref=e30]:
+            - strong [ref=e31]: Oxycodone
+            - text: (OxyContin, Percocet) - a commonly prescribed painkiller with high addiction potential
+          - listitem [ref=e32]:
+            - strong [ref=e33]: Hydrocodone
+            - text: (Vicodin, Norco) - the most widely prescribed opioid in the United States
+          - listitem [ref=e34]:
+            - strong [ref=e35]: Codeine
+            - text: "- a milder opioid often found in prescription cough syrups"
+          - listitem [ref=e36]:
+            - strong [ref=e37]: Morphine
+            - text: "- a natural opiate used primarily in hospital settings for severe pain"
+        - paragraph [ref=e38]: Dependence can develop in as little as a few weeks of regular use. Your brain adapts to the presence of the drug and begins to rely on it to function normally. When you stop taking opioids, your brain and body react, and that reaction is withdrawal. The severity of withdrawal depends on which opioid you were using, how much, how long, and your individual biology.
+        - paragraph [ref=e39]:
+          - text: If you are exploring different types of detox, our
+          - link "main detox guide" [ref=e40] [cursor=pointer]:
+            - /url: /
+          - text: covers the fundamentals of how detoxification works across all substances.
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: What to Expect
+        - heading "Opioid Withdrawal Symptoms" [level=2] [ref=e45]
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: Opioid withdrawal is intensely uncomfortable but is rarely life-threatening in otherwise healthy adults. Knowing what to expect can help you prepare and reduce the fear of the process.
+        - paragraph [ref=e48]: Symptoms typically progress through three phases. Not everyone will experience every symptom, and severity varies based on the opioid used, duration of use, and individual factors.
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: Phase 1
+          - heading "Early Symptoms (6-24 hours)" [level=4] [ref=e52]
+          - list [ref=e53]:
+            - listitem [ref=e54]: Anxiety and restlessness
+            - listitem [ref=e55]: Muscle aches and joint pain
+            - listitem [ref=e56]: Increased tearing and runny nose
+            - listitem [ref=e57]: Excessive sweating
+            - listitem [ref=e58]: Frequent yawning
+            - listitem [ref=e59]: Insomnia
+            - listitem [ref=e60]: Agitation and irritability
+        - generic [ref=e61]:
+          - generic [ref=e62]: Phase 2
+          - heading "Peak Symptoms (Days 1-3)" [level=4] [ref=e63]
+          - list [ref=e64]:
+            - listitem [ref=e65]: Nausea and vomiting
+            - listitem [ref=e66]: Diarrhea and abdominal cramps
+            - listitem [ref=e67]: Dilated pupils and blurred vision
+            - listitem [ref=e68]: Rapid heartbeat and elevated blood pressure
+            - listitem [ref=e69]: Goosebumps and chills
+            - listitem [ref=e70]: Intense drug cravings
+            - listitem [ref=e71]: Difficulty concentrating
+        - generic [ref=e72]:
+          - generic [ref=e73]: Phase 3
+          - heading "Late Symptoms (Days 4-7+)" [level=4] [ref=e74]
+          - list [ref=e75]:
+            - listitem [ref=e76]: Lingering fatigue and low energy
+            - listitem [ref=e77]: Continued sleep disruption
+            - listitem [ref=e78]: Depression and mood swings
+            - listitem [ref=e79]: Persistent cravings
+            - listitem [ref=e80]: Reduced appetite
+            - listitem [ref=e81]: Difficulty feeling pleasure
+            - listitem [ref=e82]: General irritability
+      - paragraph [ref=e84]:
+        - text: Some people experience post-acute withdrawal syndrome (PAWS), where symptoms like anxiety, sleep issues, and cravings continue for weeks or even months after the acute phase. This is normal and manageable with the right support. For a more detailed breakdown of symptoms across substances, visit our
+        - link "withdrawal symptoms guide" [ref=e85] [cursor=pointer]:
+          - /url: /withdrawal-symptoms/
+        - text: .
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - paragraph [ref=e89]: Phase by Phase
+        - heading "Opioid Withdrawal Timeline" [level=2] [ref=e90]
+      - paragraph [ref=e92]: The timeline below applies to short-acting opioids like heroin, oxycodone, and hydrocodone. Long-acting opioids like methadone have a delayed onset, with withdrawal beginning 24-48 hours after the last dose and lasting longer overall.
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e95]: "1"
+          - heading "6-24 Hours" [level=4] [ref=e96]
+          - paragraph [ref=e97]: Withdrawal begins. You may feel anxious, restless, and achy. Sweating, runny nose, and yawning are common early signs. Sleep becomes difficult. These symptoms signal that your body is recognizing the absence of the drug.
+        - generic [ref=e98]:
+          - generic [ref=e99]: "2"
+          - heading "Days 1-3" [level=4] [ref=e100]
+          - paragraph [ref=e101]: Symptoms peak during this window. Nausea, vomiting, diarrhea, and abdominal cramps are at their worst. Cravings are strongest. This is the hardest part of the process, and the period when most people relapse without support. Medical detox makes this phase significantly more manageable.
+        - generic [ref=e102]:
+          - generic [ref=e103]: "3"
+          - heading "Days 4-7" [level=4] [ref=e104]
+          - paragraph [ref=e105]: The worst physical symptoms begin to ease. Gastrointestinal issues subside, though fatigue, sleep problems, and irritability continue. Your body is stabilizing, but you may feel emotionally raw. Cravings can still be intense.
+        - generic [ref=e106]:
+          - generic [ref=e107]: "4"
+          - heading "Weeks 2+" [level=4] [ref=e108]
+          - paragraph [ref=e109]: "Most acute physical symptoms have resolved. What remains are psychological and emotional symptoms: cravings, anxiety, depression, low motivation, and disrupted sleep. These post-acute symptoms can last weeks to months and are a key reason why ongoing treatment after detox is essential."
+      - paragraph [ref=e111]:
+        - text: Fentanyl withdrawal can follow a slightly different pattern due to how the drug accumulates in body fat, sometimes causing symptoms to come in waves. For a comprehensive look at timelines for all substances, see our
+        - link "detox timeline guide" [ref=e112] [cursor=pointer]:
+          - /url: /detox-timeline/
+        - text: .
+    - blockquote [ref=e115]: The worst part is temporary. What comes after can last a lifetime.
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - paragraph [ref=e119]: Treatment Options
+        - heading "Types of Opioid Detox Treatment" [level=2] [ref=e120]
+      - paragraph [ref=e122]: There is no single right way to detox from opioids. The best approach depends on the substance, severity of dependence, your health history, and your personal circumstances. Here are the most common options.
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - generic [ref=e125]: Recommended
+          - heading "Medical Detox (Inpatient)" [level=4] [ref=e126]
+          - paragraph [ref=e127]: You stay at a facility with 24/7 medical supervision while your body clears the drug. Doctors manage symptoms with medications and monitor your vitals throughout. This is the safest option, especially for severe dependence or people with other health conditions. A typical stay is 5-10 days.
+          - paragraph [ref=e128]:
+            - text: Wondering about cost? Our
+            - link "detox cost guide" [ref=e129] [cursor=pointer]:
+              - /url: /detox-cost/
+            - text: breaks down what to expect for inpatient programs.
+        - generic [ref=e130]:
+          - generic [ref=e131]: Gold Standard
+          - heading "Medication-Assisted Treatment (MAT)" [level=4] [ref=e132]
+          - paragraph [ref=e133]: "MAT uses FDA-approved medications to ease withdrawal, reduce cravings, and support long-term recovery. The three primary medications are:"
+          - list [ref=e134]:
+            - listitem [ref=e135]:
+              - strong [ref=e136]: Buprenorphine (Suboxone, Subutex)
+              - text: "- partially activates opioid receptors, easing withdrawal without producing a high"
+            - listitem [ref=e137]:
+              - strong [ref=e138]: Methadone
+              - text: "- a long-acting opioid agonist dispensed through licensed clinics, used for both detox and maintenance"
+            - listitem [ref=e139]:
+              - strong [ref=e140]: Naltrexone (Vivitrol)
+              - text: "- blocks opioid receptors entirely, used after detox to prevent relapse"
+          - paragraph [ref=e141]: MAT combined with counseling is considered the gold standard for opioid use disorder treatment.
+        - generic [ref=e142]:
+          - generic [ref=e143]: Accelerated
+          - heading "Rapid Detox" [level=4] [ref=e144]
+          - paragraph [ref=e145]: An accelerated process where you are placed under anesthesia while medications flush opioids from your receptors. The idea is to compress days of withdrawal into hours. While it can reduce the conscious experience of withdrawal, it carries significant medical risks and is expensive. Research on its long-term effectiveness is mixed.
+          - paragraph [ref=e146]:
+            - text: Learn more in our
+            - link "complete rapid detox guide" [ref=e147] [cursor=pointer]:
+              - /url: /rapid-detox/
+            - text: .
+        - generic [ref=e148]:
+          - generic [ref=e149]: Not Recommended
+          - heading "Cold Turkey (Unassisted)" [level=4] [ref=e150]
+          - paragraph [ref=e151]:
+            - text: Stopping opioid use abruptly without medical support. While opioid withdrawal is rarely fatal on its own, going cold turkey is extremely uncomfortable and has the highest relapse rate. The severe discomfort drives most people back to using, often at doses their body can no longer handle. If you are considering this route, please read our
+            - link "home detox safety guide" [ref=e152] [cursor=pointer]:
+              - /url: /detox-at-home/
+            - text: first.
+    - generic [ref=e154]:
+      - generic [ref=e155]:
+        - paragraph [ref=e156]: Substance-Specific
+        - heading "Detox by Drug" [level=2] [ref=e157]
+      - paragraph [ref=e159]: While the general opioid withdrawal pattern is similar across substances, each drug has unique characteristics that affect the detox process.
+      - generic [ref=e160]:
+        - heading "Fentanyl Detox" [level=3] [ref=e161]
+        - paragraph [ref=e162]: Fentanyl is the most potent commonly encountered opioid, and detoxing from it presents unique challenges. Because fentanyl is fat-soluble, it can accumulate in body tissue and release gradually, causing withdrawal symptoms to come in unpredictable waves rather than following a clean linear timeline. Some people feel better for a few hours only to have symptoms return.
+        - paragraph [ref=e163]: Starting buprenorphine (Suboxone) during fentanyl withdrawal requires extra caution. Because fentanyl lingers on receptors longer, starting Suboxone too soon can trigger precipitated withdrawal, an intense and sudden onset of severe symptoms. Many providers now use a "low and slow" micro-dosing approach to bridge this gap safely.
+        - paragraph [ref=e164]: Fentanyl detox is best handled in a medical facility where providers can adjust treatment in real time as your symptoms fluctuate.
+      - generic [ref=e165]:
+        - heading "Heroin Detox" [level=3] [ref=e166]
+        - paragraph [ref=e167]: Heroin is a short-acting opioid, which means withdrawal begins relatively quickly, usually within 6-12 hours of the last use. Symptoms peak around 36-72 hours and generally improve within 5-7 days. Because heroin is metabolized fast, the withdrawal curve tends to be steep but shorter compared to longer-acting opioids.
+        - paragraph [ref=e168]: Heroin dependence often comes with additional health complications from the route of administration, including infections, vein damage, and exposure to contaminants. A medical detox program can address these alongside withdrawal management. MAT with buprenorphine or methadone is highly effective for heroin withdrawal and long-term recovery.
+      - generic [ref=e169]:
+        - heading "Prescription Painkiller Detox" [level=3] [ref=e170]
+        - paragraph [ref=e171]: Detoxing from prescription opioids like oxycodone, hydrocodone, or codeine follows a similar pattern to heroin withdrawal, though the experience can vary depending on the formulation. Extended-release versions of these drugs may produce a slightly delayed and prolonged withdrawal compared to immediate-release formulations.
+        - paragraph [ref=e172]: One unique challenge with prescription painkiller detox is the original pain condition. If you started taking opioids for chronic pain, you will need a plan for managing that pain without opioids after detox. This might include non-opioid medications, physical therapy, or other pain management strategies. Discuss this with your treatment provider before starting detox.
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - paragraph [ref=e176]: The Road Ahead
+        - heading "What Happens After Opioid Detox?" [level=2] [ref=e177]
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - paragraph [ref=e180]: Detox is not recovery. It is the first step that makes recovery possible. What you do after detox matters more than the detox itself.
+          - paragraph [ref=e181]: Completing detox means you have cleared the physical dependence, but the psychological and behavioral patterns of addiction remain. Without follow-up treatment, the relapse rate after opioid detox alone is extremely high, some studies estimate over 90%.
+          - paragraph [ref=e182]: "Effective post-detox options include:"
+          - list [ref=e183]:
+            - listitem [ref=e184]:
+              - strong [ref=e185]: Inpatient rehabilitation
+              - text: "- structured residential programs lasting 30-90 days"
+            - listitem [ref=e186]:
+              - strong [ref=e187]: Outpatient treatment
+              - text: "- regular therapy sessions while living at home"
+            - listitem [ref=e188]:
+              - strong [ref=e189]: Medication-assisted treatment
+              - text: "- ongoing Suboxone, methadone, or naltrexone combined with counseling"
+            - listitem [ref=e190]:
+              - strong [ref=e191]: Peer support groups
+              - text: "- NA, SMART Recovery, or other mutual aid programs"
+            - listitem [ref=e192]:
+              - strong [ref=e193]: Individual therapy
+              - text: "- CBT, motivational interviewing, or trauma-informed care"
+        - generic [ref=e195]:
+          - heading "Preventing Relapse" [level=3] [ref=e196]
+          - paragraph [ref=e197]: "Relapse is not a sign of failure. It is a common part of the recovery process for many people. What matters is having a plan in place:"
+          - list [ref=e198]:
+            - listitem [ref=e199]: Stay connected to your treatment team
+            - listitem [ref=e200]: Consider MAT, which significantly reduces relapse risk
+            - listitem [ref=e201]: Identify and avoid triggers when possible
+            - listitem [ref=e202]: Build a support network of people who understand your recovery
+            - listitem [ref=e203]: Have a plan for what to do if cravings become overwhelming
+            - listitem [ref=e204]: Keep naloxone (Narcan) accessible in case of emergency
+          - paragraph [ref=e205]: If you relapse, get help immediately. Your tolerance has dropped, making your old dose potentially fatal.
+    - generic [ref=e208]:
+      - 'heading "Critical: Overdose Risk After Detox" [level=3] [ref=e209]'
+      - paragraph [ref=e210]:
+        - text: "This is the single most important thing to understand about opioid detox:"
+        - strong [ref=e211]: your tolerance drops rapidly once you stop using
+        - text: . If you return to opioids after a period of abstinence, even just a few days, the dose your body previously handled can now kill you.
+      - paragraph [ref=e212]: The period immediately after detox or after leaving a treatment facility is statistically the most dangerous time for fatal overdose. This is not a scare tactic. It is the reality that makes post-detox planning and continued treatment so critical.
+      - paragraph [ref=e213]: If you or someone you know is at risk, keep naloxone (Narcan) on hand. It is available without a prescription at most pharmacies and can reverse an opioid overdose. Many community organizations distribute it for free.
+    - generic [ref=e217]:
+      - generic [ref=e218]:
+        - paragraph [ref=e219]: You Don't Have to Do This Alone
+        - heading "Ready to Talk to Someone?" [level=2] [ref=e220]
+        - paragraph [ref=e221]: These free, confidential resources are available 24/7. No insurance needed, no commitment required. Just a conversation.
+      - generic [ref=e222]:
+        - generic [ref=e223]:
+          - heading "SAMHSA National Helpline" [level=3] [ref=e224]
+          - link "1-800-662-4357" [ref=e225] [cursor=pointer]:
+            - /url: tel:18006624357
+          - paragraph [ref=e226]: Free, confidential, 24/7 treatment referral and information. Available in English and Spanish.
+        - generic [ref=e227]:
+          - heading "Crisis Text Line" [level=3] [ref=e228]
+          - paragraph [ref=e229]:
+            - text: Text
+            - strong [ref=e230]: HOME
+            - text: to
+            - strong [ref=e231]: "741741"
+          - paragraph [ref=e232]: Free, 24/7 crisis support via text message. Trained counselors available anytime.
+        - generic [ref=e233]:
+          - heading "988 Suicide & Crisis Lifeline" [level=3] [ref=e234]
+          - link "988" [ref=e235] [cursor=pointer]:
+            - /url: tel:988
+          - paragraph [ref=e236]: Call or text. For anyone in emotional distress, including substance-related crises.
+  - contentinfo [ref=e237]:
+    - generic [ref=e238]:
+      - generic [ref=e239]:
+        - generic [ref=e240]:
+          - link "getdetox" [ref=e241] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e242]: An informational resource about drug and alcohol detoxification. This site does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
+        - generic [ref=e243]:
+          - heading "Topics" [level=4] [ref=e244]
+          - link "Opioid Detox" [ref=e245] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - link "Alcohol Detox" [ref=e246] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - link "Rapid Detox" [ref=e247] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - link "Detox Timeline" [ref=e248] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - link "Detox Cost" [ref=e249] [cursor=pointer]:
+            - /url: /detox-cost/
+          - link "Withdrawal Symptoms" [ref=e250] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - link "Detox at Home" [ref=e251] [cursor=pointer]:
+            - /url: /detox-at-home/
+        - generic [ref=e252]:
+          - heading "Get Help" [level=4] [ref=e253]
+          - 'link "SAMHSA: 1-800-662-4357" [ref=e254] [cursor=pointer]':
+            - /url: tel:18006624357
+          - 'link "Crisis Line: 988" [ref=e255] [cursor=pointer]':
+            - /url: tel:988
+          - link "FindTreatment.gov" [ref=e256] [cursor=pointer]:
+            - /url: https://findtreatment.gov
+      - generic [ref=e257]:
+        - paragraph [ref=e258]: © 2026 GetDetox. For informational purposes only.
+        - paragraph [ref=e259]: If you are experiencing a medical emergency, call 911.

@@ -286,4 +286,10 @@ html.lenis, html.lenis body {
   .mobile-menu-overlay {
     display: flex !important;
   }
+
+  /* Mobile body font adjustment */
+  body {
+    font-size: 15px;
+    line-height: 1.65;
+  }
 }

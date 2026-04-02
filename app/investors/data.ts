@@ -299,13 +299,13 @@ export const TEAM_MEMBERS = [
     bio: 'Allentown native and the filmmaker who brought this story to light. Directed the Billboard Boys documentary (2017), which premiered at film festivals and was featured in The Philadelphia Inquirer, WHYY, and PhillyVoice. His personal connection to the Lehigh Valley and years of research into the billboard sitters give the script its authenticity.',
   },
   {
-    role: 'EXECUTIVE PRODUCER',
+    role: 'PRODUCER',
     name: 'Roberto Alcazar',
     image: '/images/roberto-alcazar.webp',
     bio: 'Managing Partner at EO Integration with extensive experience in impact-driven entertainment. Executive produced 200 Cartas (starring Lin-Manuel Miranda) and produced the documentary YASUNI, which premiered at the Miami International Film Festival. Also produced and directed CASI 10, featured in 25+ film festivals worldwide.',
   },
   {
-    role: 'EXECUTIVE PRODUCER',
+    role: 'PRODUCER',
     name: 'Pilar de Posadas',
     image: '/images/pilar-de-posadas.webp',
     bio: 'International content and distribution specialist. Associate at Scenic Rights (Los Angeles), with prior roles as Television Development and Acquisitions Head at Herrick Entertainment and International Sales Consultant for Dopamine Content and Zebra Producciones. Deep expertise in international sales, acquisitions, and scripted content development.',
@@ -355,8 +355,8 @@ export const DOCUMENTS = [
 
 export const CONTACTS = [
   { role: 'PRODUCER', name: 'Gary Foster', phone: '+1 (508) 292 5752', email: 'gsfhorse@mac.com' },
-  { role: 'EXECUTIVE PRODUCER', name: 'Roberto Alcazar', phone: '+1 (646) 346 9213', email: 'alcazar@eointegration.com' },
-  { role: 'EXECUTIVE PRODUCER', name: 'Pilar De Posadas', phone: '+1 (310) 740 5530', email: 'pposadas@scenicrights.com' },
+  { role: 'PRODUCER', name: 'Roberto Alcazar', phone: '+1 (646) 346 9213', email: 'alcazar@eointegration.com' },
+  { role: 'PRODUCER', name: 'Pilar De Posadas', phone: '+1 (310) 740 5530', email: 'pposadas@scenicrights.com' },
 ];
 
 /* ─── Risk Factors ─── */

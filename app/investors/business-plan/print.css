@@ -468,6 +468,62 @@ p {
   break-inside: avoid;
 }
 
+/* ─── Mobile ─── */
+
+@media (max-width: 767px) {
+  .bp-page {
+    padding: 32px 20px 60px;
+    font-size: 14px;
+  }
+
+  .bp-h1 {
+    font-size: 36px;
+  }
+
+  .bp-h2 {
+    font-size: 22px;
+  }
+
+  .bp-def-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bp-def-label {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .bp-def-value {
+    padding-top: 0;
+  }
+
+  .bp-bio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bp-table {
+    font-size: 12px;
+  }
+
+  .bp-table thead th,
+  .bp-table tbody td {
+    padding: 7px 8px;
+  }
+
+  .bp-cover {
+    min-height: auto;
+    padding: 40px 0 24px;
+  }
+
+  .bp-print-bar {
+    flex-wrap: wrap;
+  }
+
+  .bp-scenario-block {
+    padding: 16px;
+  }
+}
+
 /* ─── Print media ─── */
 
 @media print {

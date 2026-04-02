@@ -1,0 +1,82 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic:
+      - link "ALLENTOWN":
+        - /url: "#"
+      - navigation:
+        - link "The Story":
+          - /url: "#story"
+        - link "The Contest":
+          - /url: "#contest"
+        - link "The Men":
+          - /url: "#men"
+        - link "The Film":
+          - /url: "#film"
+        - link "The Team":
+          - /url: "#team"
+        - link "Contact":
+          - /url: "#contact"
+        - link "For Investors":
+          - /url: "#investors"
+    - generic [ref=e5]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic [ref=e11]: Three men.
+          - generic [ref=e12]: A billboard.
+          - generic [ref=e13]: And the American Dream.
+        - heading "ALLENTOWN" [level=1] [ref=e15]
+        - paragraph [ref=e16]:
+          - text: A feature film about the
+          - text: greatest radio contest of all time
+      - generic [ref=e18]: Scroll
+    - heading "NOBODY EXPECTED IT TO LAST." [level=2] [ref=e41]:
+      - text: NOBODY EXPECTED
+      - text: IT TO LAST.
+    - generic [ref=e49]:
+      - paragraph [ref=e50]: The Film
+      - heading "A RUST BELT FAIRY TALE." [level=2] [ref=e51]
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: A film that lives in the space between absurdity and heartbreak, where the biggest laughs come from the most desperate circumstances and the most moving moments sneak up on you sideways.
+        - paragraph [ref=e55]: A comedy about survival. A drama about dignity. And a love letter to the people who build their lives with whatever they've got.
+    - generic [ref=e59]:
+      - paragraph [ref=e60]: A note from the director
+      - paragraph [ref=e61]: "I've been developing Allentown for several years now, and the thing that keeps pulling me back is how much this story feels like right now. In 1982, three ordinary guys climbed a billboard because it was the only path to something most Americans take for granted: a place to call home."
+      - paragraph [ref=e62]: That's the story I want to tell. Not a period piece about the '80s, but a film about what happens when the ground falls out from under you and the only direction left is up. Literally.
+      - generic [ref=e63]:
+        - paragraph [ref=e64]: ZE'EV WAISMANN
+        - paragraph [ref=e65]: Director / Co-Writer
+    - generic [ref=e66]:
+      - paragraph [ref=e67]: The Team
+      - generic [ref=e69]:
+        - generic [ref=e70] [cursor=pointer]:
+          - paragraph [ref=e73]: GARY FOSTER
+          - paragraph [ref=e74]: Producer
+          - paragraph [ref=e75]: Oscar-nominated
+        - generic [ref=e76] [cursor=pointer]:
+          - paragraph [ref=e79]: ROBERTO ALCAZAR
+          - paragraph [ref=e80]: Executive Producer
+        - generic [ref=e81] [cursor=pointer]:
+          - paragraph [ref=e84]: ZE'EV WAISMANN
+          - paragraph [ref=e85]: Director / Co-Writer
+        - generic [ref=e86] [cursor=pointer]:
+          - generic [ref=e88]: P
+          - paragraph [ref=e89]: PAT TAGGART
+          - paragraph [ref=e90]: Writer
+        - generic [ref=e91] [cursor=pointer]:
+          - paragraph [ref=e94]: CONRAD SYLVIA
+          - paragraph [ref=e95]: Writer
+    - generic [ref=e96]:
+      - paragraph [ref=e97]: Three men. A billboard. And the American Dream.
+      - link "info@allentownfilm.com" [ref=e99] [cursor=pointer]:
+        - /url: mailto:info@allentownfilm.com
+      - paragraph [ref=e101]: © 2026 Electra Filmworks. All rights reserved.
+    - generic [ref=e102]:
+      - paragraph [ref=e103]: For Investors
+      - generic [ref=e105]:
+        - paragraph [ref=e106]: This section contains confidential materials for potential investors and partners. Please enter the access code to continue.
+        - generic [ref=e107]:
+          - textbox "Access code" [ref=e108]
+          - button "Enter" [ref=e109] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e115] [cursor=pointer]:
+    - img [ref=e116]
+  - alert [ref=e119]

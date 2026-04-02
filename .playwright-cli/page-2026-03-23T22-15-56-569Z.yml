@@ -1,0 +1,331 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "getdetox" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Opioid Detox" [ref=e7] [cursor=pointer]:
+          - /url: /opioid-detox/
+        - link "Alcohol Detox" [ref=e8] [cursor=pointer]:
+          - /url: /alcohol-detox/
+        - link "Rapid Detox" [ref=e9] [cursor=pointer]:
+          - /url: /rapid-detox/
+        - link "Timeline" [ref=e10] [cursor=pointer]:
+          - /url: /detox-timeline/
+        - link "Cost" [ref=e11] [cursor=pointer]:
+          - /url: /detox-cost/
+        - link "Withdrawal" [ref=e12] [cursor=pointer]:
+          - /url: /withdrawal-symptoms/
+        - link "Home Detox" [ref=e13] [cursor=pointer]:
+          - /url: /detox-at-home/
+        - link "Get Help Now" [ref=e14] [cursor=pointer]:
+          - /url: "#help"
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Symptom Guide
+        - 'heading "Withdrawal Symptoms: What to Expect for Every Substance" [level=1] [ref=e21]'
+        - paragraph [ref=e22]: Withdrawal is your body recalibrating after dependence. Knowing what to expect, which symptoms are normal, and which ones are dangerous can help you stay safe and make it through.
+      - generic [ref=e24]: Scroll to learn more
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: The Science
+        - heading "Why Withdrawal Happens" [level=2] [ref=e30]
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: Withdrawal is not a sign of weakness. It is a predictable biological response that happens when your brain and body lose a substance they have adapted to depend on.
+        - paragraph [ref=e33]: When you use a substance repeatedly, your brain adjusts. It changes the number and sensitivity of receptors involved in mood, pain, alertness, and calm. This is called neuroadaptation. Over time, your brain begins to treat the substance as part of its normal operating environment. That is tolerance, and it is why you need more of a substance to feel the same effect.
+        - paragraph [ref=e34]: Physical dependence follows tolerance. Your body now expects the substance to be present. When it suddenly is not, your nervous system overcorrects. Receptors that were being suppressed fire rapidly. Systems that were artificially calmed become hyperactive. The result is withdrawal, and the specific symptoms depend on which receptors and systems were affected by the substance you were using.
+        - paragraph [ref=e35]: This is why alcohol and benzodiazepine withdrawal can cause seizures (both suppress the central nervous system, and rebound excitability is dangerous), while opioid withdrawal feels like a severe flu (opioid receptors are involved in pain, mood, and gut function). Stimulant withdrawal is primarily psychological because those drugs affect dopamine reward pathways rather than life-sustaining systems.
+        - paragraph [ref=e36]:
+          - text: Understanding this helps frame what you are going through. Your body is not punishing you. It is recalibrating. And with the right support, it will stabilize. For a detailed look at how long this takes, see our
+          - link "detox timeline guide" [ref=e37] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - text: .
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Opioids
+        - heading "Opioid Withdrawal Symptoms" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: Opioid withdrawal is intensely uncomfortable but rarely life-threatening with proper care. Symptoms typically begin 8-24 hours after the last dose for short-acting opioids like heroin, or 24-48 hours for longer-acting ones like methadone.
+        - heading "Early Symptoms (First 12-24 Hours)" [level=3] [ref=e45]
+        - paragraph [ref=e46]: "The first signs are often mistaken for the flu. You may experience:"
+        - list [ref=e47]:
+          - listitem [ref=e48]: Anxiety and restlessness
+          - listitem [ref=e49]: Muscle aches and joint pain
+          - listitem [ref=e50]: Runny nose and watery eyes
+          - listitem [ref=e51]: Excessive sweating
+          - listitem [ref=e52]: Insomnia
+          - listitem [ref=e53]: Yawning
+          - listitem [ref=e54]: Agitation and irritability
+        - heading "Peak Symptoms (Days 1-3)" [level=3] [ref=e55]
+        - paragraph [ref=e56]: "This is when withdrawal is at its worst. Symptoms intensify and new ones appear:"
+        - list [ref=e57]:
+          - listitem [ref=e58]: Nausea and vomiting
+          - listitem [ref=e59]: Diarrhea, sometimes severe
+          - listitem [ref=e60]: Abdominal cramping
+          - listitem [ref=e61]: Goosebumps and chills
+          - listitem [ref=e62]: Dilated pupils
+          - listitem [ref=e63]: Rapid heartbeat
+          - listitem [ref=e64]: Elevated blood pressure
+        - heading "Late Symptoms (Days 4-7+)" [level=3] [ref=e65]
+        - paragraph [ref=e66]: "The acute physical symptoms begin to ease, but you may still deal with:"
+        - list [ref=e67]:
+          - listitem [ref=e68]: Persistent fatigue and low energy
+          - listitem [ref=e69]: Depression and emotional flatness
+          - listitem [ref=e70]: Difficulty concentrating
+          - listitem [ref=e71]: Strong cravings
+          - listitem [ref=e72]: Ongoing sleep disruption
+          - listitem [ref=e73]: Reduced appetite
+        - paragraph [ref=e74]: The biggest risk during opioid withdrawal is dehydration from vomiting and diarrhea, and relapse, which is dangerous because your tolerance drops rapidly during detox. A dose that was normal before can become fatal after even a few days of abstinence.
+        - paragraph [ref=e75]:
+          - text: Medications like buprenorphine (Suboxone) and methadone can dramatically reduce these symptoms. For the full guide, see our
+          - link "opioid detox page" [ref=e76] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - text: .
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: Alcohol
+        - heading "Alcohol Withdrawal Symptoms" [level=2] [ref=e81]
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - strong [ref=e84]: "Warning:"
+          - text: Alcohol withdrawal can be fatal. If you have been drinking heavily or daily for an extended period, do not stop suddenly without medical supervision. Seizures and delirium tremens (DTs) can occur and are medical emergencies. Call 911 or go to the ER if you experience seizures, hallucinations, or severe confusion.
+        - paragraph [ref=e85]: Alcohol suppresses your central nervous system. When you stop drinking after prolonged heavy use, your brain goes into a state of hyperexcitability. This is why alcohol withdrawal can cause seizures and, in severe cases, death.
+        - 'heading "Stage 1: Mild Symptoms (6-12 Hours After Last Drink)" [level=3] [ref=e86]'
+        - list [ref=e87]:
+          - listitem [ref=e88]: Anxiety and nervousness
+          - listitem [ref=e89]: Hand tremors (shaking hands)
+          - listitem [ref=e90]: Sweating
+          - listitem [ref=e91]: Nausea and vomiting
+          - listitem [ref=e92]: Insomnia
+          - listitem [ref=e93]: Headache
+          - listitem [ref=e94]: Elevated heart rate
+        - 'heading "Stage 2: Moderate Symptoms (12-48 Hours)" [level=3] [ref=e95]'
+        - list [ref=e96]:
+          - listitem [ref=e97]: Increased blood pressure
+          - listitem [ref=e98]: Confusion and disorientation
+          - listitem [ref=e99]: Heightened irritability
+          - listitem [ref=e100]: Auditory or visual hallucinations
+          - listitem [ref=e101]: Seizures (most common in this window)
+          - listitem [ref=e102]: Profuse sweating
+        - 'heading "Stage 3: Severe Symptoms - Delirium Tremens (48-72 Hours)" [level=3] [ref=e103]'
+        - paragraph [ref=e104]: "Delirium tremens (DTs) affects roughly 3-5% of people going through alcohol withdrawal, but it can be fatal without treatment. Symptoms include:"
+        - list [ref=e105]:
+          - listitem [ref=e106]: Severe confusion and disorientation
+          - listitem [ref=e107]: Vivid hallucinations
+          - listitem [ref=e108]: Extreme agitation
+          - listitem [ref=e109]: High fever
+          - listitem [ref=e110]: Seizures
+          - listitem [ref=e111]: Rapid, irregular heartbeat
+          - listitem [ref=e112]: Dangerous spikes in blood pressure
+        - paragraph [ref=e113]: With medical treatment, the mortality rate for DTs drops significantly. Without treatment, it can be as high as 37%. This is why medical detox is not optional for heavy alcohol use - it is a safety necessity.
+        - paragraph [ref=e114]:
+          - text: For a complete guide to safely managing alcohol detox, read our
+          - link "alcohol detox page" [ref=e115] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - text: .
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - paragraph [ref=e119]: Benzodiazepines
+        - heading "Benzodiazepine Withdrawal Symptoms" [level=2] [ref=e120]
+      - generic [ref=e121]:
+        - paragraph [ref=e122]: Benzodiazepine withdrawal is medically serious and shares many of the same dangers as alcohol withdrawal, including seizure risk. Benzos like Xanax (alprazolam), Valium (diazepam), Klonopin (clonazepam), and Ativan (lorazepam) all carry withdrawal risk after prolonged use.
+        - paragraph [ref=e123]: Like alcohol, benzodiazepines work by enhancing GABA, the brain's primary calming neurotransmitter. When you stop after your brain has adapted, the same rebound excitability occurs. This makes benzodiazepine withdrawal unpredictable and potentially dangerous.
+        - heading "Common Benzodiazepine Withdrawal Symptoms" [level=3] [ref=e124]
+        - list [ref=e125]:
+          - listitem [ref=e126]: Severe anxiety and panic attacks
+          - listitem [ref=e127]: Insomnia and sleep disturbances
+          - listitem [ref=e128]: Tremors and muscle tension
+          - listitem [ref=e129]: Sweating
+          - listitem [ref=e130]: Nausea
+          - listitem [ref=e131]: Difficulty concentrating
+          - listitem [ref=e132]: Irritability and mood swings
+          - listitem [ref=e133]: Perceptual disturbances (sounds seem louder, lights seem brighter)
+          - listitem [ref=e134]: Seizures (in severe cases)
+          - listitem [ref=e135]: Psychosis (rare, but possible with abrupt cessation)
+        - heading "Protracted Withdrawal" [level=3] [ref=e136]
+        - paragraph [ref=e137]: One of the most challenging aspects of benzodiazepine withdrawal is protracted withdrawal syndrome. Some people experience waves of anxiety, insomnia, cognitive difficulties, and sensory sensitivity for months or even over a year after stopping. This is more common with long-term use and higher doses.
+        - paragraph [ref=e138]: The standard medical approach is a gradual taper, slowly reducing the dose over weeks or months rather than stopping suddenly. This significantly reduces seizure risk and makes the process more manageable. Never stop benzodiazepines abruptly without medical guidance.
+        - paragraph [ref=e139]:
+          - text: For more on timelines and what to expect, visit our
+          - link "detox timeline guide" [ref=e140] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - text: .
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - paragraph [ref=e144]: Stimulants
+        - heading "Stimulant Withdrawal Symptoms" [level=2] [ref=e145]
+      - generic [ref=e146]:
+        - paragraph [ref=e147]: Withdrawal from stimulants like cocaine, methamphetamine, and prescription amphetamines (Adderall, Vyvanse) is primarily psychological rather than physical. It is not typically life-threatening, but it can be deeply uncomfortable and carries a high risk of relapse.
+        - paragraph [ref=e148]: Stimulants flood your brain with dopamine, the neurotransmitter tied to pleasure, motivation, and reward. When you stop, your dopamine system is depleted. The result is a crash that can feel like all motivation, pleasure, and energy have been drained from your body.
+        - heading "Common Stimulant Withdrawal Symptoms" [level=3] [ref=e149]
+        - list [ref=e150]:
+          - listitem [ref=e151]: Severe fatigue and excessive sleeping (hypersomnia)
+          - listitem [ref=e152]: Depression, sometimes severe
+          - listitem [ref=e153]: Intense cravings
+          - listitem [ref=e154]: Increased appetite
+          - listitem [ref=e155]: Anxiety and irritability
+          - listitem [ref=e156]: Difficulty concentrating
+          - listitem [ref=e157]: Vivid, unpleasant dreams
+          - listitem [ref=e158]: Slowed thinking and movement
+          - listitem [ref=e159]: Anhedonia (inability to feel pleasure)
+          - listitem [ref=e160]: Social withdrawal
+        - paragraph [ref=e161]: The acute crash typically lasts a few days to a week. However, depression, cravings, and anhedonia can persist for weeks or months, particularly after heavy methamphetamine use. The psychological weight of stimulant withdrawal is significant, and suicidal thoughts are a real concern during this period.
+        - paragraph [ref=e162]: While there are no FDA-approved medications specifically for stimulant withdrawal, medical support for sleep, mood, and nutrition can make a meaningful difference. If you are experiencing thoughts of self-harm during withdrawal, call 988 (Suicide and Crisis Lifeline) immediately.
+    - generic [ref=e164]:
+      - generic [ref=e165]:
+        - paragraph [ref=e166]: Know the Red Flags
+        - heading "When Withdrawal Becomes an Emergency" [level=2] [ref=e167]
+      - generic [ref=e168]:
+        - generic [ref=e169]:
+          - strong [ref=e170]: Call 911 or go to the emergency room immediately
+          - text: if you or someone going through withdrawal experiences any of the symptoms listed below. Withdrawal can escalate quickly, and waiting too long can be fatal.
+        - paragraph [ref=e171]: Most withdrawal symptoms, while miserable, are not immediately dangerous. But certain signs indicate a medical emergency that requires professional intervention right away.
+        - heading "Go to the ER If You Experience:" [level=3] [ref=e172]
+        - list [ref=e173]:
+          - listitem [ref=e174]: Seizures or convulsions of any kind
+          - listitem [ref=e175]: Hallucinations (seeing, hearing, or feeling things that are not there)
+          - listitem [ref=e176]: Severe confusion or disorientation
+          - listitem [ref=e177]: Chest pain or irregular heartbeat
+          - listitem [ref=e178]: Fever above 103 degrees Fahrenheit
+          - listitem [ref=e179]: Inability to keep any fluids down for more than 24 hours
+          - listitem [ref=e180]: Suicidal thoughts or urges to harm yourself
+          - listitem [ref=e181]: Severe tremors that prevent basic functioning
+          - listitem [ref=e182]: Loss of consciousness
+        - paragraph [ref=e183]: These symptoms are most common with alcohol and benzodiazepine withdrawal, but they can occur with any substance. Do not try to wait them out. Do not assume they will pass on their own. Emergency rooms are equipped to stabilize withdrawal emergencies, and you will not be judged for seeking help.
+        - paragraph [ref=e184]:
+          - text: If you are planning to detox and are concerned about safety, medical detox programs can monitor you around the clock. Learn more about your options on our
+          - link "detox at home page" [ref=e185] [cursor=pointer]:
+            - /url: /detox-at-home/
+          - text: or our
+          - link "detox cost guide" [ref=e186] [cursor=pointer]:
+            - /url: /detox-cost/
+          - text: .
+    - generic [ref=e188]:
+      - generic [ref=e189]:
+        - paragraph [ref=e190]: Managing Symptoms
+        - heading "How to Ease Withdrawal Symptoms" [level=2] [ref=e191]
+      - generic [ref=e192]:
+        - paragraph [ref=e193]: The most effective way to manage withdrawal is through medical detox, where healthcare providers use medications and monitoring to keep you safe and as comfortable as possible. But there are also practical steps that help regardless of your setting.
+        - heading "Medical Interventions" [level=3] [ref=e194]
+        - paragraph [ref=e195]: "These are the tools that make the biggest difference:"
+        - list [ref=e196]:
+          - listitem [ref=e197]:
+            - strong [ref=e198]: "Opioid withdrawal:"
+            - text: Buprenorphine (Suboxone), methadone, or clonidine to reduce symptoms significantly. Loperamide (Imodium) for diarrhea, ondansetron for nausea
+          - listitem [ref=e199]:
+            - strong [ref=e200]: "Alcohol withdrawal:"
+            - text: Benzodiazepines (under medical supervision) to prevent seizures and manage agitation. IV fluids, thiamine, and electrolyte replacement
+          - listitem [ref=e201]:
+            - strong [ref=e202]: "Benzodiazepine withdrawal:"
+            - text: Gradual dose tapering, sometimes switching to a longer-acting benzo like diazepam before tapering. Anticonvulsants in some cases
+          - listitem [ref=e203]:
+            - strong [ref=e204]: "Stimulant withdrawal:"
+            - text: No specific medications approved, but sleep aids, antidepressants, and nutritional support can help manage the crash
+        - heading "Comfort Measures That Help" [level=3] [ref=e205]
+        - list [ref=e206]:
+          - listitem [ref=e207]:
+            - strong [ref=e208]: Stay hydrated.
+            - text: Dehydration from sweating, vomiting, and diarrhea can become dangerous. Small, frequent sips of water, electrolyte drinks, or broth are better than trying to drink large amounts at once
+          - listitem [ref=e209]:
+            - strong [ref=e210]: Eat what you can.
+            - text: Your appetite may be gone, but bland foods like crackers, toast, bananas, and rice are easier to keep down and help stabilize blood sugar
+          - listitem [ref=e211]:
+            - strong [ref=e212]: Keep your environment calm.
+            - text: Low lights, comfortable temperature, minimal noise. Your nervous system is already overloaded
+          - listitem [ref=e213]:
+            - strong [ref=e214]: Over-the-counter medications.
+            - text: Ibuprofen for muscle aches, Pepto-Bismol or Imodium for stomach issues, melatonin for sleep. These are not a substitute for medical detox, but they help at the margins
+          - listitem [ref=e215]:
+            - strong [ref=e216]: Have someone with you.
+            - text: A trusted person who can monitor your condition, get help if something goes wrong, and simply be present
+        - heading "What Does Not Work" [level=3] [ref=e217]
+        - paragraph [ref=e218]: Trying to detox with willpower alone is not a character test. Withdrawal is a medical condition. "Toughing it out" does not speed up the process and significantly increases the risk of relapse or medical complications. Similarly, using other substances to manage withdrawal (drinking to ease opioid withdrawal, for example) creates new problems rather than solving existing ones.
+        - paragraph [ref=e219]:
+          - text: For a deeper look at home detox safety, including when it is and is not appropriate, read our
+          - link "detox at home guide" [ref=e220] [cursor=pointer]:
+            - /url: /detox-at-home/
+          - text: . For information on treatment costs and how to access care, see our
+          - link "detox cost page" [ref=e221] [cursor=pointer]:
+            - /url: /detox-cost/
+          - text: .
+    - generic [ref=e223]:
+      - generic [ref=e224]:
+        - paragraph [ref=e225]: Beyond the Physical
+        - heading "The Emotional Side of Withdrawal" [level=2] [ref=e226]
+      - generic [ref=e227]:
+        - paragraph [ref=e228]: The physical symptoms get most of the attention, but the emotional and psychological side of withdrawal can be just as overwhelming, and it often lasts longer.
+        - paragraph [ref=e229]: Anxiety during withdrawal is not regular anxiety. Your nervous system is in overdrive, producing a fight-or-flight response that can feel constant and inescapable. Everything feels urgent. Your brain is telling you that the only way to make this stop is to use again. That is not a moral failing. That is neurochemistry.
+        - paragraph [ref=e230]: Depression after stopping a substance is also common and expected. Your brain's reward system was being artificially stimulated, and now it needs time to recalibrate. Things that used to bring you pleasure may feel flat or meaningless for a while. This is temporary, but it does not feel temporary when you are in it.
+        - paragraph [ref=e231]: Cravings are perhaps the hardest part. They come in waves, sometimes triggered by specific places, people, or emotions, and sometimes seemingly out of nowhere. What helps is knowing that each wave peaks and then passes. The intensity decreases over time, even when it does not feel like it will.
+        - paragraph [ref=e232]: Irritability, mood swings, difficulty sleeping, and a sense of hopelessness are all normal parts of the process. None of these mean you are broken or that recovery is not working. They mean your brain is healing, and healing takes time.
+        - paragraph [ref=e233]: If the emotional weight becomes unbearable, if you are having thoughts of self-harm, or if you feel like you cannot keep going, reach out. Call 988 (Suicide and Crisis Lifeline), text HOME to 741741 (Crisis Text Line), or go to your nearest emergency room. You deserve support through this, not just for the physical symptoms but for all of it.
+        - paragraph [ref=e234]:
+          - text: For a broader look at what to expect during the recovery process, see our
+          - link "detox timeline guide" [ref=e235] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - text: . If you are considering
+          - link "rapid detox" [ref=e236] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - text: as an option, understand the risks and benefits before making a decision.
+    - blockquote [ref=e239]: You are stronger than what you are going through.
+    - generic [ref=e242]:
+      - generic [ref=e243]:
+        - paragraph [ref=e244]: You Don't Have to Do This Alone
+        - heading "Ready to Talk to Someone?" [level=2] [ref=e245]
+        - paragraph [ref=e246]: These free, confidential resources are available 24/7. No insurance needed, no commitment required. Just a conversation.
+      - generic [ref=e247]:
+        - generic [ref=e248]:
+          - heading "SAMHSA National Helpline" [level=3] [ref=e249]
+          - link "1-800-662-4357" [ref=e250] [cursor=pointer]:
+            - /url: tel:18006624357
+          - paragraph [ref=e251]: Free, confidential, 24/7 treatment referral and information. Available in English and Spanish.
+        - generic [ref=e252]:
+          - heading "Crisis Text Line" [level=3] [ref=e253]
+          - paragraph [ref=e254]:
+            - text: Text
+            - strong [ref=e255]: HOME
+            - text: to
+            - strong [ref=e256]: "741741"
+          - paragraph [ref=e257]: Free, 24/7 crisis support via text message. Trained counselors available anytime.
+        - generic [ref=e258]:
+          - heading "988 Suicide & Crisis Lifeline" [level=3] [ref=e259]
+          - link "988" [ref=e260] [cursor=pointer]:
+            - /url: tel:988
+          - paragraph [ref=e261]: Call or text. For anyone in emotional distress, including substance-related crises.
+  - contentinfo [ref=e262]:
+    - generic [ref=e263]:
+      - generic [ref=e264]:
+        - generic [ref=e265]:
+          - link "getdetox" [ref=e266] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e267]: An informational resource about drug and alcohol detoxification. This site does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
+        - generic [ref=e268]:
+          - heading "Topics" [level=4] [ref=e269]
+          - link "Opioid Detox" [ref=e270] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - link "Alcohol Detox" [ref=e271] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - link "Rapid Detox" [ref=e272] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - link "Detox Timeline" [ref=e273] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - link "Detox Cost" [ref=e274] [cursor=pointer]:
+            - /url: /detox-cost/
+          - link "Withdrawal Symptoms" [ref=e275] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - link "Detox at Home" [ref=e276] [cursor=pointer]:
+            - /url: /detox-at-home/
+        - generic [ref=e277]:
+          - heading "Get Help" [level=4] [ref=e278]
+          - 'link "SAMHSA: 1-800-662-4357" [ref=e279] [cursor=pointer]':
+            - /url: tel:18006624357
+          - 'link "Crisis Line: 988" [ref=e280] [cursor=pointer]':
+            - /url: tel:988
+          - link "FindTreatment.gov" [ref=e281] [cursor=pointer]:
+            - /url: https://findtreatment.gov
+      - generic [ref=e282]:
+        - paragraph [ref=e283]: © 2026 GetDetox. For informational purposes only.
+        - paragraph [ref=e284]: If you are experiencing a medical emergency, call 911.

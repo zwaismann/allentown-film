@@ -1,0 +1,307 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "getdetox" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Opioid Detox" [ref=e7] [cursor=pointer]:
+          - /url: /opioid-detox/
+        - link "Alcohol Detox" [ref=e8] [cursor=pointer]:
+          - /url: /alcohol-detox/
+        - link "Rapid Detox" [ref=e9] [cursor=pointer]:
+          - /url: /rapid-detox/
+        - link "Timeline" [ref=e10] [cursor=pointer]:
+          - /url: /detox-timeline/
+        - link "Cost" [ref=e11] [cursor=pointer]:
+          - /url: /detox-cost/
+        - link "Withdrawal" [ref=e12] [cursor=pointer]:
+          - /url: /withdrawal-symptoms/
+        - link "Home Detox" [ref=e13] [cursor=pointer]:
+          - /url: /detox-at-home/
+        - link "Get Help Now" [ref=e14] [cursor=pointer]:
+          - /url: "#help"
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Practical Info
+        - heading "How Much Does Detox Cost? A Realistic Breakdown" [level=1] [ref=e21]
+        - paragraph [ref=e22]: Detox costs range from free to $25,000 or more. Here is what you can actually expect to pay for inpatient, outpatient, and rapid detox, what insurance covers, and how to find affordable options.
+      - generic [ref=e24]: Scroll to learn more
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: The Big Picture
+        - heading "The Short Answer" [level=2] [ref=e30]
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: Detox can cost anywhere from nothing to $25,000 or more. The price depends on the type of program, the substance involved, how long you need medical supervision, and whether you have insurance.
+        - paragraph [ref=e33]: "Here is a quick overview of what different detox options typically cost:"
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - strong [ref=e37]: "Inpatient medical detox:"
+            - text: $1,000 to $1,500 per day, typically 3 to 7 days ($3,000 to $10,000+ total)
+          - listitem [ref=e38]:
+            - strong [ref=e39]: "Outpatient detox:"
+            - text: $1,000 to $5,000 total, depending on length and services
+          - listitem [ref=e40]:
+            - strong [ref=e41]: "Rapid detox (under anesthesia):"
+            - text: $10,000 to $25,000+
+          - listitem [ref=e42]:
+            - strong [ref=e43]: "State-funded or free programs:"
+            - text: $0, though wait times may apply
+          - listitem [ref=e44]:
+            - strong [ref=e45]: "With insurance:"
+            - text: Often just your copay or deductible
+        - paragraph [ref=e46]: The biggest factors that affect your cost are the substance you are detoxing from (alcohol and benzodiazepine detox require more intensive monitoring), how long you have been using, whether you have co-occurring medical or mental health conditions, and the facility you choose.
+        - paragraph [ref=e47]: Do not let the numbers above discourage you. Most people pay far less than the sticker price, and many pay nothing at all. Keep reading for the full breakdown.
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - paragraph [ref=e51]: Highest Level of Care
+        - heading "Inpatient Medical Detox Cost" [level=2] [ref=e52]
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: Inpatient medical detox is the most intensive and most expensive option. You stay at a facility 24/7 with round-the-clock medical supervision. Typical costs run $1,000 to $1,500 per day.
+        - paragraph [ref=e55]: Most inpatient detox stays last 3 to 7 days, though some can extend to 10 days or longer for alcohol or benzodiazepine withdrawal. That puts total costs in the range of $3,000 to $10,000 or more before insurance.
+        - heading "What Is Included" [level=3] [ref=e56]
+        - paragraph [ref=e57]: "The daily rate at most inpatient facilities typically covers:"
+        - list [ref=e59]:
+          - listitem [ref=e60]: 24/7 medical monitoring by nurses and physicians
+          - listitem [ref=e61]: Medications for withdrawal symptom management
+          - listitem [ref=e62]: Vital sign checks and medical assessments
+          - listitem [ref=e63]: Meals and a safe, supervised environment
+          - listitem [ref=e64]: Initial psychiatric evaluation
+          - listitem [ref=e65]: Discharge planning and aftercare referrals
+        - paragraph [ref=e66]:
+          - text: Inpatient detox is recommended for
+          - link "alcohol withdrawal" [ref=e67] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - text: (which can cause life-threatening seizures), benzodiazepine withdrawal, and severe opioid dependence, especially when previous outpatient attempts have not worked. If you are unsure what level of care you need, our
+          - link "withdrawal symptoms guide" [ref=e68] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - text: can help you gauge severity.
+        - paragraph [ref=e69]: Luxury or private detox facilities can charge $2,000 to $5,000 per day or more, but the medical care is not necessarily better. Focus on accreditation, staff credentials, and whether the facility uses evidence-based protocols.
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - paragraph [ref=e73]: Lower Cost Option
+        - heading "Outpatient Detox Cost" [level=2] [ref=e74]
+      - generic [ref=e75]:
+        - paragraph [ref=e76]: Outpatient detox lets you receive medical supervision during the day while returning home at night. It typically costs $1,000 to $5,000 total, making it significantly less expensive than inpatient care.
+        - paragraph [ref=e77]: In an outpatient program, you visit a clinic daily or several times per week for medication management, vital sign monitoring, and check-ins with medical staff. Some programs also include counseling or group sessions.
+        - heading "Who Outpatient Detox Is Right For" [level=3] [ref=e78]
+        - paragraph [ref=e79]: "Outpatient detox works best when you have a stable home environment, a support person who can stay with you, and a substance and usage pattern that does not require 24/7 monitoring. It is commonly used for:"
+        - list [ref=e81]:
+          - listitem [ref=e82]:
+            - link "Opioid detox" [ref=e83] [cursor=pointer]:
+              - /url: /opioid-detox/
+            - text: using medication-assisted treatment (Suboxone or methadone)
+          - listitem [ref=e84]: Mild to moderate alcohol dependence (not severe or long-term heavy use)
+          - listitem [ref=e85]: Situations where you need to continue working or caring for family
+          - listitem [ref=e86]: Follow-up care after a short inpatient stabilization
+        - paragraph [ref=e87]: Outpatient detox is not recommended for severe alcohol dependence, benzodiazepine withdrawal, or anyone with a history of withdrawal seizures or delirium tremens. For those situations, inpatient care is safer.
+        - paragraph [ref=e88]: The cost advantage is real, but safety comes first. Your doctor or a SAMHSA helpline counselor can help you determine the right level of care.
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - paragraph [ref=e92]: Accelerated Approach
+        - heading "Rapid Detox Cost" [level=2] [ref=e93]
+      - generic [ref=e94]:
+        - paragraph [ref=e95]: Rapid detox is the most expensive option, typically costing $10,000 to $25,000 or more. The procedure places you under general anesthesia while medications flush opioids from your receptors.
+        - paragraph [ref=e96]: The high price tag reflects the cost of general anesthesia, an anesthesiologist, intensive care-level monitoring, the specialized facility, and the medical team required for the procedure. Most programs also include a short post-procedure observation period.
+        - heading "Why It Costs So Much" [level=3] [ref=e97]
+        - list [ref=e99]:
+          - listitem [ref=e100]: General anesthesia and anesthesiologist fees
+          - listitem [ref=e101]: Intensive medical monitoring during and after the procedure
+          - listitem [ref=e102]: Specialized medications (naltrexone, naloxone)
+          - listitem [ref=e103]: Hospital or surgical center facility fees
+          - listitem [ref=e104]: Limited availability of providers who perform the procedure
+        - paragraph [ref=e105]: Most insurance plans do not cover rapid detox because many medical organizations consider it experimental or not yet supported by enough evidence to recommend over standard approaches. You should expect to pay out of pocket.
+        - paragraph [ref=e106]:
+          - text: Before choosing rapid detox based on the appeal of a faster process, read our full
+          - link "rapid detox guide" [ref=e107] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - text: to understand the risks, benefits, and what the research actually shows about long-term outcomes.
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - paragraph [ref=e111]: Coverage & Benefits
+        - heading "Does Insurance Cover Detox?" [level=2] [ref=e112]
+      - generic [ref=e113]:
+        - paragraph [ref=e114]: "Yes, most insurance plans are required to cover substance abuse treatment, including medical detox. Two federal laws make this possible: the Affordable Care Act (ACA) and the Mental Health Parity and Addiction Equity Act."
+        - paragraph [ref=e115]: Under the ACA, substance abuse treatment is one of the ten essential health benefits that most plans must cover. The parity act requires insurers to cover addiction treatment at the same level as other medical and surgical conditions, with no extra limitations on visits, copays, or deductibles.
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e118]: Private Insurance
+          - heading "Employer & Marketplace Plans" [level=4] [ref=e119]
+          - paragraph [ref=e120]: Most private plans cover medical detox. You will typically pay your standard deductible, copay, or coinsurance. In-network facilities cost less than out-of-network. Call the number on your insurance card to verify coverage and find in-network providers.
+        - generic [ref=e121]:
+          - generic [ref=e122]: Government Programs
+          - heading "Medicaid & Medicare" [level=4] [ref=e123]
+          - paragraph [ref=e124]: Medicaid covers detox in most states, often with little or no out-of-pocket cost. Medicare Part A covers inpatient detox, and Part B covers outpatient services. Coverage specifics vary by state for Medicaid and by plan for Medicare Advantage.
+        - generic [ref=e125]:
+          - generic [ref=e126]: Military & VA
+          - heading "TRICARE & VA Benefits" [level=4] [ref=e127]
+          - paragraph [ref=e128]: TRICARE covers medically necessary detox and substance abuse treatment. The VA provides detox services to eligible veterans, often at no cost. Contact your local VA medical center or call the Veterans Crisis Line at 988 (press 1).
+        - generic [ref=e129]:
+          - generic [ref=e130]: No Insurance
+          - heading "Uninsured Options" [level=4] [ref=e131]
+          - paragraph [ref=e132]: If you do not have insurance, you still have options. State-funded programs, sliding-scale facilities, and nonprofit treatment centers provide detox services regardless of your ability to pay. Scroll down for more on free and low-cost resources.
+      - generic [ref=e133]:
+        - heading "How to Verify Your Coverage" [level=3] [ref=e134]
+        - paragraph [ref=e135]: "Before entering a program, take these steps to understand what your insurance will cover:"
+        - list [ref=e137]:
+          - listitem [ref=e138]: Call the member services number on the back of your insurance card
+          - listitem [ref=e139]: Ask specifically about "medical detoxification" and "substance abuse treatment" benefits
+          - listitem [ref=e140]: Ask whether the facility you are considering is in-network or out-of-network
+          - listitem [ref=e141]: Ask about your deductible, copay, and any pre-authorization requirements
+          - listitem [ref=e142]: Ask about length-of-stay limits and whether the plan covers medications used during detox
+          - listitem [ref=e143]: Get the answers in writing or take detailed notes with the representative's name
+        - paragraph [ref=e144]: Many treatment facilities also have admissions staff who will verify your insurance for you. Do not be afraid to ask them to check before you commit.
+    - generic [ref=e146]:
+      - generic [ref=e147]:
+        - paragraph [ref=e148]: Affordable Alternatives
+        - heading "Free and Low-Cost Detox Options" [level=2] [ref=e149]
+      - generic [ref=e150]:
+        - paragraph [ref=e151]: If you do not have insurance or cannot afford your out-of-pocket costs, there are real options available. Every state has publicly funded treatment programs, and many facilities offer services on a sliding scale based on your income.
+        - heading "Where to Find Free or Reduced-Cost Detox" [level=3] [ref=e152]
+        - list [ref=e154]:
+          - listitem [ref=e155]:
+            - strong [ref=e156]: "SAMHSA's National Helpline (1-800-662-4357):"
+            - text: Free, confidential, 24/7. They can connect you with state-funded programs and low-cost facilities in your area
+          - listitem [ref=e157]:
+            - strong [ref=e158]: "FindTreatment.gov:"
+            - text: SAMHSA's online locator lets you filter by "payment assistance available" to find facilities that accept clients regardless of ability to pay
+          - listitem [ref=e159]:
+            - strong [ref=e160]: "State-funded treatment programs:"
+            - text: Every state receives federal block grant funding for substance abuse treatment. Contact your state's substance abuse agency for referrals
+          - listitem [ref=e161]:
+            - strong [ref=e162]: "Medicaid:"
+            - text: If your income qualifies, Medicaid covers detox in most states. Many facilities can help you apply on the spot
+          - listitem [ref=e163]:
+            - strong [ref=e164]: "Medicare:"
+            - text: Covers both inpatient and outpatient detox for eligible individuals 65 and older or those with qualifying disabilities
+          - listitem [ref=e165]:
+            - strong [ref=e166]: "Community health centers:"
+            - text: Federally Qualified Health Centers (FQHCs) are required to serve patients regardless of ability to pay, and many offer substance abuse services
+          - listitem [ref=e167]:
+            - strong [ref=e168]: "Nonprofit and faith-based programs:"
+            - text: Organizations like the Salvation Army and local nonprofits operate free or donation-based detox and recovery programs
+          - listitem [ref=e169]:
+            - strong [ref=e170]: "Sliding-scale facilities:"
+            - text: Many private treatment centers adjust their fees based on your income. Ask about financial assistance before assuming you cannot afford care
+        - paragraph [ref=e171]:
+          - text: Wait times for free programs can be longer than for private facilities. If you need help now, call SAMHSA at
+          - link "1-800-662-4357" [ref=e172] [cursor=pointer]:
+            - /url: tel:18006624357
+          - text: to find the fastest available option near you.
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - paragraph [ref=e176]: What to Ask Upfront
+        - heading "Hidden Costs to Watch For" [level=2] [ref=e177]
+      - generic [ref=e178]:
+        - paragraph [ref=e179]: The quoted price for detox does not always include everything. Before you commit to a program, ask about these common additional charges so you are not caught off guard.
+        - list [ref=e181]:
+          - listitem [ref=e182]:
+            - strong [ref=e183]: "Medications:"
+            - text: Some facilities bill detox medications separately. Ask whether withdrawal management drugs like Suboxone, benzodiazepines, or anti-nausea medication are included in the daily rate
+          - listitem [ref=e184]:
+            - strong [ref=e185]: "Lab work and testing:"
+            - text: Blood tests, urine drug screens, and liver panels are standard during detox. Confirm whether these are part of the program cost or billed separately
+          - listitem [ref=e186]:
+            - strong [ref=e187]: "Medical consultations:"
+            - text: If you see a psychiatrist, specialist, or physician outside the core detox team, those visits may generate separate charges
+          - listitem [ref=e188]:
+            - strong [ref=e189]: "Aftercare and transition planning:"
+            - text: Some programs include post-detox planning, while others charge for it. Ask what happens when detox ends
+          - listitem [ref=e190]:
+            - strong [ref=e191]: "Extended stays:"
+            - text: If your detox takes longer than expected (which is common), know whether the daily rate continues or whether a different rate applies
+          - listitem [ref=e192]:
+            - strong [ref=e193]: "Out-of-network charges:"
+            - text: Even if a facility takes your insurance, individual providers (like an anesthesiologist for rapid detox) may be out-of-network
+        - paragraph [ref=e194]: The best way to protect yourself is to ask for a written estimate that includes all anticipated charges before you start. A reputable facility will be transparent about costs. If they are not willing to discuss pricing clearly, that is worth noting.
+        - paragraph [ref=e195]:
+          - text: For a broader look at what happens during and after detox, read our
+          - link "detox timeline guide" [ref=e196] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - text: . If you are considering managing withdrawal on your own to save money, please read our
+          - link "guide to detoxing at home" [ref=e197] [cursor=pointer]:
+            - /url: /detox-at-home/
+          - text: first to understand the risks.
+    - generic [ref=e199]:
+      - generic [ref=e200]:
+        - paragraph [ref=e201]: The Most Important Thing
+        - heading "Cost Should Not Stop You" [level=2] [ref=e202]
+      - generic [ref=e203]:
+        - paragraph [ref=e204]: "If you are reading this page because you are worried about affording detox, here is what matters most: options exist at every price point, including free. The cost of not getting help is always higher."
+        - paragraph [ref=e205]: Untreated addiction costs more than any detox program. Emergency room visits, legal problems, lost income, damaged relationships, and declining health all carry price tags that compound over time. Detox is an investment in stopping that cycle.
+        - paragraph [ref=e206]: "Here is what you can do right now:"
+        - list [ref=e208]:
+          - listitem [ref=e209]:
+            - text: Call SAMHSA at
+            - link "1-800-662-4357" [ref=e210] [cursor=pointer]:
+              - /url: tel:18006624357
+            - text: to find programs in your area, including free options
+          - listitem [ref=e211]: If you have insurance, call the number on your card and ask about detox coverage
+          - listitem [ref=e212]:
+            - text: Visit
+            - link "FindTreatment.gov" [ref=e213] [cursor=pointer]:
+              - /url: https://findtreatment.gov
+            - text: to search for facilities that offer payment assistance
+          - listitem [ref=e214]: Ask any facility you are considering about sliding-scale fees or financial assistance programs
+          - listitem [ref=e215]: If you qualify, apply for Medicaid, which covers detox in most states
+        - paragraph [ref=e216]: You deserve to get better regardless of what is in your bank account. The system is complicated, but help is available. Start with one phone call.
+    - generic [ref=e220]:
+      - generic [ref=e221]:
+        - paragraph [ref=e222]: You Don't Have to Do This Alone
+        - heading "Ready to Talk to Someone?" [level=2] [ref=e223]
+        - paragraph [ref=e224]: These free, confidential resources are available 24/7. No insurance needed, no commitment required. Just a conversation.
+      - generic [ref=e225]:
+        - generic [ref=e226]:
+          - heading "SAMHSA National Helpline" [level=3] [ref=e227]
+          - link "1-800-662-4357" [ref=e228] [cursor=pointer]:
+            - /url: tel:18006624357
+          - paragraph [ref=e229]: Free, confidential, 24/7 treatment referral and information. Available in English and Spanish.
+        - generic [ref=e230]:
+          - heading "Crisis Text Line" [level=3] [ref=e231]
+          - paragraph [ref=e232]:
+            - text: Text
+            - strong [ref=e233]: HOME
+            - text: to
+            - strong [ref=e234]: "741741"
+          - paragraph [ref=e235]: Free, 24/7 crisis support via text message. Trained counselors available anytime.
+        - generic [ref=e236]:
+          - heading "988 Suicide & Crisis Lifeline" [level=3] [ref=e237]
+          - link "988" [ref=e238] [cursor=pointer]:
+            - /url: tel:988
+          - paragraph [ref=e239]: Call or text. For anyone in emotional distress, including substance-related crises.
+  - contentinfo [ref=e240]:
+    - generic [ref=e241]:
+      - generic [ref=e242]:
+        - generic [ref=e243]:
+          - link "getdetox" [ref=e244] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e245]: An informational resource about drug and alcohol detoxification. This site does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
+        - generic [ref=e246]:
+          - heading "Topics" [level=4] [ref=e247]
+          - link "Opioid Detox" [ref=e248] [cursor=pointer]:
+            - /url: /opioid-detox/
+          - link "Alcohol Detox" [ref=e249] [cursor=pointer]:
+            - /url: /alcohol-detox/
+          - link "Rapid Detox" [ref=e250] [cursor=pointer]:
+            - /url: /rapid-detox/
+          - link "Detox Timeline" [ref=e251] [cursor=pointer]:
+            - /url: /detox-timeline/
+          - link "Detox Cost" [ref=e252] [cursor=pointer]:
+            - /url: /detox-cost/
+          - link "Withdrawal Symptoms" [ref=e253] [cursor=pointer]:
+            - /url: /withdrawal-symptoms/
+          - link "Detox at Home" [ref=e254] [cursor=pointer]:
+            - /url: /detox-at-home/
+        - generic [ref=e255]:
+          - heading "Get Help" [level=4] [ref=e256]
+          - 'link "SAMHSA: 1-800-662-4357" [ref=e257] [cursor=pointer]':
+            - /url: tel:18006624357
+          - 'link "Crisis Line: 988" [ref=e258] [cursor=pointer]':
+            - /url: tel:988
+          - link "FindTreatment.gov" [ref=e259] [cursor=pointer]:
+            - /url: https://findtreatment.gov
+      - generic [ref=e260]:
+        - paragraph [ref=e261]: © 2026 GetDetox. For informational purposes only.
+        - paragraph [ref=e262]: If you are experiencing a medical emergency, call 911.

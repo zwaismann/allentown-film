@@ -83,14 +83,14 @@ const TEAM_MEMBERS = [
     bio: 'Allentown native and the filmmaker who brought this story to light. Directed the Billboard Boys documentary (2017), which premiered at film festivals and was featured in The Philadelphia Inquirer, WHYY, and PhillyVoice. His personal connection to the Lehigh Valley and years of research into the billboard sitters give the script its authenticity.',
   },
   {
-    role: 'EXECUTIVE PRODUCER',
+    role: 'PRODUCER',
     name: 'Roberto Alcazar',
     image: '/images/roberto-alcazar.webp',
     short: 'EO Integration. 200 Cartas (Lin-Manuel Miranda), YASUNI',
     bio: 'Managing Partner at EO Integration with extensive experience in impact-driven entertainment. Executive produced 200 Cartas (starring Lin-Manuel Miranda) and produced the documentary YASUNI, which premiered at the Miami International Film Festival. Also produced and directed CASI 10, featured in 25+ film festivals worldwide.',
   },
   {
-    role: 'EXECUTIVE PRODUCER',
+    role: 'PRODUCER',
     name: 'Pilar de Posadas',
     image: '/images/pilar-de-posadas.webp',
     short: 'Scenic Rights (LA). International sales and acquisitions',
@@ -139,8 +139,8 @@ const DOCUMENTS = [
 
 const CONTACTS = [
   { role: 'PRODUCER', name: 'Gary Foster', phone: '+1 (508) 292 5752', email: 'gsfhorse@mac.com' },
-  { role: 'EXECUTIVE PRODUCER', name: 'Roberto Alcazar', phone: '+1 (646) 346 9213', email: 'alcazar@eointegration.com' },
-  { role: 'EXECUTIVE PRODUCER', name: 'Pilar De Posadas', phone: '+1 (310) 740 5530', email: 'pposadas@scenicrights.com' },
+  { role: 'PRODUCER', name: 'Roberto Alcazar', phone: '+1 (646) 346 9213', email: 'alcazar@eointegration.com' },
+  { role: 'PRODUCER', name: 'Pilar De Posadas', phone: '+1 (310) 740 5530', email: 'pposadas@scenicrights.com' },
 ];
 
 /* ─── Utility: section fade-in hook ─── */
@@ -326,7 +326,7 @@ export default function InvestorsPage() {
 
   /* ─── Unlocked Content ─── */
   return (
-    <div style={{ background: 'var(--color-bg)', minHeight: '100vh' }}>
+    <div style={{ background: 'var(--color-bg)', minHeight: '100vh', overflowX: 'hidden' }}>
       {/* Fixed back link */}
       <Link href="/" style={{
         position: 'fixed', top: 'clamp(20px, 3vw, 32px)', left: 'clamp(20px, 3vw, 32px)',
@@ -371,6 +371,11 @@ export default function InvestorsPage() {
         @keyframes investorFadeIn {
           from { opacity: 0; transform: translateY(12px); }
           to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 480px) {
+          .contact-separator { display: none; }
+          .contact-separator + span,
+          .contact-separator + a { display: block; }
         }
       `}</style>
     </div>
@@ -509,7 +514,7 @@ function ExecutiveSummarySection() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
         gap: '16px',
         marginBottom: '32px',
       }}>
@@ -568,7 +573,7 @@ function ExecutiveSummarySection() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
         gap: '16px',
         marginBottom: '32px',
       }}>
@@ -669,13 +674,13 @@ function FinancialPlanSection() {
       {/* Two-column: budget + revenue */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
         gap: '24px',
         marginBottom: '32px',
       }}>
         {/* Budget breakdown */}
         <div style={{
-          padding: '28px',
+          padding: 'clamp(16px, 3vw, 28px)',
           background: 'rgba(255,255,255,0.03)',
           border: '1px solid rgba(255,255,255,0.08)',
           borderRadius: '6px',
@@ -689,14 +694,14 @@ function FinancialPlanSection() {
           </p>
           {BUDGET_BREAKDOWN.map((item) => (
             <div key={item.label} style={{
-              display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-              padding: '8px 0',
+              display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
+              padding: '8px 0', gap: '8px', flexWrap: 'wrap',
               borderBottom: '1px solid rgba(255,255,255,0.04)',
             }}>
-              <span style={{ ...S.body, fontSize: '14px' }}>{item.label}</span>
+              <span style={{ ...S.body, fontSize: '14px', flex: '1 1 auto', minWidth: 0 }}>{item.label}</span>
               <span style={{
                 fontFamily: "'DM Sans', sans-serif", fontSize: '14px',
-                fontWeight: 600, color: '#E8DCC8',
+                fontWeight: 600, color: '#E8DCC8', flexShrink: 0,
               }}>{item.amount}</span>
             </div>
           ))}
@@ -704,7 +709,7 @@ function FinancialPlanSection() {
 
         {/* Revenue projections */}
         <div style={{
-          padding: '28px',
+          padding: 'clamp(16px, 3vw, 28px)',
           background: 'rgba(255,255,255,0.03)',
           border: '1px solid rgba(255,255,255,0.08)',
           borderRadius: '6px',
@@ -753,8 +758,8 @@ function AttachmentsSection() {
       <p style={S.sectionHeading}>Current Attachments</p>
 
       <div style={{
-        display: 'flex', gap: '24px', alignItems: 'flex-start',
-        padding: '28px',
+        display: 'flex', gap: '24px', alignItems: 'flex-start', flexWrap: 'wrap',
+        padding: 'clamp(16px, 3vw, 28px)',
         background: 'rgba(255,255,255,0.03)',
         border: '1px solid rgba(255,255,255,0.08)',
         borderRadius: '6px',
@@ -794,8 +799,8 @@ function AttachmentsSection() {
       </div>
 
       <div style={{
-        display: 'flex', gap: '24px', alignItems: 'flex-start',
-        padding: '28px',
+        display: 'flex', gap: '24px', alignItems: 'flex-start', flexWrap: 'wrap',
+        padding: 'clamp(16px, 3vw, 28px)',
         background: 'rgba(255,255,255,0.03)',
         border: '1px solid rgba(255,255,255,0.08)',
         borderRadius: '6px',
@@ -844,7 +849,7 @@ function ProductionPlanSection() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
         gap: '20px',
         marginBottom: '24px',
       }}>
@@ -1039,7 +1044,7 @@ function DownloadsSection() {
             rel="noopener noreferrer"
             style={{
               display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap',
-              padding: '24px 28px',
+              padding: 'clamp(16px, 3vw, 24px) clamp(16px, 3vw, 28px)',
               background: 'rgba(255,255,255,0.03)',
               border: '1px solid rgba(255,255,255,0.08)',
               borderRadius: '6px',
@@ -1091,21 +1096,22 @@ function DownloadsSection() {
         </p>
 
         {CONTACTS.map((c) => (
-          <p key={c.name} style={{
+          <div key={c.name} style={{
             fontFamily: "'DM Sans', sans-serif",
             fontSize: 'clamp(13px, 1.3vw, 15px)',
             color: '#E8DCC8',
             lineHeight: 1.8,
             opacity: 0.8,
+            marginBottom: '8px',
           }}>
             <span style={{ ...S.muted, fontSize: '11px', letterSpacing: '0.1em' }}>{c.role}</span>
             {' '}
             <strong style={S.bold}>{c.name}</strong>
-            {' | '}
-            <span style={{ color: '#8899AA' }}>{c.phone}</span>
-            {' | '}
-            <a href={`mailto:${c.email}`} style={{ color: '#D4943A', textDecoration: 'none' }}>{c.email}</a>
-          </p>
+            <span className="contact-separator"> | </span>
+            <span style={{ color: '#8899AA', whiteSpace: 'nowrap' }}>{c.phone}</span>
+            <span className="contact-separator"> | </span>
+            <a href={`mailto:${c.email}`} style={{ color: '#D4943A', textDecoration: 'none', wordBreak: 'break-all' as const }}>{c.email}</a>
+          </div>
         ))}
 
         <p style={{
