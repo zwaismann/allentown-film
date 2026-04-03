@@ -131,7 +131,7 @@ const DOCUMENTS = [
   },
   {
     title: 'Production Budget',
-    description: 'Full production budget breakdown - $2.3M, 26 shoot days',
+    description: 'Full production budget breakdown - $2.5M, 26 shoot days',
     href: '/docs/ALLENTOWN_Production_Budget.pdf',
     type: 'PDF',
   },
@@ -492,7 +492,7 @@ function ExecutiveSummarySection() {
       </p>
 
       <p style={{ ...S.body, marginBottom: '32px' }}>
-        With a <strong style={S.bold}>$2.3M budget</strong>, we seek equity, Pennsylvania's 25-30% Film Tax Credit (~$600K),
+        With a <strong style={S.bold}>$2.5M budget</strong>, we seek equity, Pennsylvania's 25-30% Film Tax Credit (~$600K),
         and grants (e.g., Greater Philadelphia Film Office). Projected revenue of{' '}
         <strong style={{ ...S.bold, color: '#D4943A' }}>$5.75M (150% ROI)</strong> spans festivals (Sundance),
         limited theatrical, streaming (Netflix, Amazon), and international sales.
@@ -624,7 +624,7 @@ function ExecutiveSummarySection() {
       <p style={S.body}>
         Led by producer <strong style={S.bold}>Gary Foster</strong> (<em>Bedford Park</em>, 2026 Sundance,
         <em> Sleepless in Seattle</em>), the team ensures execution and global appeal. Pennsylvania's incentives
-        and the lean $2.3M budget mitigate risk, positioning Allentown as a profitable, uplifting investment.
+        and the lean $2.5M budget mitigate risk, positioning Allentown as a profitable, uplifting investment.
       </p>
     </section>
   );
@@ -666,7 +666,7 @@ function FinancialPlanSection() {
 
       <p style={{ ...S.body, marginBottom: '32px' }}>
         <strong style={S.bold}>ALLENTOWN</strong> is budgeted at{' '}
-        <strong style={{ ...S.bold, color: '#D4943A' }}>$2.3M</strong>, leveraging Pennsylvania's low-cost
+        <strong style={{ ...S.bold, color: '#D4943A' }}>$2.5M</strong>, leveraging Pennsylvania's low-cost
         locations and 25-30% Film Tax Credit (~$600K). Projected revenue of{' '}
         <strong style={{ ...S.bold, color: '#D4943A' }}>$5.75M yields a 150% ROI</strong>.
       </p>
@@ -690,7 +690,7 @@ function FinancialPlanSection() {
             letterSpacing: '0.2em', textTransform: 'uppercase',
             color: '#8899AA', marginBottom: '16px',
           }}>
-            Budget Breakdown - $2.3M
+            Budget Breakdown - $2.5M
           </p>
           {BUDGET_BREAKDOWN.map((item) => (
             <div key={item.label} style={{

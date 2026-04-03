@@ -167,7 +167,7 @@ export default function BusinessPlanPage() {
             { num: '06', id: 'market-analysis', title: 'Market Analysis', desc: 'Genre trends, streaming appetite, audience' },
             { num: '07', id: 'distribution', title: 'Distribution Strategy', desc: 'Festival, theatrical, streaming, international' },
             { num: '08', id: 'production-plan', title: 'Production Plan', desc: 'Timeline, PA advantages, shoot details' },
-            { num: '09', id: 'budget', title: 'Budget Top Sheet', desc: 'Line item summary - $2.3M total' },
+            { num: '09', id: 'budget', title: 'Budget Top Sheet', desc: 'Line item summary - $2.5M total' },
             { num: '10', id: 'financing', title: 'Financing Structure', desc: 'Capital stack, equity raise, tax credit' },
             { num: '11', id: 'investment-terms', title: 'Investment Terms', desc: 'LLC structure, 120% preferred return, profit split' },
             { num: '12', id: 'projections', title: 'Financial Projections', desc: 'Conservative, moderate, and optimistic scenarios' },
@@ -589,7 +589,7 @@ export default function BusinessPlanPage() {
 
         <div className="bp-h3">Shoot Details</div>
         <p>
-          26-day principal photography. SAG Ultra Low Budget agreement (currently $933/day scale). IATSE low-budget crew rates. The billboard set is a practical centerpiece built on location. 25+ locations across Allentown and surrounding Lehigh Valley. 1982 period setting requires wardrobe, prop, and vehicle departments but no significant VFX work.
+          26-day principal photography. SAG Basic Agreement ($630/day scale). Key crew department heads at $600/day minimum. The billboard set is a practical centerpiece built on location. 25+ locations across Allentown and surrounding Lehigh Valley. 1982 period setting requires wardrobe, prop, and vehicle departments but no significant VFX work.
         </p>
       </div>
 
@@ -619,10 +619,10 @@ export default function BusinessPlanPage() {
         <div className="bp-h3">Budget Notes</div>
         <ul style={{ paddingLeft: '20px', fontSize: '14px', lineHeight: '1.8' }}>
           <li>Above-the-line includes deferred compensation elements for director and writer, reducing cash outlay</li>
-          <li>10% contingency ($212,698) is fully funded within the {BUDGET_TOTAL} total</li>
+          <li>10% contingency ($229,385) is fully funded within the {BUDGET_TOTAL} total</li>
           <li>Production budget was prepared with direct input from Pennsylvania Film Commission schedules</li>
           <li>Full budget with assumptions available at: <em>info@allentownfilm.com</em></li>
-          <li>SAG Ultra Low Budget agreement applies (rates confirmed with SAG-AFTRA)</li>
+          <li>SAG Basic Agreement applies ($630/day scale, $600/day minimum for key crew)</li>
         </ul>
       </div>
 
@@ -947,7 +947,7 @@ export default function BusinessPlanPage() {
 
         <div className="bp-h3">Contingency</div>
         <p>
-          A 10% contingency ($212,698) is budgeted within the {BUDGET_TOTAL} total. This is the industry-standard buffer for unforeseen production costs and is fully funded within the current capital raise.
+          A 10% contingency ($229,385) is budgeted within the {BUDGET_TOTAL} total. This is the industry-standard buffer for unforeseen production costs and is fully funded within the current capital raise.
         </p>
 
         <div className="bp-h3">Completion Bond</div>

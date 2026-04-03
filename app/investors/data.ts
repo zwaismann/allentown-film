@@ -18,28 +18,28 @@ export const DIRECT_COMPS = [
 
 /* ─── Budget ─── */
 
-export const BUDGET_TOTAL = '$2,339,676';
-export const BUDGET_SHORTHAND = '$2.3M';
-export const EQUITY_RAISE = '$1.7M';
+export const BUDGET_TOTAL = '$2,523,238';
+export const BUDGET_SHORTHAND = '$2.5M';
+export const EQUITY_RAISE = '$1.9M';
 export const TAX_CREDIT = '$600K';
 export const ENTITY_NAME = 'Allentown Film Company';
 
 export const BUDGET_BREAKDOWN = [
-  { label: 'Above-The-Line (Script, Producers, Director, Cast)', amount: '$764K', detail: '$763,688' },
-  { label: 'Production (Crew, Equipment, Locations)', amount: '$1.04M', detail: '$1,039,290' },
+  { label: 'Above-The-Line (Script, Producers, Director, Cast)', amount: '$713K', detail: '$713,063' },
+  { label: 'Production (Crew, Equipment, Locations)', amount: '$1.26M', detail: '$1,256,790' },
   { label: 'Post-Production (Editing, Sound, VFX, Music)', amount: '$268K', detail: '$268,000' },
   { label: 'Other (Insurance, Publicity, General)', amount: '$56K', detail: '$56,000' },
-  { label: 'Contingency (10%)', amount: '$213K', detail: '$212,698' },
+  { label: 'Contingency (10%)', amount: '$229K', detail: '$229,385' },
 ];
 
 export const BUDGET_TOP_SHEET = [
-  { category: 'Above-The-Line', total: '$763,688' },
-  { category: 'Below-The-Line Production', total: '$1,039,290' },
+  { category: 'Above-The-Line', total: '$713,063' },
+  { category: 'Below-The-Line Production', total: '$1,256,790' },
   { category: 'Below-The-Line Post-Production', total: '$268,000' },
   { category: 'Below-The-Line Other', total: '$56,000' },
-  { category: 'Total Above and Below-The-Line', total: '$2,126,978', bold: true },
-  { category: 'Contingency (10%)', total: '$212,698' },
-  { category: 'Grand Total', total: '$2,339,676', bold: true },
+  { category: 'Total Above and Below-The-Line', total: '$2,293,853', bold: true },
+  { category: 'Contingency (10%)', total: '$229,385' },
+  { category: 'Grand Total', total: '$2,523,238', bold: true },
 ];
 
 /* ─── Revenue / Scenarios ─── */
@@ -254,7 +254,7 @@ export const PRODUCTION_PHASES = [
   {
     phase: 'Production',
     timeline: 'Q4 2026, 26-day shoot',
-    detail: 'SAG Ultra Low Budget agreement, IATSE low-budget crew, billboard set as practical centerpiece, 1982 period setting across 25+ locations.',
+    detail: 'SAG Basic Agreement, key crew at $600/day minimum, billboard set as practical centerpiece, 1982 period setting across 25+ locations.',
   },
   {
     phase: 'Post-Production',
@@ -266,9 +266,9 @@ export const PRODUCTION_PHASES = [
 /* ─── Capital Stack ─── */
 
 export const CAPITAL_STACK = [
-  { source: 'Equity Investors', amount: '~$1.7M', percent: '~73%', notes: 'Accredited investors, LLC membership units' },
-  { source: 'PA Film Tax Credit', amount: '~$600K', percent: '~26%', notes: '25-30% of qualified PA spend, transferable' },
-  { source: 'Deferred Compensation', amount: '~$85K+', percent: '~4%', notes: 'EP fees + partial writer/director' },
+  { source: 'Equity Investors', amount: '~$1.9M', percent: '~76%', notes: 'Accredited investors, LLC membership units' },
+  { source: 'PA Film Tax Credit', amount: '~$600K', percent: '~24%', notes: '25-30% of qualified PA spend, transferable' },
+  { source: 'Deferred Compensation', amount: '~$85K+', percent: '~3%', notes: 'EP fees + partial writer/director' },
 ];
 
 /* ─── Team ─── */
@@ -347,7 +347,7 @@ export const DOCUMENTS = [
   },
   {
     title: 'Production Budget',
-    description: 'Full production budget breakdown - $2.3M, 26 shoot days',
+    description: 'Full production budget breakdown - $2.5M, 26 shoot days',
     href: '/docs/ALLENTOWN_Production_Budget.pdf',
     type: 'PDF' as const,
   },
@@ -363,7 +363,7 @@ export const CONTACTS = [
 
 export const RISK_FACTORS = [
   { title: 'Market Risk', description: 'The film industry is inherently speculative. There is no guarantee of commercial success regardless of the quality of the film, cast, or marketing.' },
-  { title: 'Completion Risk', description: 'The film may exceed its budget or schedule. Mitigated by 10% contingency ($213K) and an experienced production team with a proven track record.' },
+  { title: 'Completion Risk', description: 'The film may exceed its budget or schedule. Mitigated by 10% contingency ($229K) and an experienced production team with a proven track record.' },
   { title: 'Distribution Risk', description: 'There is no distribution agreement in place. The film may not secure theatrical, streaming, or international distribution on favorable terms, or at all.' },
   { title: 'Cast Risk', description: 'Attached cast may become unavailable due to scheduling, health, or other factors. Replacement could affect the film\'s market value.' },
   { title: 'Tax Credit Risk', description: 'PA Film Tax Credit is subject to state legislative approval and annual funding caps. Credit may not be awarded, or may be awarded at a reduced rate.' },

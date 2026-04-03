@@ -17,7 +17,7 @@ const DOCUMENTS = [
   },
   {
     title: 'Production Budget',
-    description: 'Full production budget breakdown - $2.3M, 26 shoot days',
+    description: 'Full production budget breakdown - $2.5M, 26 shoot days',
     href: '/docs/ALLENTOWN_Production_Budget.pdf',
     size: '29 KB',
   },
